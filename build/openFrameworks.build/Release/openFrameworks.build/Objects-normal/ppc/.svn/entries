@@ -1,0 +1,79 @@
+8
+
+dir
+74
+http://svn.typeslashcode.com/typeslashcode/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/build/openFrameworks.build/Release/openFrameworks.build/Objects-normal/ppc
+http://svn.typeslashcode.com/typeslashcode
+
+
+
+2010-03-22T14:45:08.731135Z
+74
+axel
+
+
+svn:special svn:externals svn:needs-lock
+
+IRTracker.o~>
+file
+
+
+
+
+2009-11-16T22:35:18.000000Z
+30b651ea93f50e8496be3eb879a02c53
+2010-03-22T14:45:08.731135Z
+74
+axel
+
+IRTracker.o~?
+file
+
+
+
+
+2009-11-16T22:35:18.000000Z
+720320c93b8d412fe9e33d35ab5c742a
+2010-03-22T14:45:08.731135Z
+74
+axel
+has-props
+
+openFrameworks
+file
+
+
+
+
+2009-11-15T06:01:14.000000Z
+8ff3b8f4ca27570608777e998b11a692
+2010-03-22T14:45:08.731135Z
+74
+axel
+has-props
+
+IRTracker.o~$
+file
+
+
+
+
+2009-11-16T22:35:18.000000Z
+da584294fa252684b3358d1917a93cca
+2010-03-22T14:45:08.731135Z
+74
+axel
+has-props
+
+openFrameworks.LinkFileList
+file
+
+
+
+
+2009-11-16T22:34:31.000000Z
+c3750c3d56029bc3305b748b9ba23f2c
+2010-03-22T14:45:08.731135Z
+74
+axel
+

@@ -1,0 +1,69 @@
+8
+
+dir
+74
+http://svn.typeslashcode.com/typeslashcode/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/build/openFrameworks.build/Release/openFrameworks.build
+http://svn.typeslashcode.com/typeslashcode
+
+
+
+2010-03-22T14:45:08.731135Z
+74
+axel
+
+
+svn:special svn:externals svn:needs-lock
+
+Objects-normal
+dir
+
+openFrameworks.hmap
+file
+
+
+
+
+2009-11-16T22:34:31.000000Z
+59e03748df758ee21eb54daabe91d9bd
+2010-03-22T14:45:08.731135Z
+74
+axel
+has-props
+
+openFrameworks~.dep
+file
+
+
+
+
+2009-10-14T14:35:28.000000Z
+b7854627ef732f95b40f73dc16b04dbc
+2010-03-22T14:45:08.731135Z
+74
+axel
+
+openFrameworks.dep
+file
+
+
+
+
+2009-11-16T22:35:21.000000Z
+200706003bcfd26e471a68b50357dc8c
+2010-03-22T14:45:08.731135Z
+74
+axel
+
+Script-E4B6FFFD0C3F9AB9008CF71C.sh
+file
+
+
+
+
+2009-10-14T14:33:49.000000Z
+ba666065ae9cee526ba0dab68423b02a
+2010-03-22T14:45:08.731135Z
+74
+axel
+has-props
+

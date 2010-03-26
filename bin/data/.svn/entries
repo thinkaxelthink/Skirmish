@@ -1,0 +1,67 @@
+8
+
+dir
+74
+http://svn.typeslashcode.com/typeslashcode/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/bin/data
+http://svn.typeslashcode.com/typeslashcode
+
+
+
+2010-03-22T14:45:08.731135Z
+74
+axel
+
+
+svn:special svn:externals svn:needs-lock
+
+fieldofplay.png
+file
+
+
+
+
+2009-11-30T21:12:43.000000Z
+b7901b04fd7f4d5323b8e3930d14c513
+2010-03-22T14:45:08.731135Z
+74
+axel
+has-props
+
+DIN-Regular.ttf
+file
+
+
+
+
+2008-11-11T02:02:04.000000Z
+b8bf5d338b31b155a81f77fd6698a730
+2010-03-22T14:45:08.731135Z
+74
+axel
+has-props
+
+data.xml
+file
+
+
+
+
+2010-03-05T02:25:23.000000Z
+8909eede7c42339dfca577f5e995b40e
+2010-03-22T14:45:08.731135Z
+74
+axel
+
+tankbrigade.bmp
+file
+
+
+
+
+2002-11-26T15:52:12.000000Z
+64ef6af323092085519aa34f928151b2
+2010-03-22T14:45:08.731135Z
+74
+axel
+has-props
+

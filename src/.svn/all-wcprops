@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/typeslashcode/!svn/ver/74/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/src
+END
+Creature.h
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/typeslashcode/!svn/ver/75/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/src/Creature.h
+END
+LastStandApplication.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/typeslashcode/!svn/ver/75/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/src/LastStandApplication.cpp
+END
+Player.h
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/typeslashcode/!svn/ver/75/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/src/Player.h
+END
+CreatureFactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/typeslashcode/!svn/ver/74/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/src/CreatureFactory.cpp
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/typeslashcode/!svn/ver/74/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/src/main.cpp
+END
+GameScore.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/typeslashcode/!svn/ver/74/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/src/GameScore.cpp
+END
+IRTracker.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/typeslashcode/!svn/ver/75/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/src/IRTracker.cpp
+END
+LastStandApplication.h
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/typeslashcode/!svn/ver/74/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/src/LastStandApplication.h
+END
+CreatureFactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/typeslashcode/!svn/ver/74/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/src/CreatureFactory.h
+END
+Creature.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/typeslashcode/!svn/ver/75/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/src/Creature.cpp
+END
+GameScore.h
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/typeslashcode/!svn/ver/74/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/src/GameScore.h
+END
+IRTracker.h
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/typeslashcode/!svn/ver/75/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/src/IRTracker.h
+END
+Player.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/typeslashcode/!svn/ver/75/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/src/Player.cpp
+END

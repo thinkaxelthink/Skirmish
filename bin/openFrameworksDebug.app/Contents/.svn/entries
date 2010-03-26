@@ -1,0 +1,46 @@
+8
+
+dir
+74
+http://svn.typeslashcode.com/typeslashcode/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/bin/openFrameworksDebug.app/Contents
+http://svn.typeslashcode.com/typeslashcode
+
+
+
+2010-03-22T14:45:08.731135Z
+74
+axel
+
+
+svn:special svn:externals svn:needs-lock
+
+MacOS
+dir
+
+Info.plist
+file
+
+
+
+
+2009-10-10T21:59:10.000000Z
+7714a776d45281993a45d3963547a11c
+2010-03-22T14:45:08.731135Z
+74
+axel
+
+Resources
+dir
+
+PkgInfo
+file
+
+
+
+
+2009-10-10T21:59:10.000000Z
+23b7d7d024abb0f558420e098800bf27
+2010-03-22T14:45:08.731135Z
+74
+axel
+

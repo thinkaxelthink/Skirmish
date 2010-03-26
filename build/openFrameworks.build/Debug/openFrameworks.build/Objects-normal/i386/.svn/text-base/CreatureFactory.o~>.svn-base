@@ -1,0 +1,3 @@
+/Users/kegrone/Documents/aesquite/semester/fall09/thesis/dev/code/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/src/CreatureFactory.cpp:12: error: definition of implicitly-declared 'CreatureFactory::CreatureFactory()'
+/Users/kegrone/Documents/aesquite/semester/fall09/thesis/dev/code/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/src/CreatureFactory.cpp:12: error: declaration of 'CreatureFactory::CreatureFactory()' throws different exceptions
+/Users/kegrone/Documents/aesquite/semester/fall09/thesis/dev/code/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/src/CreatureFactory.h:15: error: than previous declaration 'CreatureFactory::CreatureFactory() throw ()'

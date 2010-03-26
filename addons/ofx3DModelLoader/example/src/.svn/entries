@@ -1,0 +1,55 @@
+8
+
+dir
+74
+http://svn.typeslashcode.com/typeslashcode/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/addons/ofx3DModelLoader/example/src
+http://svn.typeslashcode.com/typeslashcode
+
+
+
+2010-03-22T14:45:08.731135Z
+74
+axel
+
+
+svn:special svn:externals svn:needs-lock
+
+testApp.cpp
+file
+
+
+
+
+2009-03-10T02:52:34.000000Z
+9e65d6ae6eed4079dfdc8ff2062bcd9d
+2010-03-22T14:45:08.731135Z
+74
+axel
+has-props
+
+main.cpp
+file
+
+
+
+
+2009-03-10T02:52:34.000000Z
+218e5f79ee293e49b80a76a3add5aa0a
+2010-03-22T14:45:08.731135Z
+74
+axel
+has-props
+
+testApp.h
+file
+
+
+
+
+2009-03-10T02:52:34.000000Z
+07d892082b43d3b676dbdd114b30f4d3
+2010-03-22T14:45:08.731135Z
+74
+axel
+has-props
+

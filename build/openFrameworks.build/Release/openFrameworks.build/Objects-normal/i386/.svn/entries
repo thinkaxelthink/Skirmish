@@ -1,0 +1,41 @@
+8
+
+dir
+74
+http://svn.typeslashcode.com/typeslashcode/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/build/openFrameworks.build/Release/openFrameworks.build/Objects-normal/i386
+http://svn.typeslashcode.com/typeslashcode
+
+
+
+2010-03-22T14:45:08.731135Z
+74
+axel
+
+
+svn:special svn:externals svn:needs-lock
+
+openFrameworks
+file
+
+
+
+
+2009-11-15T06:01:15.000000Z
+1a1d2cd0f348cc34d52dc581ac765974
+2010-03-22T14:45:08.731135Z
+74
+axel
+has-props
+
+openFrameworks.LinkFileList
+file
+
+
+
+
+2009-11-16T22:34:31.000000Z
+4cd6c81362fa9268afa8e5cfd5ab1a04
+2010-03-22T14:45:08.731135Z
+74
+axel
+

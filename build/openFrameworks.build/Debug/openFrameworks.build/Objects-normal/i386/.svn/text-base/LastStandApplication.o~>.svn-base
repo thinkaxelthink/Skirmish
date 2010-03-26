@@ -1,0 +1,3 @@
+/Users/kegrone/Documents/aesquite/semester/fall09/thesis/dev/code/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/src/LastStandApplication.cpp: In member function 'virtual void LastStandApplication::update()':
+/Users/kegrone/Documents/aesquite/semester/fall09/thesis/dev/code/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/src/LastStandApplication.cpp:137: error: 'class IRTracker' has no member named 'getPlayerBlobX'
+/Users/kegrone/Documents/aesquite/semester/fall09/thesis/dev/code/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/src/LastStandApplication.cpp:137: error: 'class IRTracker' has no member named 'getPlayerBlobY'

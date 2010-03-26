@@ -1,0 +1,2 @@
+/Users/kegrone/Documents/aesquite/semester/fall09/thesis/dev/code/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/src/Player.cpp: In constructor 'Player::Player()':
+/Users/kegrone/Documents/aesquite/semester/fall09/thesis/dev/code/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/src/Player.cpp:14: error: 'mi_hit_points' was not declared in this scope

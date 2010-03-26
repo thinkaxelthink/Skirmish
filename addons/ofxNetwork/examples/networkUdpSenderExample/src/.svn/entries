@@ -1,0 +1,52 @@
+8
+
+dir
+74
+http://svn.typeslashcode.com/typeslashcode/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/addons/ofxNetwork/examples/networkUdpSenderExample/src
+http://svn.typeslashcode.com/typeslashcode
+
+
+
+2010-03-22T14:45:08.731135Z
+74
+axel
+
+
+svn:special svn:externals svn:needs-lock
+
+testApp.cpp
+file
+
+
+
+
+2009-03-25T19:11:04.000000Z
+252c633a04e6283ae5dc912a80ee906d
+2010-03-22T14:45:08.731135Z
+74
+axel
+
+main.cpp
+file
+
+
+
+
+2009-03-25T19:11:04.000000Z
+604ee4027e62630d6ee247a82b3fbc4f
+2010-03-22T14:45:08.731135Z
+74
+axel
+
+testApp.h
+file
+
+
+
+
+2009-03-25T19:11:04.000000Z
+4b801329c9b5918d336edfcdfee3a775
+2010-03-22T14:45:08.731135Z
+74
+axel
+

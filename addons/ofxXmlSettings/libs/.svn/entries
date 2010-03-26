@@ -1,0 +1,64 @@
+8
+
+dir
+74
+http://svn.typeslashcode.com/typeslashcode/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/addons/ofxXmlSettings/libs
+http://svn.typeslashcode.com/typeslashcode
+
+
+
+2010-03-22T14:45:08.731135Z
+74
+axel
+
+
+svn:special svn:externals svn:needs-lock
+
+tinyxmlerror.cpp
+file
+
+
+
+
+2008-08-28T16:07:44.000000Z
+cf5c6f205d9c15967401977bcef750c6
+2010-03-22T14:45:08.731135Z
+74
+axel
+
+tinyxmlparser.cpp
+file
+
+
+
+
+2008-08-28T16:07:44.000000Z
+61f673567a221034ffbb2384db7ac0f5
+2010-03-22T14:45:08.731135Z
+74
+axel
+
+tinyxml.cpp
+file
+
+
+
+
+2008-08-28T16:07:44.000000Z
+4eb10127acd13bdf317d9fa628037027
+2010-03-22T14:45:08.731135Z
+74
+axel
+
+tinyxml.h
+file
+
+
+
+
+2008-08-28T16:07:44.000000Z
+ffd0a57516b54548f3aa932f3183913a
+2010-03-22T14:45:08.731135Z
+74
+axel
+

@@ -1,0 +1,2 @@
+/Users/kegrone/Documents/aesquite/dev/type_code/svn/typeslashcode/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/src/Player.cpp: In member function 'void Player::setGunPower(float)':
+/Users/kegrone/Documents/aesquite/dev/type_code/svn/typeslashcode/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/src/Player.cpp:88: error: 'mf_gun_power' was not declared in this scope

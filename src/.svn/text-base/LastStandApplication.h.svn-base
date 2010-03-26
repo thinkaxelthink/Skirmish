@@ -1,0 +1,66 @@
+/*
+ *  LastStandApplication.h
+ *  openFrameworks
+ *
+ *  Created by Axel Esquite on 10/10/09.
+ *  Copyright 2009 Axel Esquite. All rights reserved.
+ *
+ */
+
+#ifndef _LAST_STAND_APPLICATION
+#define _LAST_STAND_APPLICATION
+
+// OF
+#include "ofMain.h"
+#include "ofxVectorMath.h"
+
+// App
+#include "Player.h"
+#include "Creature.h"
+#include "GameScore.h"
+#include "IRTracker.h"
+
+// CPP Lib
+#include <vector>
+
+class LastStandApplication : public ofBaseApp{
+	
+public:
+	void setup();
+	void update();
+	void draw();
+	
+	void keyPressed  (int key);
+	void keyReleased(int key);
+	void mouseMoved(int x, int y );
+	void mouseDragged(int x, int y, int button);
+	void mousePressed(int x, int y, int button);
+	void mouseReleased(int x, int y, int button);
+	void windowResized(int w, int h);
+	
+	// this variable determines how many creatures can appear on screen at a time
+	// TODO: will have to make this dynamic, but is not being used right now
+	int creature_max;
+	
+	Player player;
+	std::vector<Creature> creatures;
+	IRTracker camera;
+	
+	//Score
+	GameScore gameScore;
+	
+	bool	b_repel;
+	float	f_radius;
+	float	f_strength;
+	
+	// timer for creature spawn
+	int i_timer;
+	int i_start_time;
+	
+	bool b_start_game;
+	bool b_adjusting_point;
+	int i_which_point_adjusting;
+	
+};
+
+#endif

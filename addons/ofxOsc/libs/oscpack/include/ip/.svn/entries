@@ -1,0 +1,76 @@
+8
+
+dir
+74
+http://svn.typeslashcode.com/typeslashcode/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/addons/ofxOsc/libs/oscpack/include/ip
+http://svn.typeslashcode.com/typeslashcode
+
+
+
+2010-03-22T14:45:08.731135Z
+74
+axel
+
+
+svn:special svn:externals svn:needs-lock
+
+IpEndpointName.h
+file
+
+
+
+
+2008-08-28T16:03:32.000000Z
+b0527d4a49cb87ec8a6224b9571e0cad
+2010-03-22T14:45:08.731135Z
+74
+axel
+
+PacketListener.h
+file
+
+
+
+
+2008-08-28T16:03:32.000000Z
+df228ad3756fadb832c488fd251921cf
+2010-03-22T14:45:08.731135Z
+74
+axel
+
+UdpSocket.h
+file
+
+
+
+
+2008-08-28T16:03:32.000000Z
+7c081125af1f1c27055954d776c13184
+2010-03-22T14:45:08.731135Z
+74
+axel
+
+TimerListener.h
+file
+
+
+
+
+2008-08-28T16:03:32.000000Z
+7c833968fc6a757c303339498a2426f3
+2010-03-22T14:45:08.731135Z
+74
+axel
+
+NetworkingUtils.h
+file
+
+
+
+
+2008-08-28T16:03:32.000000Z
+b21f197d56b89098e47a0cc9be154f3a
+2010-03-22T14:45:08.731135Z
+74
+axel
+

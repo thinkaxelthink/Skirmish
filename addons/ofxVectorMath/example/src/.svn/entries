@@ -1,0 +1,52 @@
+8
+
+dir
+74
+http://svn.typeslashcode.com/typeslashcode/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/addons/ofxVectorMath/example/src
+http://svn.typeslashcode.com/typeslashcode
+
+
+
+2010-03-22T14:45:08.731135Z
+74
+axel
+
+
+svn:special svn:externals svn:needs-lock
+
+testApp.cpp
+file
+
+
+
+
+2009-03-16T20:27:24.000000Z
+13d817060d8559dd8eeed0407e063126
+2010-03-22T14:45:08.731135Z
+74
+axel
+
+main.cpp
+file
+
+
+
+
+2009-03-16T20:27:24.000000Z
+218e5f79ee293e49b80a76a3add5aa0a
+2010-03-22T14:45:08.731135Z
+74
+axel
+
+testApp.h
+file
+
+
+
+
+2009-03-16T20:27:24.000000Z
+71ea5d0ed93f4f2cc79f761d1c3c84e6
+2010-03-22T14:45:08.731135Z
+74
+axel
+

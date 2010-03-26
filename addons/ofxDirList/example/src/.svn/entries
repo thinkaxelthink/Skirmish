@@ -1,0 +1,52 @@
+8
+
+dir
+74
+http://svn.typeslashcode.com/typeslashcode/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/addons/ofxDirList/example/src
+http://svn.typeslashcode.com/typeslashcode
+
+
+
+2010-03-22T14:45:08.731135Z
+74
+axel
+
+
+svn:special svn:externals svn:needs-lock
+
+testApp.cpp
+file
+
+
+
+
+2009-03-10T02:52:34.000000Z
+4a27b50c3f6e5be2e5a29e5963d618d7
+2010-03-22T14:45:08.731135Z
+74
+axel
+
+main.cpp
+file
+
+
+
+
+2009-03-10T02:52:34.000000Z
+218e5f79ee293e49b80a76a3add5aa0a
+2010-03-22T14:45:08.731135Z
+74
+axel
+
+testApp.h
+file
+
+
+
+
+2009-03-10T02:52:34.000000Z
+4fbef7f621f187deddedf4a63b1fb09f
+2010-03-22T14:45:08.731135Z
+74
+axel
+

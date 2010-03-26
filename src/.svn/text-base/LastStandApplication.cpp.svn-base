@@ -1,0 +1,294 @@
+/*
+ *  LastStandApplication.cpp
+ *  openFrameworks
+ *
+ *  Created by Axel Esquite on 10/10/09.
+ *  Copyright 2009 Axel Esquite. All rights reserved.
+ *
+ */
+
+#include "LastStandApplication.h"
+using namespace std;
+
+//--------------------------------------------------------------
+void LastStandApplication::setup(){
+	
+	//creature_max = 20;
+	ofSetColor(255,255,255);
+	ofNoFill();
+	ofEnableSmoothing();
+	ofSetCircleResolution(50);
+	ofSetFrameRate(50);
+	
+	int screen_width = ofGetScreenWidth();
+	int screen_height = ofGetScreenHeight();
+	
+	gameScore.setFormat("TIME", 0, "DIN-Regular.ttf", 30);
+	
+	
+	// sets up strength and area that creatures will flock to
+	// TODO: this will have to change. creatures will take in player
+	// as target and not need to have a radius, just track player
+	b_repel		= true;
+	f_radius	= 1000;
+	f_strength	= 0.2f;
+	
+	
+	player.setPlayerPosition(ofGetWidth()/2, ofGetHeight()/2);
+	//camera.setupCamera(2);
+	camera.setupCV();
+	
+	b_start_game			= false;
+	b_adjusting_point		= false;
+	i_which_point_adjusting	= 0;
+
+}
+
+//--------------------------------------------------------------
+void LastStandApplication::update(){
+	
+	if(b_start_game == true)
+	{
+		// update timer
+		i_timer = ofGetElapsedTimeMillis() - i_start_time;
+		i_timer /= 1000;
+		
+		// update score type TIMER in seconds
+		gameScore.update(i_timer);
+		
+		if(i_timer %5 == 0)
+		{
+			//printf("spawn creature\n");
+			
+			// sets max creatures allowed on the field
+			creature_max = i_timer / 5;
+			
+			// adds however many creatures needed until creature_max is met
+			while(creatures.size() < creature_max)
+			{
+				// Create a creature
+				Creature creature;
+				
+				float spawn_x = ofRandom(0,ofGetWidth());//ofRandom(0, ((float)screen_width*-1.05));
+				float spawn_y = ofRandom(0,ofGetHeight());//ofRandom(0, ((float)screen_height*-1.05));
+				
+				// set creature position
+				creature.setInitialCondition(spawn_x, spawn_y, 0, 0);
+				creatures.push_back(creature);
+			}
+		}
+		
+		// creature flock distance info
+		float too_close_dist = 2.0f;
+		float in_sight_dist = 6.0f;
+		
+		// uses mouse as player
+		//if(mouseX <= 0 && mouseY <=0
+	//	   || mouseX >= ofGetWidth() && mouseY <= 0
+	//	   || mouseX >= ofGetWidth() && mouseY >= ofGetHeight()
+	//	   || mouseX <= 0 && mouseY >= ofGetHeight()
+	//	   )
+	//	{
+	//		player.setPlayerPosition(ofGetWidth()/2, ofGetHeight()/2);
+	//	}
+	//	else
+	//	{
+	//	   player.setPlayerPosition(mouseX, mouseY);
+	//	}
+		
+		
+		// updates creature flock 
+		for(int i=0; i<creatures.size(); i++)
+		{
+			creatures[i].resetForce();
+			creatures[i].addAttractionForce(player.getPlayerX(),player.getPlayerY(), f_radius, f_strength);
+			
+			for(int j=0; j<creatures.size(); j++)
+			{
+				if(j == i)
+				{
+					continue;
+				}
+				
+				float f_dist = (creatures[i].getPosition() - creatures[i].getPosition()).length();
+				
+				if(f_dist <= in_sight_dist)
+				{
+					if(f_dist <= too_close_dist)
+					{
+						creatures[i].addRepulsionForce(creatures[j].getPosition(), f_radius/4, 0.2f);
+					}
+				}
+			}
+			creatures[i].addDampingForce();
+			creatures[i].update();
+			if(player.checkHit(creatures[i].getPosition(), creatures[i].getRadius()) == true)
+			{
+				b_start_game = player.deliverHit(creatures[i].getDamage());
+			}
+			//creatures[i].bounceOffWalls();
+		}
+		
+		camera.processFrame();
+		//camera.printPlayerBlobArea();
+		player.setPlayerPosition((float) (camera.getPlayerBlobX() * 3.2), (float) (camera.getPlayerBlobY() * 3.2));
+	}
+}
+
+//--------------------------------------------------------------
+void LastStandApplication::draw(){
+	
+	// draw player
+	player.draw();
+	
+	// draws all camera views
+	//camera.drawFeed();
+	
+	// your score
+	gameScore.outputAsString(730, 40);
+	
+	// if game is started
+	
+	if(b_start_game == true)
+	{
+		// draw creature flock
+		for(int i=0; i<creatures.size(); i++)
+		{
+			creatures[i].draw();
+		}
+	}
+	
+}
+
+//--------------------------------------------------------------
+void LastStandApplication::keyPressed(int key){
+	
+	/*
+	 int new_player_position_x;
+	int new_player_position_y;
+	
+	if(key == 'w')
+	{
+		new_player_position_y = player.getPlayerY() - 15;
+		player.setPlayerY(new_player_position_y);
+	}
+	else if(key == 'a')
+	{
+		new_player_position_x = player.getPlayerX() - 15;
+		player.setPlayerX(new_player_position_x);
+	}
+	else if(key == 's')
+	{
+		new_player_position_y = player.getPlayerY() + 15;
+		player.setPlayerY(new_player_position_y);
+	}
+	else if(key == 'd')
+	{
+		new_player_position_x = player.getPlayerX() + 15;
+		player.setPlayerX(new_player_position_x);
+	}
+	else if(key == 'q')
+	{
+		b_start_game = true;
+	}*/
+	
+	
+	switch (key){
+		case '1':
+			b_adjusting_point = true;
+			i_which_point_adjusting = 0;
+			break;
+		case '2':
+			b_adjusting_point = true;
+			i_which_point_adjusting = 1;
+			break;
+		case '3':
+			b_adjusting_point = true;
+			i_which_point_adjusting = 2;
+			break;
+		case '4':
+			b_adjusting_point = true;
+			i_which_point_adjusting = 3;
+			break;
+		case 'x':
+			b_adjusting_point = false;
+			break;
+		case 'q':
+			b_start_game = true;
+			i_start_time = ofGetElapsedTimeMillis();
+			break;
+	}
+	
+}
+
+//--------------------------------------------------------------
+void LastStandApplication::keyReleased(int key){
+	
+}
+
+//--------------------------------------------------------------
+void LastStandApplication::mouseMoved(int x, int y ){
+	
+}
+
+//--------------------------------------------------------------
+void LastStandApplication::mouseDragged(int x, int y, int button){
+	
+}
+
+//--------------------------------------------------------------
+void LastStandApplication::mousePressed(int x, int y, int button){
+	
+	if(b_adjusting_point == true)
+	{
+		camera.setSourcePoint(i_which_point_adjusting, x, y);
+	}
+	//ofxVec2f ofv_mouse;
+	
+	//ofv_mouse.set((float) x, (float) y);
+	
+	//printf("%f\n %f\n", float (ofv_mouse.x), float (ofv_mouse.y));
+	
+	//to see where the hit box was ::: outdated
+	//player.checkHit((float) x, (float) y);
+	
+	
+	/*********************************************************************************
+	 ** Goes through all creatures and checks if mouse has hit one
+	 ** TODO: instead of on mouse click this should occur when laser is tracked
+	 *********************************************************************************
+	 
+	 for(int i = 0; i<creatures.size(); i++)
+	{
+		// A creature knows when it is hit
+		bool b_creatureHit = creatures[i].checkHit(float (x), float (y));
+		
+		// kill creature if hit or show a bullet hole on ground if not hit
+		if(b_creatureHit == true )
+		{
+			//printf("i'm hit\n");
+			//creatures[i].kill();
+			creatures.erase(creatures.begin()+i);
+			
+			// use this if you want to update according to score type NUMBER
+			//gameScore.update(2);
+		}
+		else
+		{
+			// TODO: write bullet class & methods for display/behavior
+			//printf("no hit\n");
+		}
+	}*/
+	
+}
+
+//--------------------------------------------------------------
+void LastStandApplication::mouseReleased(int x, int y, int button){
+	
+}
+
+//--------------------------------------------------------------
+void LastStandApplication::windowResized(int w, int h){
+	
+}
+

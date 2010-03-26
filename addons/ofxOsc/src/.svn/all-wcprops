@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/typeslashcode/!svn/ver/74/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/addons/ofxOsc/src
+END
+ofxOscArg.h
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/typeslashcode/!svn/ver/74/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/addons/ofxOsc/src/ofxOscArg.h
+END
+ofxOscBundle.h
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/typeslashcode/!svn/ver/74/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/addons/ofxOsc/src/ofxOscBundle.h
+END
+ofxOscSender.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/typeslashcode/!svn/ver/74/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/addons/ofxOsc/src/ofxOscSender.cpp
+END
+ofxOsc.h
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/typeslashcode/!svn/ver/74/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/addons/ofxOsc/src/ofxOsc.h
+END
+ofxOscMessage.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/typeslashcode/!svn/ver/74/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/addons/ofxOsc/src/ofxOscMessage.cpp
+END
+ofxOscReceiver.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/typeslashcode/!svn/ver/74/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/addons/ofxOsc/src/ofxOscReceiver.cpp
+END
+ofxOscSender.h
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/typeslashcode/!svn/ver/74/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/addons/ofxOsc/src/ofxOscSender.h
+END
+ofxOscBundle.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/typeslashcode/!svn/ver/74/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/addons/ofxOsc/src/ofxOscBundle.cpp
+END
+ofxOscMessage.h
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/typeslashcode/!svn/ver/74/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/addons/ofxOsc/src/ofxOscMessage.h
+END
+ofxOscReceiver.h
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/typeslashcode/!svn/ver/74/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/addons/ofxOsc/src/ofxOscReceiver.h
+END

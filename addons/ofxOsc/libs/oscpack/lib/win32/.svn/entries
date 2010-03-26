@@ -1,0 +1,55 @@
+8
+
+dir
+74
+http://svn.typeslashcode.com/typeslashcode/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/addons/ofxOsc/libs/oscpack/lib/win32
+http://svn.typeslashcode.com/typeslashcode
+
+
+
+2010-03-22T14:45:08.731135Z
+74
+axel
+
+
+svn:special svn:externals svn:needs-lock
+
+oscpack.a
+file
+
+
+
+
+2008-08-28T16:03:38.000000Z
+3e3e655e219adc5d741585abe7b074c8
+2010-03-22T14:45:08.731135Z
+74
+axel
+has-props
+
+oscpack.lib
+file
+
+
+
+
+2009-03-25T04:06:58.000000Z
+eee8045098913c573f8510933a48afcc
+2010-03-22T14:45:08.731135Z
+74
+axel
+has-props
+
+oscpackd.lib
+file
+
+
+
+
+2009-03-25T04:06:58.000000Z
+11a0d9e9b7bae826e9d5286574a2aa0e
+2010-03-22T14:45:08.731135Z
+74
+axel
+has-props
+

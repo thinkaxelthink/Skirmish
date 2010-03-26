@@ -1,0 +1,55 @@
+8
+
+dir
+74
+http://svn.typeslashcode.com/typeslashcode/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/addons/ofxOpenCv/libs/opencv/lib/linux
+http://svn.typeslashcode.com/typeslashcode
+
+
+
+2010-03-22T14:45:08.731135Z
+74
+axel
+
+
+svn:special svn:externals svn:needs-lock
+
+libcxcore.a
+file
+
+
+
+
+2009-03-25T04:06:32.000000Z
+7501409756474b68e096cc25c1ccd509
+2010-03-22T14:45:08.731135Z
+74
+axel
+has-props
+
+libcvaux.a
+file
+
+
+
+
+2009-03-25T04:06:32.000000Z
+e3f7df0303bfdc1a46c0a613243bbe63
+2010-03-22T14:45:08.731135Z
+74
+axel
+has-props
+
+libcv.a
+file
+
+
+
+
+2009-03-25T04:06:34.000000Z
+eb25e40e4d58668660895f7aac3513f1
+2010-03-22T14:45:08.731135Z
+74
+axel
+has-props
+
