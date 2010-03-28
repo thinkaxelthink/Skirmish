@@ -38,6 +38,7 @@ public:
 								 float f_too_close,
 								 float f_in_sight,
 								 float f_scale,
+								 float f_repulsion_radius,
 								 string s_sprite,
 								 string s_sounds,
 								 float f_damage_rate,
@@ -49,14 +50,15 @@ protected:
 	
 	int   mi_creature_max;
 	bool  mb_repel;
+	bool  mb_creatureHit;
 	float mf_radius;
+	float mf_repulsion_radius;
 	float mf_strength;
 	float mf_too_close_dist;
 	float mf_in_sight_dist;
 	float mf_spawn_x;
 	float mf_spawn_y;
 	float mf_dist;
-	bool  mb_creatureHit;
 	
 	// Stores copies of creatures to be used
 	std::vector<Creature> creature_archetypes;

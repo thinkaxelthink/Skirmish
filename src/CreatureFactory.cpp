@@ -74,11 +74,13 @@ void CreatureFactory::updateCreaturesFlock(Player &player) {
 		
 		creatures[i].addAttractionForce(player.getPlayerX(), 
 										player.getPlayerY(), 
-										creatures[i].getRadius(), 
+										creatures[i].getRepulsionRadius(), 
 										creatures[i].getStrength());
+		
 		
 		for(int j=0; j<creatures.size(); j++)
 		{
+			
 			if(j == i)
 			{
 				continue;
@@ -91,7 +93,7 @@ void CreatureFactory::updateCreaturesFlock(Player &player) {
 				if(mf_dist <= creatures[i].getTooClose())
 				{
 					creatures[i].addRepulsionForce(creatures[j].getPosition(), 
-												   creatures[j].getRadius()/4, 
+												   creatures[j].getRepulsionRadius()/4, 
 												   creatures[j].getScale());
 				}
 			}
@@ -159,6 +161,7 @@ void CreatureFactory::setNewCreatureArchetype(string s_creature_type,
 											  float f_too_close, 
 											  float f_in_sight,
 											  float f_scale,
+											  float f_repulsion_radius,
 											  string s_sprite,
 											  string s_sounds,
 											  float f_damage_rate,
@@ -175,6 +178,7 @@ void CreatureFactory::setNewCreatureArchetype(string s_creature_type,
 								   f_too_close, 
 								   f_in_sight,
 								   f_scale,
+								   f_repulsion_radius,
 								   s_sprite,
 								   s_sounds,
 								   f_damage_rate,

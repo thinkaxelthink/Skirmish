@@ -68,6 +68,7 @@ void LastStandApplication::setup(){
 															XML.getValue("TOO_CLOSE_DISTANCE", 2.0f),
 															XML.getValue("IN_SIGHT_DISTANCE", 6.0F),
 															XML.getValue("SCALE", 0.2f),
+															XML.getValue("REPULSION_RADIUS", 1000.0f),
 															XML.getValue("SPRITE", "DEFAULT"),
 															XML.getValue("SOUNDS", "DEFAULT"),
 															XML.getValue("DAMAGE_RATE", 10.0f),

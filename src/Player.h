@@ -13,6 +13,8 @@
 #include "ofMain.h"
 #include "ofxVectorMath.h"
 
+#include <iostream>
+
 class Player {
 	
 public:

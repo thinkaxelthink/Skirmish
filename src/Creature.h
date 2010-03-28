@@ -46,6 +46,7 @@ public:
 						  float f_too_close, 
 						  float f_in_sight,
 						  float f_scale,
+						  float f_repulsion_radius,
 						  string s_sprite,
 						  string s_sounds,
 						  float f_damage_rate,
@@ -66,6 +67,7 @@ public:
 	float getTooClose();
 	float getInSight();
 	float getScale();
+	float getRepulsionRadius();
 	float getHitPoints();
 	bool getRepel();
 	string getType();
@@ -90,6 +92,7 @@ protected:
 	float mf_too_close;
 	float mf_in_sight;
 	float mf_scale;
+	float mf_repulsion_radius;
 	float mf_hit_points;
 };
 

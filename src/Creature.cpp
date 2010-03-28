@@ -195,6 +195,7 @@ void Creature::setAllProperties(string s_creature_type,
 								float f_too_close, 
 								float f_in_sight,
 								float f_scale,
+								float f_repulsion_radius,
 								string s_sprite,
 								string s_sounds,
 								float f_damage_rate,
@@ -208,6 +209,7 @@ void Creature::setAllProperties(string s_creature_type,
 	mf_too_close		= f_too_close;
 	mf_in_sight			= f_in_sight;
 	mf_scale			= f_scale;
+	mf_repulsion_radius = f_repulsion_radius;
 	ms_sprite			= s_sprite;
 	ms_sounds			= s_sounds;
 	mf_damage			= f_damage_rate;
@@ -225,6 +227,7 @@ void Creature::setAllProperties(Creature creature_archetype) {
 	mf_too_close		= creature_archetype.getTooClose();
 	mf_in_sight			= creature_archetype.getInSight();
 	mf_scale			= creature_archetype.getScale();
+	mf_repulsion_radius = creature_archetype.getRepulsionRadius();
 	ms_sprite			= creature_archetype.getSprite();
 	ms_sounds			= creature_archetype.getSounds();
 	mf_damage			= creature_archetype.getDamage();
@@ -259,7 +262,6 @@ float Creature::getDamage() {
 
 //------------------------------------------------------------
 float Creature::getStrength() {
-	cout << "getStrength() called: " << mf_strength << endl;
 	return mf_strength;
 }
 
@@ -281,6 +283,11 @@ float Creature::getInSight() {
 //------------------------------------------------------------
 float Creature::getScale() {
 	return mf_scale;
+}
+
+//------------------------------------------------------------
+float Creature::getRepulsionRadius() {
+	return mf_repulsion_radius;
 }
 
 //------------------------------------------------------------
