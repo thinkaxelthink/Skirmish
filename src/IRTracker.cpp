@@ -12,7 +12,16 @@
 IRTracker::IRTracker() {
 	b_cameraSetup		= false;
 	b_videoSetup		= false;
-	f_playerBlobArea	= 100.00;
+	f_playerBlobArea	= 300.0f; // 100.0f
+	f_bulletMinBlobArea	= 100.0f;
+	f_bulletMaxBlobArea	= 200.0f;
+	
+	
+	//int playerBlobAreaMin	= 500;
+	//int playerBlobAreaMax	= 1500;
+	
+	//int gunBlobAreaMin		= 30;
+	//int gunBlobAreaMax		= 300;
 }
 
 void IRTracker::setupCamera(int i_deviceNumber) {
@@ -69,10 +78,11 @@ void IRTracker::processFrame() {
 	// Part 1 - get the video data
 	///////////////////////////////////////////////////////////
 	bool bLearnBg			= false;
-	int threshold			= 196;
-	int minBlobSize			= 25;
+	int threshold			= 79; //196
+	int minBlobSize			= 25; 
 	int maxBlobSize			= 1000;
 	int nBlobsConsidered	= 2;
+	
 	
 	
 	ofvidGrab_irFeed.update();
@@ -98,7 +108,8 @@ void IRTracker::processFrame() {
 		
 		//printf("we found %i blobs \n", ofxCvContourFind_contourFinder.nBlobs);
 		/*for (int i = 0; i <  ofxCvContourFind_contourFinder.nBlobs; i++){
-			printf("centroid of blob %i = (%f,%f) \n", i, ofxCvContourFind_contourFinder.blobs[i].centroid.x, ofxCvContourFind_contourFinder.blobs[i].centroid.y);
+			//printf("centroid of blob %i = (%f,%f) \n", i, ofxCvContourFind_contourFinder.blobs[i].centroid.x, ofxCvContourFind_contourFinder.blobs[i].centroid.y);
+			printf("area of blob %i = (%f,%f) \n", i, ofxCvContourFind_contourFinder.blobs[i].area);
 		}*/
 	}
 	
@@ -129,7 +140,7 @@ float IRTracker::getPlayerBlobX() {
 	
 	float f_x_pos_returned;
 	
-	for (int i = 0; i <  ofxCvContourFind_contourFinder.nBlobs; i++)
+	for (int i = 0; i <  ofxCvContourFind_contourFinder.blobs.size(); i++)
 	{
 		if(ofxCvContourFind_contourFinder.blobs[i].area >= f_playerBlobArea)
 		{
@@ -153,7 +164,7 @@ float IRTracker::getPlayerBlobY() {
 	
 	float f_y_pos_returned;
 	
-	for (int i = 0; i <  ofxCvContourFind_contourFinder.nBlobs; i++)
+	for (int i = 0; i <  ofxCvContourFind_contourFinder.blobs.size(); i++)
 	{
 		if(ofxCvContourFind_contourFinder.blobs[i].area >= f_playerBlobArea)
 		{
@@ -163,7 +174,7 @@ float IRTracker::getPlayerBlobY() {
 		{
 			// TODO: store old position so that if blob is missing/cannot be detected
 			// you will have the last position
-			f_y_pos_returned = 0;
+			f_y_pos_returned = 240.0f;
 		}
 	}
 	
@@ -175,7 +186,7 @@ float IRTracker::getBulletX() {
 	
 	float f_bullet_x;
 	
-	for(int i = 0; i < ofxCvContourFind_contourFinder.nBlobs; i++)
+	for(int i = 0; i < ofxCvContourFind_contourFinder.blobs.size(); i++)
 	{
 		if(ofxCvContourFind_contourFinder.blobs[i].area >= f_bulletMinBlobArea
 			&& ofxCvContourFind_contourFinder.blobs[i].area <= f_bulletMaxBlobArea)
@@ -186,7 +197,7 @@ float IRTracker::getBulletX() {
 		{
 			// TODO: Can this just return NULL? if so awesome. 0 is still a value and if a 
 			// creature happens to be at 0,0 it will die and that's not really fair
-			f_bullet_x = 0;
+			f_bullet_x = 0.0f;
 		}
 	}
 	
@@ -197,7 +208,7 @@ float IRTracker::getBulletY() {
 	
 	float f_bullet_y;
 	
-	for(int i = 0; i < ofxCvContourFind_contourFinder.nBlobs; i++)
+	for(int i = 0; i < ofxCvContourFind_contourFinder.blobs.size(); i++)
 	{
 		if(ofxCvContourFind_contourFinder.blobs[i].area >= f_bulletMinBlobArea
 			&& ofxCvContourFind_contourFinder.blobs[i].area <= f_bulletMaxBlobArea)
@@ -208,7 +219,7 @@ float IRTracker::getBulletY() {
 		{
 			// TODO: Can this just return NULL? if so awesome. 0 is still a value and if a 
 			// creature happens to be at 0,0 it will die and that's not really fair
-			f_bullet_y = 0;
+			f_bullet_y = 0.0f;
 		}
 	}
 	
