@@ -9,7 +9,7 @@
         <GUN_POWER>25.0f</GUN_POWER>
     </PLAYER_SETTINGS>
     <CREATURE>
-        <NAME>SEEKER</NAME>
+        <NAME>SOLDIER</NAME>
         <DAMPING>0.4f</DAMPING>
         <REPEL>true</REPEL>
         <RADIUS>15.0f</RADIUS>
@@ -18,8 +18,23 @@
         <IN_SIGHT_DISTANCE>6.0f</IN_SIGHT_DISTANCE>
         <SCALE>0.2f</SCALE>
         <REPULSION_RADIUS>1000.0f</REPULSION_RADIUS>
-        <SPRITE>seeker.png</SPRITE>
-        <SOUNDS>seeker.aif</SOUNDS>
+        <SPRITE>soldier/Soldier_00000.png,soldier/Soldier_00001.png,soldier/Soldier_00002.png,soldier/Soldier_00003.png,soldier/Soldier_00004.png,soldier/Soldier_00005.png,soldier/Soldier_00006.png,soldier/Soldier_00007.png,soldier/Soldier_00008.png,soldier/Soldier_00009.png,soldier/Soldier_00010.png,soldier/Soldier_00011.png,soldier/Soldier_00012.png,soldier/Soldier_00013.png,soldier/Soldier_00014.png,soldier/Soldier_00015.png,soldier/Soldier_00016.png,soldier/Soldier_00017.png,soldier/Soldier_00018.png</SPRITE>
+        <SOUNDS>images/soldier.aif</SOUNDS>
+        <DAMAGE_RATE>25.0f</DAMAGE_RATE>
+        <HIT_POINTS>25.0f</HIT_POINTS>
+    </CREATURE>
+    <CREATURE>
+        <NAME>SCUBA</NAME>
+        <DAMPING>0.4f</DAMPING>
+        <REPEL>true</REPEL>
+        <RADIUS>15.0f</RADIUS>
+        <STRENGTH>0.2f</STRENGTH>
+        <TOO_CLOSE_DISTANCE>2.0f</TOO_CLOSE_DISTANCE>
+        <IN_SIGHT_DISTANCE>6.0f</IN_SIGHT_DISTANCE>
+        <SCALE>0.2f</SCALE>
+        <REPULSION_RADIUS>1000.0f</REPULSION_RADIUS>
+        <SPRITE>images/scuba.png</SPRITE>
+        <SOUNDS>images/scuba.aif</SOUNDS>
         <DAMAGE_RATE>25.0f</DAMAGE_RATE>
         <HIT_POINTS>25.0f</HIT_POINTS>
     </CREATURE>

@@ -19,7 +19,8 @@ void LastStandApplication::setup(){
 	
 	// check if load was successful
 	if( XML.loadFile("data.xml") ){
-		printf("data.xml loaded! \n");
+		
+		cout<<"data.xml loaded! \n"<<endl;
 		
 		// It's all gravy - XML loaded now disperse data
 		// first load Game Settings, use GAME_SETTINGS as ROOT

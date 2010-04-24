@@ -48,7 +48,7 @@ void CreatureFactory::spawnCreatures() {
 		// creature_archetypes[ofRandom(0, creature_archetypes.size())];
 		
 		creature.setAllProperties(creature_archetypes[0]);
-		
+		creature.loadSprite();
 		/***************************************************************
 		 ** TODO: make spawn position be outside of field.
 		 ** possibly deploy "emitters" outside the field
@@ -183,7 +183,7 @@ void CreatureFactory::setNewCreatureArchetype(string s_creature_type,
 								   s_sounds,
 								   f_damage_rate,
 								   f_hit_points);
-	
+	//new_archetype.loadSounds();
 	// pop the new instance of a creature into an archetype holder array
 	creature_archetypes.push_back(new_archetype);
 }

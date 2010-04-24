@@ -151,6 +151,9 @@ float IRTracker::getPlayerBlobX() {
 			// TODO: store old position so that if blob is missing/cannot be detected
 			// you will have the last position
 			f_x_pos_returned = 0;
+			/*cout<<"getPlayerBlobX, there are no blobs matching blob area: "<<f_x_pos_returned<<endl;
+			cout<<"current area for blob "<<i<<" : "<<ofxCvContourFind_contourFinder.blobs[i].area<<endl;
+			cout<<"player blob area setting: "<<f_playerBlobArea<<endl;*/
 		}
 	}
 	
@@ -175,6 +178,9 @@ float IRTracker::getPlayerBlobY() {
 			// TODO: store old position so that if blob is missing/cannot be detected
 			// you will have the last position
 			f_y_pos_returned = 240.0f;
+			/*cout<<"getPlayerBlobY, there are no blobs matching blob area: "<<f_y_pos_returned<<endl;
+			cout<<"current area for blob "<<i<<" : "<<ofxCvContourFind_contourFinder.blobs[i].area<<endl;
+			cout<<"player blob area setting: "<<f_playerBlobArea<<endl;*/
 		}
 	}
 	
@@ -198,6 +204,7 @@ float IRTracker::getBulletX() {
 			// TODO: Can this just return NULL? if so awesome. 0 is still a value and if a 
 			// creature happens to be at 0,0 it will die and that's not really fair
 			f_bullet_x = 0.0f;
+			//cout<<"getBulletX, there are no blobs matching min/max area: "<<f_bullet_x<<endl;
 		}
 	}
 	
@@ -220,6 +227,7 @@ float IRTracker::getBulletY() {
 			// TODO: Can this just return NULL? if so awesome. 0 is still a value and if a 
 			// creature happens to be at 0,0 it will die and that's not really fair
 			f_bullet_y = 0.0f;
+			//cout<<"getBulletY, there are no blobs matching min/max area: "<<f_bullet_y<<endl;
 		}
 	}
 	

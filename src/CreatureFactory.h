@@ -15,7 +15,6 @@
 #include "Player.h"
 
 #include <vector>
-#include <iostream>
 
 class CreatureFactory : public Creature {
 	

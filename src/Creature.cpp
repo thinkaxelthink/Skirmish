@@ -10,10 +10,12 @@
 #include "Creature.h"
 
 Creature::Creature() {
-	setInitialCondition(0, 0, 0, 0);
-	mf_damping = 0.4f;
-	mf_radius = 15.0f;
-	mf_damage = 2.0f;
+	//setInitialCondition(0, 0, 0, 0);
+	//mf_damping = 0.4f;
+	//mf_radius = 15.0f;
+	//mf_damage = 2.0f;
+	mi_frame_num = 0;
+	mi_last_frame_number = 0;
 }
 
 //------------------------------------------------------------
@@ -114,13 +116,50 @@ void Creature::setInitialCondition(float px, float py, float vx, float vy){
 void Creature::update(){	
 	ofv_vel = ofv_vel + ofv_frc;
 	ofv_pos = ofv_pos + ofv_vel;
+	
+	mf_angle = (float)atan2(-ofv_vel.y, ofv_vel.x);
+    mf_theta =  -1.0 * mf_angle;
+	mf_heading2D = ofRadToDeg(mf_theta)+90;	
 }
 
 //------------------------------------------------------------
 void Creature::draw(){
-	ofSetColor(195, 223, 234);
+	/*ofSetColor(195, 223, 234);
 	ofFill();
-    ofRect(ofv_pos.x, ofv_pos.y, 20, 20);
+    ofRect(ofv_pos.x, ofv_pos.y, 20, 20);*/
+
+	ofEnableAlphaBlending();
+	ofSetColor(255, 255, 255);
+	
+	ofPushMatrix();
+    ofTranslate(ofv_pos.x, ofv_pos.y);
+    ofRotateZ(mf_heading2D);	
+	
+	// get frame number
+	// if frame is != to last frame num
+	// 
+	// increment mvimg_sprites index by 1
+	// draw image at that index
+	// save frame num as last_frame_num
+	int i_current_frame = ofGetFrameNum();
+	if(mi_last_frame_number != i_current_frame)
+	{
+		if(i_current_frame %19 == 0)
+		{
+			mi_frame_num = 0;
+		}
+		else
+		{
+			mi_frame_num++;
+		}
+		
+		mvimg_sprites[mi_frame_num].draw(0,0);
+		
+		mi_last_frame_number = i_current_frame;
+	}
+    ofPopMatrix();
+	
+	ofDisableAlphaBlending();
 }
 
 //------------------------------------------------------------
@@ -187,6 +226,36 @@ bool Creature::checkHit(float f_gunX, float f_gunY){
 }
 
 //------------------------------------------------------------
+void Creature::loadSprite() {
+	// Go through all our image paths from xml
+	for(int i = 0; i < mv_images.size(); i++)
+	{
+		// create a temp ofImage for load
+		ofImage temp_image;
+		
+		// load image from path at mv_image index
+		temp_image.loadImage(mv_images[i]);
+		temp_image.setAnchorPercent(0.5,0.5);
+		/*if(temp_image.loadImage(mv_images[i]))
+		{
+			cout<<mv_images[i]<<" was loaded."<<endl;
+		}
+		else
+		{
+			cout<<mv_images[i]<<" could not be loaded"<<endl;
+		}*/
+		
+		// store it for use later in this vector
+		mvimg_sprites.push_back(temp_image);
+	}
+}
+
+//------------------------------------------------------------
+void Creature::loadSounds() {
+	//msound_sound.loadSound(s_sounds, false);
+}
+
+//------------------------------------------------------------
 void Creature::setAllProperties(string s_creature_type, 
 								float f_damping, 
 								bool b_repel, 
@@ -214,6 +283,15 @@ void Creature::setAllProperties(string s_creature_type,
 	ms_sounds			= s_sounds;
 	mf_damage			= f_damage_rate;
 	mf_hit_points		= f_hit_points;
+	
+	string temp_sprite;
+	stringstream stream(ms_sprite);
+	while(getline(stream, temp_sprite, ','))
+	{
+		mv_images.push_back(temp_sprite);
+	}
+	
+	cout<<"creature name: "<<ms_creature_type<<endl;
 }
 
 //------------------------------------------------------------
@@ -232,6 +310,15 @@ void Creature::setAllProperties(Creature creature_archetype) {
 	ms_sounds			= creature_archetype.getSounds();
 	mf_damage			= creature_archetype.getDamage();
 	mf_hit_points		= creature_archetype.getHitPoints();
+	
+	string temp_sprite;
+	stringstream stream(ms_sprite);
+	while(getline(stream, temp_sprite, ','))
+	{
+		mv_images.push_back(temp_sprite);
+	}
+	
+	cout<<"creature name: "<<ms_creature_type<<endl;
 	
 }
 

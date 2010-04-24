@@ -13,8 +13,6 @@
 #include "ofMain.h"
 #include "ofxVectorMath.h"
 
-#include <iostream>
-
 
 class Creature {
 	
@@ -36,6 +34,8 @@ public:
 	
 	void bounceOffWalls();
 	bool checkHit(float f_gunX, float f_gunY);
+	void loadSprite();
+	void loadSounds();
 	
 	// SETTERS
 	void setAllProperties(string s_creature_type, 
@@ -94,6 +94,14 @@ protected:
 	float mf_scale;
 	float mf_repulsion_radius;
 	float mf_hit_points;
+	float mf_angle;
+	float mf_theta;
+	float mf_heading2D;
+	int mi_frame_num;
+	int mi_last_frame_number;
+	
+	std::vector<string> mv_images;
+	std::vector<ofImage> mvimg_sprites;
 };
 
 #endif
