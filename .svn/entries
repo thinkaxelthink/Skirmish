@@ -1,43 +1,0 @@
-8
-
-dir
-74
-http://svn.typeslashcode.com/typeslashcode/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication
-http://svn.typeslashcode.com/typeslashcode
-
-
-
-2010-03-22T14:45:08.731135Z
-74
-axel
-
-
-svn:special svn:externals svn:needs-lock
-
-build
-dir
-
-openFrameworks-Info.plist
-file
-
-
-
-
-2007-02-25T16:28:30.000000Z
-8575684a4041426cbad2264cef064e27
-2010-03-22T14:45:08.731135Z
-74
-axel
-
-src
-dir
-
-addons
-dir
-
-bin
-dir
-
-openFrameworks.xcodeproj
-dir
-
