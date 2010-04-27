@@ -1,37 +1,0 @@
-8
-
-dir
-74
-http://svn.typeslashcode.com/typeslashcode/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/addons/ofxOsc
-http://svn.typeslashcode.com/typeslashcode
-
-
-
-2010-03-22T14:45:08.731135Z
-74
-axel
-
-
-svn:special svn:externals svn:needs-lock
-
-install.xml
-file
-
-
-
-
-2009-03-25T04:15:08.000000Z
-3e76c9ece73ee3b46437473b630d4e78
-2010-03-22T14:45:08.731135Z
-74
-axel
-
-src
-dir
-
-libs
-dir
-
-examples
-dir
-

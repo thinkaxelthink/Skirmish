@@ -1,19 +1,0 @@
-8
-
-dir
-74
-http://svn.typeslashcode.com/typeslashcode/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/addons/ofxVectorGraphics/example
-http://svn.typeslashcode.com/typeslashcode
-
-
-
-2010-03-22T14:45:08.731135Z
-74
-axel
-
-
-svn:special svn:externals svn:needs-lock
-
-src
-dir
-
