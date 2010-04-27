@@ -129,12 +129,11 @@ void CreatureFactory::checkBulletPosition(float f_bullet_x, float f_bullet_y) {
 	for(int i = 0; i<creatures.size(); i++)
 	{
 		// A creature knows when it is hit
-		mb_creatureHit = creatures[i].checkHit(float (f_bullet_x), float (f_bullet_y));
+		mb_creatureHit = creatures[i].checkHit(f_bullet_x, f_bullet_y);
 		
 		// kill creature if hit or show a bullet hole on ground if not hit
 		if(mb_creatureHit == true)
 		{
-			//printf("i'm hit\n");
 			//creatures[i].kill();
 			creatures.erase(creatures.begin()+i);
 			
@@ -165,7 +164,8 @@ void CreatureFactory::setNewCreatureArchetype(string s_creature_type,
 											  string s_sprite,
 											  string s_sounds,
 											  float f_damage_rate,
-											  float f_hit_points) {
+											  float f_hit_points,
+											  int i_frame_rate) {
 		
 	// take these properties and set them in a new creature
 	Creature new_archetype;
@@ -182,7 +182,8 @@ void CreatureFactory::setNewCreatureArchetype(string s_creature_type,
 								   s_sprite,
 								   s_sounds,
 								   f_damage_rate,
-								   f_hit_points);
+								   f_hit_points,
+								   i_frame_rate);
 	//new_archetype.loadSounds();
 	// pop the new instance of a creature into an archetype holder array
 	creature_archetypes.push_back(new_archetype);

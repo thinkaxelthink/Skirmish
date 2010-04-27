@@ -50,7 +50,8 @@ public:
 						  string s_sprite,
 						  string s_sounds,
 						  float f_damage_rate,
-						  float f_hit_points);
+						  float f_hit_points,
+						  int i_frame_rate);
 	
 	void setAllProperties(Creature creature_archetype);
 	
@@ -73,6 +74,7 @@ public:
 	string getType();
 	string getSprite();
 	string getSounds();
+	int getFrameRate();
 	// TODO: get sprite should return png
 	// TODO: get sound should return audio
 	
@@ -94,6 +96,8 @@ protected:
 	float mf_scale;
 	float mf_repulsion_radius;
 	float mf_hit_points;
+	int mi_frame_rate;
+	
 	float mf_angle;
 	float mf_theta;
 	float mf_heading2D;

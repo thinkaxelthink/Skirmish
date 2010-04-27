@@ -114,19 +114,41 @@ void Creature::setInitialCondition(float px, float py, float vx, float vy){
 
 //------------------------------------------------------------
 void Creature::update(){	
+	
 	ofv_vel = ofv_vel + ofv_frc;
 	ofv_pos = ofv_pos + ofv_vel;
 	
 	mf_angle = (float)atan2(-ofv_vel.y, ofv_vel.x);
     mf_theta =  -1.0 * mf_angle;
 	mf_heading2D = ofRadToDeg(mf_theta)+90;	
+	
+	// get frame number
+	// draw image at that index
+	// save frame num as last_frame_num
+	int i_current_frame = ofGetFrameNum();
+	
+	// check if this is a new frame
+	if(mi_last_frame_number != i_current_frame)
+	{
+		// This sets up our frame rate
+		// any frame divisible by our frame rate (19) 
+		// will make the sprite play from the begining
+		if(i_current_frame %mi_frame_rate == 0)
+		{
+			mi_frame_num = 0;
+		}
+		else
+		{
+			// otherwise increment mvimg_sprites index by 1
+			mi_frame_num++;
+		}
+		
+		mi_last_frame_number = i_current_frame;
+	}
 }
 
 //------------------------------------------------------------
 void Creature::draw(){
-	/*ofSetColor(195, 223, 234);
-	ofFill();
-    ofRect(ofv_pos.x, ofv_pos.y, 20, 20);*/
 
 	ofEnableAlphaBlending();
 	ofSetColor(255, 255, 255);
@@ -135,31 +157,13 @@ void Creature::draw(){
     ofTranslate(ofv_pos.x, ofv_pos.y);
     ofRotateZ(mf_heading2D);	
 	
-	// get frame number
-	// if frame is != to last frame num
-	// 
-	// increment mvimg_sprites index by 1
-	// draw image at that index
-	// save frame num as last_frame_num
-	int i_current_frame = ofGetFrameNum();
-	if(mi_last_frame_number != i_current_frame)
-	{
-		if(i_current_frame %19 == 0)
-		{
-			mi_frame_num = 0;
-		}
-		else
-		{
-			mi_frame_num++;
-		}
-		
-		mvimg_sprites[mi_frame_num].draw(0,0);
-		
-		mi_last_frame_number = i_current_frame;
-	}
+	mvimg_sprites[mi_frame_num].setAnchorPercent(0.5,0.5);
+	mvimg_sprites[mi_frame_num].draw(0,0);
+
     ofPopMatrix();
 	
 	ofDisableAlphaBlending();
+	ofRect(ofv_pos.x, ofv_pos.y, 100.0, 100.0);
 }
 
 //------------------------------------------------------------
@@ -184,23 +188,29 @@ void Creature::bounceOffWalls(){
 		ofv_pos.x = maxx; // move to the edge, (important!)
 		ofv_vel.x *= -1;
 		bDidICollide = true;
-	} else if (ofv_pos.x < minx){
+	} 
+	else if (ofv_pos.x < minx)
+	{
 		ofv_pos.x = minx; // move to the edge, (important!)
 		ofv_vel.x *= -1;
 		bDidICollide = true;
 	}
 	
-	if (ofv_pos.y > maxy){
+	if (ofv_pos.y > maxy)
+	{
 		ofv_pos.y = maxy; // move to the edge, (important!)
 		ofv_vel.y *= -1;
 		bDidICollide = true;
-	} else if (ofv_pos.y < miny){
+	} 
+	else if (ofv_pos.y < miny)
+	{
 		ofv_pos.y = miny; // move to the edge, (important!)
 		ofv_vel.y *= -1;
 		bDidICollide = true;
 	}
 	
-	if (bDidICollide == true && bDampedOnCollision == true){
+	if (bDidICollide == true && bDampedOnCollision == true)
+	{
 		ofv_vel *= 0.3;
 	}
 	
@@ -213,10 +223,11 @@ bool Creature::checkHit(float f_gunX, float f_gunY){
 	// or check radius, then check if it's a direct hit, 
 	// apply damage percent accordingly
 	if(f_gunX >= ofv_pos.x 
-	   && f_gunX <= ofv_pos.x + 20.0
+	   && f_gunX <= ofv_pos.x + 100.0
 	   && f_gunY >= ofv_pos.y
-	   && f_gunY <= ofv_pos.y + 20.0)
+	   && f_gunY <= ofv_pos.y + 100.0)
 	{
+		cout<<"checkHit returns true"<<endl;
 		return true;
 	}
 	else
@@ -235,7 +246,6 @@ void Creature::loadSprite() {
 		
 		// load image from path at mv_image index
 		temp_image.loadImage(mv_images[i]);
-		temp_image.setAnchorPercent(0.5,0.5);
 		/*if(temp_image.loadImage(mv_images[i]))
 		{
 			cout<<mv_images[i]<<" was loaded."<<endl;
@@ -268,7 +278,8 @@ void Creature::setAllProperties(string s_creature_type,
 								string s_sprite,
 								string s_sounds,
 								float f_damage_rate,
-								float f_hit_points) {
+								float f_hit_points,
+								int	i_frame_rate) {
 	
 	ms_creature_type	= s_creature_type;
 	mf_damping			= f_damping;
@@ -283,6 +294,7 @@ void Creature::setAllProperties(string s_creature_type,
 	ms_sounds			= s_sounds;
 	mf_damage			= f_damage_rate;
 	mf_hit_points		= f_hit_points;
+	mi_frame_rate		= i_frame_rate;
 	
 	string temp_sprite;
 	stringstream stream(ms_sprite);
@@ -292,6 +304,7 @@ void Creature::setAllProperties(string s_creature_type,
 	}
 	
 	cout<<"creature name: "<<ms_creature_type<<endl;
+	cout<<"creature fps: "<<mi_frame_rate<<endl;
 }
 
 //------------------------------------------------------------
@@ -310,6 +323,7 @@ void Creature::setAllProperties(Creature creature_archetype) {
 	ms_sounds			= creature_archetype.getSounds();
 	mf_damage			= creature_archetype.getDamage();
 	mf_hit_points		= creature_archetype.getHitPoints();
+	mi_frame_rate		= creature_archetype.getFrameRate();
 	
 	string temp_sprite;
 	stringstream stream(ms_sprite);
@@ -317,8 +331,6 @@ void Creature::setAllProperties(Creature creature_archetype) {
 	{
 		mv_images.push_back(temp_sprite);
 	}
-	
-	cout<<"creature name: "<<ms_creature_type<<endl;
 	
 }
 
@@ -400,4 +412,9 @@ string Creature::getSprite() {
 //------------------------------------------------------------
 string Creature::getSounds() {
 	return ms_sounds;
+}
+
+//------------------------------------------------------------
+int Creature::getFrameRate() {
+	return mi_frame_rate;
 }

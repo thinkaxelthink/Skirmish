@@ -29,6 +29,7 @@ void LastStandApplication::setup(){
 			// core game
 			player_max				= XML.getValue("PLAYER_MAX", 0);	
 			frame_speed				= XML.getValue("FRAME_SPEED", 50);
+			play_field.loadImage(XML.getValue("PLAYFIELD", "DEFAULT"));
 			
 			// for game score, but need more params
 			gameScore.setFormat(XML.getValue("SCORE_FORMAT", "TIME"), 0, "DIN-Regular.ttf", 30);
@@ -37,7 +38,10 @@ void LastStandApplication::setup(){
 			player.setPlayerHitPoints(XML.getValue("PLAYER_SETTINGS:HIT_POINTS", 0.0f));
 			player.setDamageRadius(XML.getValue("PLAYER_SETTINGS:DAMAGE_RADIUS", 0.0f));
 			player.setGunPower(XML.getValue("PLAYER_SETTINGS:GUN_POWER", 0.0f));
-		
+			camera.setPlayerBlobArea(XML.getValue("PLAYER_SETTINGS:PLAYER_MIN_BLOB_AREA", 0.0f), 
+									 XML.getValue("PLAYER_SETTINGS:PLAYER_MAX_BLOB_AREA", 0.0f));
+			camera.setBulletBlobArea(XML.getValue("PLAYER_SETTINGS:GUN_MIN_BLOB_AREA", 0.0f), 
+								 XML.getValue("PLAYER_SETTINGS:GUN_MAX_BLOB_AREA", 0.0f));
 			// creature settings
 			int numCreatureTags	= XML.getNumTags("CREATURE");
 			// if there is at least one creature save the settings
@@ -73,7 +77,8 @@ void LastStandApplication::setup(){
 															XML.getValue("SPRITE", "DEFAULT"),
 															XML.getValue("SOUNDS", "DEFAULT"),
 															XML.getValue("DAMAGE_RATE", 10.0f),
-															XML.getValue("HIT_POINTS", 10.0f));
+															XML.getValue("HIT_POINTS", 10.0f),
+															XML.getValue("FRAME_RATE", 0));
 					
 					XML.popTag();
 				}
@@ -148,13 +153,14 @@ void LastStandApplication::update(){
 		// Assumes there is always a blob
 		// sets position of player to blob's (if blob is big enough to be registered as a player)
 		player.setPlayerPosition((float) (camera.getPlayerBlobX() * 3.2), (float) (camera.getPlayerBlobY() * 3.2));
-		creatureFactory.checkBulletPosition(camera.getBulletX(), camera.getBulletY());
+		creatureFactory.checkBulletPosition((float) (camera.getBulletX() * 3.2), (float) (camera.getBulletY() * 3.2));
 	}
 }
 
 //--------------------------------------------------------------
 void LastStandApplication::draw(){
-	
+	ofSetColor(255, 255, 255);
+	play_field.draw(0,0);
 	// draw player
 	player.draw();
 	
@@ -170,6 +176,9 @@ void LastStandApplication::draw(){
 		// draw creature flock
 		creatureFactory.drawCreatures();
 	}
+	
+	ofNoFill();
+	ofCircle((camera.getBulletX() * 3.2), (camera.getBulletY() * 3.2), 10);
 	
 }
 

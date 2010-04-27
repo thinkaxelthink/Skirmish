@@ -12,16 +12,7 @@
 IRTracker::IRTracker() {
 	b_cameraSetup		= false;
 	b_videoSetup		= false;
-	f_playerBlobArea	= 300.0f; // 100.0f
-	f_bulletMinBlobArea	= 100.0f;
-	f_bulletMaxBlobArea	= 200.0f;
 	
-	
-	//int playerBlobAreaMin	= 500;
-	//int playerBlobAreaMax	= 1500;
-	
-	//int gunBlobAreaMin		= 30;
-	//int gunBlobAreaMax		= 300;
 }
 
 void IRTracker::setupCamera(int i_deviceNumber) {
@@ -106,11 +97,6 @@ void IRTracker::processFrame() {
 		
 		ofxCvContourFind_contourFinder.findContours(ofxCvGray_irDiffImage, minBlobSize, maxBlobSize, nBlobsConsidered, false, true);
 		
-		//printf("we found %i blobs \n", ofxCvContourFind_contourFinder.nBlobs);
-		/*for (int i = 0; i <  ofxCvContourFind_contourFinder.nBlobs; i++){
-			//printf("centroid of blob %i = (%f,%f) \n", i, ofxCvContourFind_contourFinder.blobs[i].centroid.x, ofxCvContourFind_contourFinder.blobs[i].centroid.y);
-			printf("area of blob %i = (%f,%f) \n", i, ofxCvContourFind_contourFinder.blobs[i].area);
-		}*/
 	}
 	
 } 
@@ -124,36 +110,30 @@ void IRTracker::drawFeed() {
 
 }
 
-void IRTracker::printPlayerBlobArea() {
+void IRTracker::printAllBlobAreas() {
 	
-	// Bad name for this. Function returns the size of the blob of
-	// my helmet light so that i can average out how big they player can be.
+	// prints the area of all blob in nBlobs to the debugger.
 	for(int i = 0; i < ofxCvContourFind_contourFinder.nBlobs; i++)
 	{
-		printf("%f \n", ofxCvContourFind_contourFinder.blobs[i].area);
+		cout<<"blob area: "<<ofxCvContourFind_contourFinder.blobs[i].area<<endl;
 	}
 }
 
 float IRTracker::getPlayerBlobX() {
 	
 	// Assumes a cv has been set up and frame processed
-	
+
 	float f_x_pos_returned;
 	
 	for (int i = 0; i <  ofxCvContourFind_contourFinder.blobs.size(); i++)
 	{
-		if(ofxCvContourFind_contourFinder.blobs[i].area >= f_playerBlobArea)
+		if(ofxCvContourFind_contourFinder.blobs[i].area >= f_playerMinBlobArea
+			&& ofxCvContourFind_contourFinder.blobs[i].area <= f_playerMaxBlobArea)
 		{
 			f_x_pos_returned = ofxCvContourFind_contourFinder.blobs[i].centroid.x;
-		}
-		else
-		{
-			// TODO: store old position so that if blob is missing/cannot be detected
-			// you will have the last position
-			f_x_pos_returned = 0;
-			/*cout<<"getPlayerBlobX, there are no blobs matching blob area: "<<f_x_pos_returned<<endl;
-			cout<<"current area for blob "<<i<<" : "<<ofxCvContourFind_contourFinder.blobs[i].area<<endl;
-			cout<<"player blob area setting: "<<f_playerBlobArea<<endl;*/
+			
+			// TODO: Use this for security when player leaves play field
+			//mf_player_last_xpos = f_x_pos_returned;
 		}
 	}
 	
@@ -169,18 +149,13 @@ float IRTracker::getPlayerBlobY() {
 	
 	for (int i = 0; i <  ofxCvContourFind_contourFinder.blobs.size(); i++)
 	{
-		if(ofxCvContourFind_contourFinder.blobs[i].area >= f_playerBlobArea)
+		if(ofxCvContourFind_contourFinder.blobs[i].area >= f_playerMinBlobArea
+		   && ofxCvContourFind_contourFinder.blobs[i].area <= f_playerMaxBlobArea)
 		{
 			f_y_pos_returned = ofxCvContourFind_contourFinder.blobs[i].centroid.y;
-		}
-		else
-		{
-			// TODO: store old position so that if blob is missing/cannot be detected
-			// you will have the last position
-			f_y_pos_returned = 240.0f;
-			/*cout<<"getPlayerBlobY, there are no blobs matching blob area: "<<f_y_pos_returned<<endl;
-			cout<<"current area for blob "<<i<<" : "<<ofxCvContourFind_contourFinder.blobs[i].area<<endl;
-			cout<<"player blob area setting: "<<f_playerBlobArea<<endl;*/
+			
+			// TODO: Use this for security when player leaves play field
+			//mf_player_last_ypos = f_y_pos_returned;
 		}
 	}
 	
@@ -198,13 +173,7 @@ float IRTracker::getBulletX() {
 			&& ofxCvContourFind_contourFinder.blobs[i].area <= f_bulletMaxBlobArea)
 		{
 			f_bullet_x = ofxCvContourFind_contourFinder.blobs[i].centroid.x;
-		}
-		else
-		{
-			// TODO: Can this just return NULL? if so awesome. 0 is still a value and if a 
-			// creature happens to be at 0,0 it will die and that's not really fair
-			f_bullet_x = 0.0f;
-			//cout<<"getBulletX, there are no blobs matching min/max area: "<<f_bullet_x<<endl;
+			cout<<"found bullet X: "<<f_bullet_x<<endl;
 		}
 	}
 	
@@ -221,21 +190,25 @@ float IRTracker::getBulletY() {
 			&& ofxCvContourFind_contourFinder.blobs[i].area <= f_bulletMaxBlobArea)
 		{
 			f_bullet_y = ofxCvContourFind_contourFinder.blobs[i].centroid.y;
-		}
-		else
-		{
-			// TODO: Can this just return NULL? if so awesome. 0 is still a value and if a 
-			// creature happens to be at 0,0 it will die and that's not really fair
-			f_bullet_y = 0.0f;
-			//cout<<"getBulletY, there are no blobs matching min/max area: "<<f_bullet_y<<endl;
+			cout<<"found bullet Y: "<<f_bullet_y<<endl;
 		}
 	}
 	
 	return f_bullet_y;
 }
 
+void IRTracker::setPlayerBlobArea(float f_min_area, float f_max_area) {
+	f_playerMinBlobArea = f_min_area;
+	f_playerMaxBlobArea = f_max_area;
+}
+
+void IRTracker::setBulletBlobArea(float f_min_area, float f_max_area) {
+	f_bulletMinBlobArea = f_min_area;
+	f_bulletMaxBlobArea = f_max_area;
+}
+
 void IRTracker::setSourcePoint(int i_point_adjusting, int i_x, int i_y) {
 	ofpoint_srcPoints[i_point_adjusting].set((float) i_x, (float) i_y);
-	printf("Params are: %d, %d for pt - %d \n", i_x, i_y, i_point_adjusting);
-	printf("Source points after set: %f, %f \n", ofpoint_srcPoints[i_point_adjusting].x, ofpoint_srcPoints[i_point_adjusting].y);
+	cout<<"Params are: "<<i_x<<", "<<i_y <<"for pt - "<<i_point_adjusting<<endl;
+	cout<<"Source points after set - X: "<<ofpoint_srcPoints[i_point_adjusting].x<<", Y: "<<ofpoint_srcPoints[i_point_adjusting].y<<endl;
 }

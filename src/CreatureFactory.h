@@ -41,7 +41,8 @@ public:
 								 string s_sprite,
 								 string s_sounds,
 								 float f_damage_rate,
-								 float f_hit_points);
+								 float f_hit_points,
+								 int i_frame_rate);
 	
 	//GETTERS
 	

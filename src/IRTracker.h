@@ -23,7 +23,7 @@ public:
 	void setupCV();
 	void processFrame();
 	void drawFeed();
-	void printPlayerBlobArea();
+	void printAllBlobAreas();
 	
 	float getPlayerBlobX();
 	float getPlayerBlobY();
@@ -31,13 +31,16 @@ public:
 	float getBulletX();
 	float getBulletY();
 	
+	void setPlayerBlobArea(float f_min_area, float f_max_area);
+	void setBulletBlobArea(float f_min_area, float f_max_area);
 	void setSourcePoint(int i_point_adjusting, int i_x, int i_y);
 		
 protected:
 	
 	int i_width, i_height;
 	bool b_cameraSetup, b_videoSetup;
-	float f_playerBlobArea,f_bulletMinBlobArea, f_bulletMaxBlobArea;
+	float f_playerBlobArea,f_playerMinBlobArea,f_playerMaxBlobArea,f_bulletMinBlobArea, f_bulletMaxBlobArea;
+	float mf_player_last_xpos, mf_player_last_ypos;
 	
 	ofPoint ofpoint_srcPoints[4];
 	ofPoint ofpoint_dstPoints[4];

@@ -41,6 +41,7 @@ public:
 	ofxXmlSettings XML;
 	int player_max;
 	int frame_speed;
+	ofImage play_field;
 	
 	// this variable determines how many creatures can appear on screen at a time
 	int creature_max;

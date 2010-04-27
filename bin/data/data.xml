@@ -2,11 +2,17 @@
 <GAME_SETTINGS>
     <PLAYER_MAX>1</PLAYER_MAX>
     <FRAMESPEED>50</FRAMESPEED>
+    <PLAYFIELD>Field.jpg</PLAYFIELD>
+    <BULLET_SPRITE>Bullet.png</BULLET_SPRITE>
     <SCORE_FORMAT>TIME</SCORE_FORMAT>
     <PLAYER_SETTINGS>
-        <HIT_POINTS>100.0f</HIT_POINTS>
+        <HIT_POINTS>1000.0f</HIT_POINTS>
         <DAMAGE_RADIUS>25.0f</DAMAGE_RADIUS>
         <GUN_POWER>25.0f</GUN_POWER>
+        <PLAYER_MIN_BLOB_AREA>250.0f</PLAYER_MIN_BLOB_AREA>
+        <PLAYER_MAX_BLOB_AREA>1500.0f</PLAYER_MAX_BLOB_AREA>
+        <GUN_MIN_BLOB_AREA>100.0f</GUN_MIN_BLOB_AREA>
+        <GUN_MAX_BLOB_AREA>200.0f</GUN_MAX_BLOB_AREA>
     </PLAYER_SETTINGS>
     <CREATURE>
         <NAME>SOLDIER</NAME>
@@ -19,9 +25,10 @@
         <SCALE>0.2f</SCALE>
         <REPULSION_RADIUS>1000.0f</REPULSION_RADIUS>
         <SPRITE>soldier/Soldier_00000.png,soldier/Soldier_00001.png,soldier/Soldier_00002.png,soldier/Soldier_00003.png,soldier/Soldier_00004.png,soldier/Soldier_00005.png,soldier/Soldier_00006.png,soldier/Soldier_00007.png,soldier/Soldier_00008.png,soldier/Soldier_00009.png,soldier/Soldier_00010.png,soldier/Soldier_00011.png,soldier/Soldier_00012.png,soldier/Soldier_00013.png,soldier/Soldier_00014.png,soldier/Soldier_00015.png,soldier/Soldier_00016.png,soldier/Soldier_00017.png,soldier/Soldier_00018.png</SPRITE>
-        <SOUNDS>images/soldier.aif</SOUNDS>
-        <DAMAGE_RATE>25.0f</DAMAGE_RATE>
+        <SOUNDS>sounds/soldier.aif</SOUNDS>
+        <DAMAGE_RATE>0.2f</DAMAGE_RATE>
         <HIT_POINTS>25.0f</HIT_POINTS>
+        <FRAME_RATE>19</FRAME_RATE>
     </CREATURE>
     <CREATURE>
         <NAME>SCUBA</NAME>
@@ -34,8 +41,9 @@
         <SCALE>0.2f</SCALE>
         <REPULSION_RADIUS>1000.0f</REPULSION_RADIUS>
         <SPRITE>images/scuba.png</SPRITE>
-        <SOUNDS>images/scuba.aif</SOUNDS>
+        <SOUNDS>sounds/scuba.aif</SOUNDS>
         <DAMAGE_RATE>25.0f</DAMAGE_RATE>
         <HIT_POINTS>25.0f</HIT_POINTS>
+        <FRAME_RATE>19</FRAME_RATE>
     </CREATURE>
 </GAME_SETTINGS>
