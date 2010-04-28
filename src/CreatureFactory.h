@@ -23,10 +23,12 @@ public:
 	CreatureFactory();
 	void startFactory(bool b_repel, float f_radius, float f_strength, float f_too_close_dist, float f_in_sight_distance); 
 	void updateCreatureMax(int i_creature_max);
+	void findEdgeToSpawn(float f_player_x, float f_player_y);
 	void spawnCreatures();
 	void updateCreaturesFlock(Player &player);
 	void drawCreatures();
 	void checkBulletPosition(float f_bullet_x, float f_bullet_y);
+	void checkBulletPosition(ofxVec2f ofxvec_gun_pos, float f_gun_radius);
 	
 	//SETTERS
 	void setNewCreatureArchetype(string s_creature_type, 

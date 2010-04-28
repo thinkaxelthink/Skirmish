@@ -28,9 +28,50 @@ void CreatureFactory::startFactory(bool b_repel, float f_radius, float f_strengt
 //------------------------------------------------------------
 void CreatureFactory::updateCreatureMax(int i_creature_max) {
 	
+	// TODO: Amount to spawn should be
+	// as time played > current time between spawns < last time between spawns 
 	mi_creature_max = i_creature_max;
 	spawnCreatures();
 	
+}
+
+//------------------------------------------------------------
+void CreatureFactory::findEdgeToSpawn(float f_player_x, float f_player_y) {
+	
+	float f_screen_x_diff = ofGetWidth() - f_player_x;
+	float f_screen_y_diff = ofGetHeight() - f_player_y;
+		
+	if(f_screen_x_diff > f_player_x)
+	{
+		mf_spawn_x = ofGetWidth();
+	}
+	else if(f_screen_x_diff < f_player_x)
+	{
+		mf_spawn_x = 0.0f;
+	}
+	else
+	{
+		// you're dead center
+		// TODO: randomize between zero and screen width
+		
+		mf_spawn_x = 0.0f;
+	}
+	
+	if(f_screen_y_diff > f_player_y)
+	{
+		mf_spawn_y = ofGetHeight();
+	}
+	else if(f_screen_y_diff < f_player_y)
+	{
+		mf_spawn_y = 0.0f;
+	}
+	else
+	{
+		// you're dead center
+		// TODO: randomize between zero and screen width
+		
+		mf_spawn_y = 0.0f;
+	}
 }
 
 //------------------------------------------------------------
@@ -49,16 +90,9 @@ void CreatureFactory::spawnCreatures() {
 		
 		creature.setAllProperties(creature_archetypes[0]);
 		creature.loadSprite();
-		/***************************************************************
-		 ** TODO: make spawn position be outside of field.
-		 ** possibly deploy "emitters" outside the field
-		 ** or find a better way to just hand a position to these vars
-		 ***************************************************************/
-		mf_spawn_x = ofRandom(0,ofGetWidth());
-		mf_spawn_y = ofRandom(0,ofGetHeight());
 		
 		// set creature position
-		//creature.setInitialCondition(mf_spawn_x, mf_spawn_y, 0, 0);
+		creature.setPosition((mf_spawn_x * ofRandomf()), (mf_spawn_y * ofRandomf()));
 		creatures.push_back(creature);
 	}
 	
@@ -148,6 +182,33 @@ void CreatureFactory::checkBulletPosition(float f_bullet_x, float f_bullet_y) {
 		}
 	
 	
+	}
+}
+
+//------------------------------------------------------------
+void CreatureFactory::checkBulletPosition(ofxVec2f ofxvec_gun_pos, float f_gun_radius) {
+	
+	for(int i = 0; i<creatures.size(); i++)
+	{
+		// A creature knows when it is hit
+		mb_creatureHit = creatures[i].checkHit(ofxvec_gun_pos, f_gun_radius);
+		
+		// kill creature if hit or show a bullet hole on ground if not hit
+		if(mb_creatureHit == true)
+		{
+			//creatures[i].kill();
+			creatures.erase(creatures.begin()+i);
+			
+			// update game score with all the info it needs to keep track of stats
+			// TODO: add more params to update. it should keep track of info about the creature and player for stats
+			//gameScore.update(2);
+		}
+		else
+		{
+			// TODO: display a bullet hole sprite 
+			//printf("no hit\n");
+		}
+		
 	}
 }
 

@@ -13,6 +13,7 @@
 
 #include "ofMain.h"
 #include "ofxOpenCv.h"
+#include "ofxVectorMath.h"
 
 class IRTracker {
 	
@@ -30,6 +31,8 @@ public:
 	
 	float getBulletX();
 	float getBulletY();
+	ofxVec2f getBulletPosition();
+	float getBulletRadius();
 	
 	void setPlayerBlobArea(float f_min_area, float f_max_area);
 	void setBulletBlobArea(float f_min_area, float f_max_area);
@@ -41,6 +44,7 @@ protected:
 	bool b_cameraSetup, b_videoSetup;
 	float f_playerBlobArea,f_playerMinBlobArea,f_playerMaxBlobArea,f_bulletMinBlobArea, f_bulletMaxBlobArea;
 	float mf_player_last_xpos, mf_player_last_ypos;
+	float mf_bullet_radius;
 	
 	ofPoint ofpoint_srcPoints[4];
 	ofPoint ofpoint_dstPoints[4];

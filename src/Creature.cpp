@@ -113,6 +113,16 @@ void Creature::setInitialCondition(float px, float py, float vx, float vy){
 }
 
 //------------------------------------------------------------
+void Creature::setPosition(float px, float py) {
+	ofv_pos.set(px,py);
+}
+
+//------------------------------------------------------------
+void Creature::setVelocity(float vx, float vy) {
+	ofv_vel.set(vx,vy);
+}
+
+//------------------------------------------------------------
 void Creature::update(){	
 	
 	ofv_vel = ofv_vel + ofv_frc;
@@ -163,7 +173,9 @@ void Creature::draw(){
     ofPopMatrix();
 	
 	ofDisableAlphaBlending();
-	ofRect(ofv_pos.x, ofv_pos.y, 100.0, 100.0);
+	/*ofNoFill();
+	ofCircle(ofv_pos.x, ofv_pos.y, mvimg_sprites[mi_frame_num].getWidth());
+	ofFill();*/
 }
 
 //------------------------------------------------------------
@@ -217,12 +229,12 @@ void Creature::bounceOffWalls(){
 }
 
 //------------------------------------------------------------
-bool Creature::checkHit(float f_gunX, float f_gunY){
+bool Creature::checkHit(float f_gunX, float f_gunY, float f_gun_radius){
 	
 	// TODO: check radius for % damage capability
 	// or check radius, then check if it's a direct hit, 
 	// apply damage percent accordingly
-	if(f_gunX >= ofv_pos.x 
+	/*if(f_gunX >= ofv_pos.x 
 	   && f_gunX <= ofv_pos.x + 100.0
 	   && f_gunY >= ofv_pos.y
 	   && f_gunY <= ofv_pos.y + 100.0)
@@ -233,8 +245,29 @@ bool Creature::checkHit(float f_gunX, float f_gunY){
 	else
 	{
 		return false;
+	}*/
+	
+}
+
+//------------------------------------------------------------
+bool Creature::checkHit(ofxVec2f ofxvec_gun_pos, float f_gun_radius){
+	
+	float f_hit_radius = mf_radius + f_gun_radius;
+	
+	ofxVec2f ofxvec_distance = ofv_pos - ofxvec_gun_pos;
+	
+	float f_current_length = ofxvec_distance.length();
+	
+	if(f_current_length < f_hit_radius)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
 	}
 }
+
 
 //------------------------------------------------------------
 void Creature::loadSprite() {

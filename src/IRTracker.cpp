@@ -13,6 +13,8 @@ IRTracker::IRTracker() {
 	b_cameraSetup		= false;
 	b_videoSetup		= false;
 	
+	// TODO: make this get dynamically set in getBulletPosition
+	mf_bullet_radius	= 20.0f;
 }
 
 void IRTracker::setupCamera(int i_deviceNumber) {
@@ -173,7 +175,7 @@ float IRTracker::getBulletX() {
 			&& ofxCvContourFind_contourFinder.blobs[i].area <= f_bulletMaxBlobArea)
 		{
 			f_bullet_x = ofxCvContourFind_contourFinder.blobs[i].centroid.x;
-			cout<<"found bullet X: "<<f_bullet_x<<endl;
+			//cout<<"found bullet X: "<<f_bullet_x<<endl;
 		}
 	}
 	
@@ -190,11 +192,24 @@ float IRTracker::getBulletY() {
 			&& ofxCvContourFind_contourFinder.blobs[i].area <= f_bulletMaxBlobArea)
 		{
 			f_bullet_y = ofxCvContourFind_contourFinder.blobs[i].centroid.y;
-			cout<<"found bullet Y: "<<f_bullet_y<<endl;
+			//cout<<"found bullet Y: "<<f_bullet_y<<endl;
 		}
 	}
 	
 	return f_bullet_y;
+}
+
+ofxVec2f IRTracker::getBulletPosition() {
+	
+	ofxVec2f ofxvec_bullet;
+	
+	ofxvec_bullet.set((float) (getBulletX() * 3.2), (float) (getBulletY() * 3.2));
+	
+	return ofxvec_bullet;
+}
+
+float IRTracker::getBulletRadius() {
+	return mf_bullet_radius;
 }
 
 void IRTracker::setPlayerBlobArea(float f_min_area, float f_max_area) {

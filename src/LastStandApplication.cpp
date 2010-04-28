@@ -141,6 +141,7 @@ void LastStandApplication::update(){
 		// then calls spawnCreatures() internally
 		// TODO: the creature creation algorithm should be done 
 		// solely in the factory; create a smarter algorithm
+		creatureFactory.findEdgeToSpawn(player.getPlayerX(), player.getPlayerY()); 
 		creatureFactory.updateCreatureMax(creature_max);
 		
 		// updates creature flock 
@@ -152,13 +153,16 @@ void LastStandApplication::update(){
 		
 		// Assumes there is always a blob
 		// sets position of player to blob's (if blob is big enough to be registered as a player)
+		// TODO: overload this to accept a 2d vec and make camera return 2d vecs
 		player.setPlayerPosition((float) (camera.getPlayerBlobX() * 3.2), (float) (camera.getPlayerBlobY() * 3.2));
-		creatureFactory.checkBulletPosition((float) (camera.getBulletX() * 3.2), (float) (camera.getBulletY() * 3.2));
+		creatureFactory.checkBulletPosition(camera.getBulletPosition(), camera.getBulletRadius());
+		//creatureFactory.checkBulletPosition((float) (camera.getBulletX() * 3.2), (float) (camera.getBulletY() * 3.2));
 	}
 }
 
 //--------------------------------------------------------------
 void LastStandApplication::draw(){
+	
 	ofSetColor(255, 255, 255);
 	play_field.draw(0,0);
 	// draw player
@@ -178,7 +182,8 @@ void LastStandApplication::draw(){
 	}
 	
 	ofNoFill();
-	ofCircle((camera.getBulletX() * 3.2), (camera.getBulletY() * 3.2), 10);
+	ofCircle((camera.getBulletX() * 3.2), (camera.getBulletY() * 3.2), 5);
+	ofFill();
 	
 }
 

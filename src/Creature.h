@@ -29,11 +29,14 @@ public:
 	void addDampingForce();
 	
 	void setInitialCondition(float px, float py, float vx, float vy);
+	void setPosition(float px, float py);
+	void setVelocity(float vx, float vy);
 	void update();
 	void die();
 	
 	void bounceOffWalls();
-	bool checkHit(float f_gunX, float f_gunY);
+	bool checkHit(float f_gunX, float f_gunY, float f_gun_radius);
+	bool checkHit(ofxVec2f ofxvec_gun_pos, float f_gun_radius);
 	void loadSprite();
 	void loadSounds();
 	
