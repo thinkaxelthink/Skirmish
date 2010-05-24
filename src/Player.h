@@ -23,6 +23,7 @@ public:
 	void draw();
 	bool checkHit(ofxVec2f p2f_position, float f_radius);
 	void deliverHit(float f_damage);
+	void resetLife();
 	
 	// SETTERS
 	void setPlayerPosition(float f_x_pos, float f_y_pos);
@@ -43,6 +44,7 @@ protected:
 	
 	float mf_player_radius;
 	float mf_hit_points;
+	float mf_hit_point_reset;
 	float mf_gun_power;
 	float mf_player_x;
 	float mf_player_y;

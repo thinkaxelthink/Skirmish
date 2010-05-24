@@ -335,46 +335,13 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>E143646D1188BCA70050E92A</string>
+										<string>E1C3AFF211A2208D00E2E909</string>
 										<key>history</key>
 										<array>
-											<string>E1B3EA4B1081624200338EE8</string>
-											<string>E1B3EA4C1081624200338EE8</string>
-											<string>E1B3EA4D1081624200338EE8</string>
-											<string>E19FF09F10826983002C2B06</string>
-											<string>E163097110A9168200BF6E70</string>
-											<string>E1A4F24910AA345A00C51D6E</string>
-											<string>E1A4F24A10AA345A00C51D6E</string>
-											<string>E1A4F24B10AA345A00C51D6E</string>
 											<string>E117DB5610AF8FD400C8D7BF</string>
-											<string>E117DBB610AFE3D000C8D7BF</string>
-											<string>E117DBB710AFE3D000C8D7BF</string>
-											<string>E117DBB810AFE3D000C8D7BF</string>
-											<string>E117DBBF10AFE3D000C8D7BF</string>
-											<string>E117DBC010AFE3D000C8D7BF</string>
-											<string>E1B5EC6110B0A49B00524AB6</string>
-											<string>E1B5EC6210B0A49B00524AB6</string>
-											<string>E1B5EC6310B0A49B00524AB6</string>
-											<string>E1B5EC6C10B0A49B00524AB6</string>
-											<string>E1ABCD6710CEFD4D00A494EE</string>
-											<string>E1ABCD6810CEFD4D00A494EE</string>
-											<string>E1ABCD6910CEFD4D00A494EE</string>
 											<string>E19562351140CF8A00197960</string>
-											<string>E19562391140CF8A00197960</string>
-											<string>E195623B1140CF8A00197960</string>
-											<string>E195623C1140CF8A00197960</string>
-											<string>E195623D1140CF8A00197960</string>
-											<string>E19D2A3D115AACA800091320</string>
-											<string>E19D2A3E115AACA800091320</string>
-											<string>E19D2A3F115AACA800091320</string>
-											<string>E19D2A40115AACA800091320</string>
-											<string>E19D2A41115AACA800091320</string>
-											<string>E19D2A42115AACA800091320</string>
-											<string>E10458CE118154A800466789</string>
 											<string>E13B94E911839FA3000DDE9B</string>
 											<string>E13A677D11866D1100C09B12</string>
-											<string>E1A831A11187B1BC00F211BF</string>
-											<string>E1A831A21187B1BC00F211BF</string>
 											<string>E1A831AA1187B1BC00F211BF</string>
 											<string>E1A832241187BB1F00F211BF</string>
 											<string>E1A8322A1187CEA200F211BF</string>
@@ -385,7 +352,7 @@
 											<string>E1A832711187DFBF00F211BF</string>
 											<string>E1A832731187DFBF00F211BF</string>
 											<string>E1A8328F1187E06100F211BF</string>
-											<string>E18356AA1187E1AF008EDC87</string>
+											<string>E143646D1188BCA70050E92A</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -396,47 +363,14 @@
 											<string>E1B3E973108145C400338EE8</string>
 											<string>E1B3E9961081474000338EE8</string>
 											<string>E1B3EA591081624200338EE8</string>
-											<string>E1B3EA6E1081624200338EE8</string>
-											<string>E1B3EA721081624200338EE8</string>
-											<string>E1B3EA741081624200338EE8</string>
-											<string>E1B3EA751081624200338EE8</string>
-											<string>E1B3EA771081624200338EE8</string>
-											<string>E1B3EA781081624200338EE8</string>
-											<string>E1B3EA791081624200338EE8</string>
 											<string>E1B3EA9B1081624200338EE8</string>
 											<string>E1B3EB0C1081792200338EE8</string>
 											<string>E1B3EB0D1081792200338EE8</string>
-											<string>E19FF0A810826983002C2B06</string>
-											<string>E19FF0AA10826983002C2B06</string>
-											<string>E19FF0AE10826983002C2B06</string>
-											<string>E163097810A9168200BF6E70</string>
-											<string>E163097910A9168200BF6E70</string>
-											<string>E1A4F25710AA345A00C51D6E</string>
-											<string>E1A4F25810AA345A00C51D6E</string>
-											<string>E1A4F25A10AA345A00C51D6E</string>
 											<string>E1BEDD0010ABC5C500B236CB</string>
 											<string>E1BEDD0110ABC5C500B236CB</string>
 											<string>E117DB5A10AF8FD400C8D7BF</string>
-											<string>E117DBC810AFE3D000C8D7BF</string>
-											<string>E117DBCF10AFE3D000C8D7BF</string>
-											<string>E117DBD310AFE3D000C8D7BF</string>
-											<string>E117DBD610AFE3D000C8D7BF</string>
-											<string>E117DBD810AFE3D000C8D7BF</string>
-											<string>E117DBDF10AFE3D000C8D7BF</string>
-											<string>E117DBE810AFE3D000C8D7BF</string>
-											<string>E117DBE910AFE3D000C8D7BF</string>
-											<string>E117DBEA10AFE3D000C8D7BF</string>
-											<string>E117DBEB10AFE3D000C8D7BF</string>
 											<string>E1F2C60A10B0BC2300502BE6</string>
 											<string>E1F2C60F10B0BC2300502BE6</string>
-											<string>E19562871140CF8A00197960</string>
-											<string>E195628B1140CF8A00197960</string>
-											<string>E19D2A55115AACA800091320</string>
-											<string>E19D2A56115AACA800091320</string>
-											<string>E19D2A58115AACA800091320</string>
-											<string>E19D2A59115AACA800091320</string>
-											<string>E10458ED118154A800466789</string>
-											<string>E1A831BE1187B1BC00F211BF</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -494,9 +428,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>E143645B118882D40050E92A</string>
+				<string>E1C3AFF311A2208D00E2E909</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>E143645C118882D40050E92A</string>
+				<string>E1C3AFF411A2208D00E2E909</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -630,9 +564,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1CD10A99069EF8BA00B06720</string>
-		<string>E1B762C210813B44002C4311</string>
-		<string>/Users/kegrone/Documents/aesquite/dev/type_code/svn/typeslashcode/projects/skirmish/of_preRelease_v0.06_xcode_FAT/apps/examples/LastStandApplication/openFrameworks.xcodeproj</string>
+		<string>/Users/kegrone/Documents/aesquite/semester/spring10/thesis/code/openFrameworks.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>1 165 1360 713 0 0 1440 878 </string>

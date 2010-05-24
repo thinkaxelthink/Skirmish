@@ -25,6 +25,7 @@ public:
 	void updateCreatureMax(int i_creature_max);
 	void findEdgeToSpawn(float f_player_x, float f_player_y);
 	void spawnCreatures();
+	void resetCreatures();
 	void updateCreaturesFlock(Player &player);
 	void drawCreatures();
 	void checkBulletPosition(float f_bullet_x, float f_bullet_y);

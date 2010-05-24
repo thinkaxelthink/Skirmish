@@ -27,7 +27,8 @@ public:
 	void printAllBlobAreas();
 	
 	float getPlayerBlobX();
-	float getPlayerBlobY();
+	float getPlayerBlobY();	
+	ofxVec2f getPlayerPosition();
 	
 	float getBulletX();
 	float getBulletY();
@@ -58,6 +59,8 @@ protected:
 	ofxCvGrayscaleImage		ofxCvGray_irDiffImage;
 	ofxCvContourFinder		ofxCvContourFind_contourFinder;
 		
+	ofxVec2f ofxvec_current_player_position, ofxvec_last_player_position;
+
 };
 
 #endif

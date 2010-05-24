@@ -258,6 +258,8 @@ bool Creature::checkHit(ofxVec2f ofxvec_gun_pos, float f_gun_radius){
 	
 	float f_current_length = ofxvec_distance.length();
 	
+	//cout<<"f_hit_radius: "<<f_hit_radius<<", f_current_length: "<<f_current_length<<endl;
+	
 	if(f_current_length < f_hit_radius)
 	{
 		return true;

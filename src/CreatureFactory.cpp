@@ -38,6 +38,9 @@ void CreatureFactory::updateCreatureMax(int i_creature_max) {
 //------------------------------------------------------------
 void CreatureFactory::findEdgeToSpawn(float f_player_x, float f_player_y) {
 	
+	// finds the farthest edge from the player and 
+	// spawns creatures from that side
+	
 	float f_screen_x_diff = ofGetWidth() - f_player_x;
 	float f_screen_y_diff = ofGetHeight() - f_player_y;
 		
@@ -47,14 +50,14 @@ void CreatureFactory::findEdgeToSpawn(float f_player_x, float f_player_y) {
 	}
 	else if(f_screen_x_diff < f_player_x)
 	{
-		mf_spawn_x = 0.0f;
+		mf_spawn_x = (f_player_x * 0.8);
 	}
 	else
 	{
 		// you're dead center
 		// TODO: randomize between zero and screen width
 		
-		mf_spawn_x = 0.0f;
+		mf_spawn_x = (f_player_x * 0.8);
 	}
 	
 	if(f_screen_y_diff > f_player_y)
@@ -63,14 +66,14 @@ void CreatureFactory::findEdgeToSpawn(float f_player_x, float f_player_y) {
 	}
 	else if(f_screen_y_diff < f_player_y)
 	{
-		mf_spawn_y = 0.0f;
+		mf_spawn_y = (f_player_y * 0.2);
 	}
 	else
 	{
 		// you're dead center
 		// TODO: randomize between zero and screen width
 		
-		mf_spawn_y = 0.0f;
+		mf_spawn_y = (f_player_y * 0.2);
 	}
 }
 
@@ -96,6 +99,11 @@ void CreatureFactory::spawnCreatures() {
 		creatures.push_back(creature);
 	}
 	
+}
+
+//------------------------------------------------------------
+void CreatureFactory::resetCreatures() {
+	creatures.clear();
 }
 
 //------------------------------------------------------------
@@ -150,65 +158,71 @@ void CreatureFactory::updateCreaturesFlock(Player &player) {
 void CreatureFactory::drawCreatures() {
 
 	// draw our flock
-	for(int i=0; i<creatures.size(); i++)
+	if(creatures.size() > 0)
 	{
-		creatures[i].draw();
+		for(int i=0; i<creatures.size(); i++)
+		{
+			creatures[i].draw();
+		}
 	}
-
 }
 
 //------------------------------------------------------------
 void CreatureFactory::checkBulletPosition(float f_bullet_x, float f_bullet_y) {
-	
-	for(int i = 0; i<creatures.size(); i++)
+	if(creatures.size() > 0)
 	{
-		// A creature knows when it is hit
-		mb_creatureHit = creatures[i].checkHit(f_bullet_x, f_bullet_y);
-		
-		// kill creature if hit or show a bullet hole on ground if not hit
-		if(mb_creatureHit == true)
+		for(int i = 0; i<creatures.size(); i++)
 		{
-			//creatures[i].kill();
-			creatures.erase(creatures.begin()+i);
+			// A creature knows when it is hit
+			mb_creatureHit = creatures[i].checkHit(f_bullet_x, f_bullet_y);
 			
-			// update game score with all the info it needs to keep track of stats
-			// TODO: add more params to update. it should keep track of info about the creature and player for stats
-			//gameScore.update(2);
+			// kill creature if hit or show a bullet hole on ground if not hit
+			if(mb_creatureHit == true)
+			{
+				//creatures[i].kill();
+				creatures.erase(creatures.begin()+i);
+				
+				// update game score with all the info it needs to keep track of stats
+				// TODO: add more params to update. it should keep track of info about the creature and player for stats
+				//gameScore.update(2);
+			}
+			else
+			{
+				// TODO: display a bullet hole sprite 
+				//printf("no hit\n");
+			}
+		
+		
 		}
-		else
-		{
-			// TODO: display a bullet hole sprite 
-			//printf("no hit\n");
-		}
-	
-	
 	}
 }
 
 //------------------------------------------------------------
 void CreatureFactory::checkBulletPosition(ofxVec2f ofxvec_gun_pos, float f_gun_radius) {
-	
-	for(int i = 0; i<creatures.size(); i++)
+	if(creatures.size() > 0)
 	{
-		// A creature knows when it is hit
-		mb_creatureHit = creatures[i].checkHit(ofxvec_gun_pos, f_gun_radius);
-		
-		// kill creature if hit or show a bullet hole on ground if not hit
-		if(mb_creatureHit == true)
+		for(int i = 0; i<creatures.size(); i++)
 		{
-			//creatures[i].kill();
-			creatures.erase(creatures.begin()+i);
+			// A creature knows when it is hit
+			mb_creatureHit = creatures[i].checkHit(ofxvec_gun_pos, f_gun_radius);
+
+			// kill creature if hit or show a bullet hole on ground if not hit
+			if(mb_creatureHit == true)
+			{
+				//creatures[i].kill();
+				creatures.erase(creatures.begin()+i);
+				
+				// update game score with all the info it needs to keep track of stats
+				// TODO: add more params to update. it should keep track of info about the creature and player for stats
+				//gameScore.update(2);
+			}
+			else
+			{
+				// TODO: display a bullet hole sprite 
+				//printf("no hit\n");
+			}
 			
-			// update game score with all the info it needs to keep track of stats
-			// TODO: add more params to update. it should keep track of info about the creature and player for stats
-			//gameScore.update(2);
 		}
-		else
-		{
-			// TODO: display a bullet hole sprite 
-			//printf("no hit\n");
-		}
-		
 	}
 }
 

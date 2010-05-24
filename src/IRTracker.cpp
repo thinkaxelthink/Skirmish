@@ -30,6 +30,7 @@ void IRTracker::setupCamera(int i_deviceNumber) {
 	i_height = ofvidGrab_irFeed.height;		
 }
 
+//------------------------------------------------------------
 void IRTracker::setupCV() {
 	
 	// setup video grabber:
@@ -64,6 +65,7 @@ void IRTracker::setupCV() {
 	
 }
 
+//------------------------------------------------------------
 //process the incoming frame and look for a laser	
 void IRTracker::processFrame() {
 	
@@ -103,6 +105,7 @@ void IRTracker::processFrame() {
 	
 } 
 
+//------------------------------------------------------------
 void IRTracker::drawFeed() {
 	
 	ofxCvGray_irGrayImage.draw(20,20, 320,240);
@@ -112,6 +115,7 @@ void IRTracker::drawFeed() {
 
 }
 
+//------------------------------------------------------------
 void IRTracker::printAllBlobAreas() {
 	
 	// prints the area of all blob in nBlobs to the debugger.
@@ -121,6 +125,7 @@ void IRTracker::printAllBlobAreas() {
 	}
 }
 
+//------------------------------------------------------------
 float IRTracker::getPlayerBlobX() {
 	
 	// Assumes a cv has been set up and frame processed
@@ -143,6 +148,7 @@ float IRTracker::getPlayerBlobX() {
 	
 }
 
+//------------------------------------------------------------
 float IRTracker::getPlayerBlobY() {
 	
 	// Assumes a cv has been set up and frame processed
@@ -165,6 +171,36 @@ float IRTracker::getPlayerBlobY() {
 	
 }
 
+//------------------------------------------------------------
+ofxVec2f IRTracker::getPlayerPosition() {
+	
+	ofxVec2f ofxvec_player;
+	
+	for (int i = 0; i <  ofxCvContourFind_contourFinder.blobs.size(); i++)
+	{
+		if(ofxCvContourFind_contourFinder.blobs[i].area >= f_playerMinBlobArea
+		   && ofxCvContourFind_contourFinder.blobs[i].area <= f_playerMaxBlobArea)
+		{
+			ofxvec_current_player_position.set((float) (ofxCvContourFind_contourFinder.blobs[i].centroid.x * 3.2),
+											   (float) (ofxCvContourFind_contourFinder.blobs[i].centroid.y * 3.2));
+			ofxvec_player = (0.8 * ofxvec_last_player_position) + (0.2 * ofxvec_current_player_position);
+			
+			//mb_is_player = true;
+			
+			ofxvec_last_player_position.set((float) (ofxCvContourFind_contourFinder.blobs[i].centroid.x * 3.2),
+											(float) (ofxCvContourFind_contourFinder.blobs[i].centroid.y * 3.2));
+			
+		}
+		/*else
+		 {
+		 //mb_is_player = false;
+		 }*/
+	}
+	
+	return ofxvec_player;
+}
+
+//------------------------------------------------------------
 float IRTracker::getBulletX() {
 	
 	float f_bullet_x;
@@ -182,6 +218,7 @@ float IRTracker::getBulletX() {
 	return f_bullet_x;
 }
 
+//------------------------------------------------------------
 float IRTracker::getBulletY() {
 	
 	float f_bullet_y;
@@ -199,6 +236,7 @@ float IRTracker::getBulletY() {
 	return f_bullet_y;
 }
 
+//------------------------------------------------------------
 ofxVec2f IRTracker::getBulletPosition() {
 	
 	ofxVec2f ofxvec_bullet;
@@ -208,20 +246,24 @@ ofxVec2f IRTracker::getBulletPosition() {
 	return ofxvec_bullet;
 }
 
+//------------------------------------------------------------
 float IRTracker::getBulletRadius() {
 	return mf_bullet_radius;
 }
 
+//------------------------------------------------------------
 void IRTracker::setPlayerBlobArea(float f_min_area, float f_max_area) {
 	f_playerMinBlobArea = f_min_area;
 	f_playerMaxBlobArea = f_max_area;
 }
 
+//------------------------------------------------------------
 void IRTracker::setBulletBlobArea(float f_min_area, float f_max_area) {
 	f_bulletMinBlobArea = f_min_area;
 	f_bulletMaxBlobArea = f_max_area;
 }
 
+//------------------------------------------------------------
 void IRTracker::setSourcePoint(int i_point_adjusting, int i_x, int i_y) {
 	ofpoint_srcPoints[i_point_adjusting].set((float) i_x, (float) i_y);
 	cout<<"Params are: "<<i_x<<", "<<i_y <<"for pt - "<<i_point_adjusting<<endl;

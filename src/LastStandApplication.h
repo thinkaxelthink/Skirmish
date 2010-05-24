@@ -20,6 +20,7 @@
 #include "Player.h"
 #include "GameScore.h"
 #include "IRTracker.h"
+#include "GameUtils.h"
 
 
 class LastStandApplication : public ofBaseApp{
@@ -66,8 +67,12 @@ public:
 	int i_start_time;
 	
 	bool b_start_game;
+	bool b_agreement_accepted;
 	bool b_adjusting_point;
 	int i_which_point_adjusting;
+	int i_agreement_hit_count;
+	
+	ofImage ofimg_caution;
 	
 };
 

@@ -113,78 +113,127 @@ void LastStandApplication::setup(){
 	camera.setupCV();
 	
 	b_start_game			= false;
+	b_agreement_accepted	= false;
 	b_adjusting_point		= false;
 	i_which_point_adjusting	= 0;
-
+	
+	ofimg_caution.loadImage("images/CautionWhole.png");
+	i_agreement_hit_count = 0;
 }
 
 //--------------------------------------------------------------
 void LastStandApplication::update(){
 	
-	if(b_start_game == true)
+	if(b_agreement_accepted == true && b_start_game == true)
 	{
-		// update timer
-		i_timer = ofGetElapsedTimeMillis() - i_start_time;
-		i_timer /= 1000;
-		
-		// update score type TIMER in seconds
-		gameScore.update(i_timer);
-		
-		if(i_timer %5 == 0)
+		if(player.isAlive() == false)
 		{
-			
-			// sets max creatures allowed on the field
-			creature_max = i_timer / 5;
+			b_start_game		  = false;
+			b_agreement_accepted  = false;
+			i_start_time		  = 0;
+			i_agreement_hit_count = 0;
+			player.resetLife();
+			creatureFactory.resetCreatures();
 		}
-		
-		// this will set max creatures allowed on the field
-		// then calls spawnCreatures() internally
-		// TODO: the creature creation algorithm should be done 
-		// solely in the factory; create a smarter algorithm
-		creatureFactory.findEdgeToSpawn(player.getPlayerX(), player.getPlayerY()); 
-		creatureFactory.updateCreatureMax(creature_max);
-		
-		// updates creature flock 
-		creatureFactory.updateCreaturesFlock(player);
-		b_start_game = player.isAlive();
-	
+		else
+		{	
+			// update timer
+			i_timer = ofGetElapsedTimeMillis() - i_start_time;
+			i_timer /= 1000;
+			
+			// update score type TIMER in seconds
+			gameScore.update(i_timer);
+			
+			if(i_timer %5 == 0)
+			{
+				
+				// sets max creatures allowed on the field
+				creature_max = i_timer / 5;
+			}
+			
+			// Finds which edge the player is closest to and sets factory's 
+			// member x & y pos to that position
+			creatureFactory.findEdgeToSpawn(player.getPlayerX(), player.getPlayerY()); 
+			
+			// this will set max creatures allowed on the field
+			// then calls spawnCreatures() internally
+			creatureFactory.updateCreatureMax(creature_max);
+			
+			// updates creature flock 
+			creatureFactory.updateCreaturesFlock(player);
+			
+			
+			//b_start_game = player.isAlive();
+			
+			// looks for ir blobs
+			camera.processFrame();
+
+			// Assumes there is always a blob
+			// sets position of player to blob's (if blob is big enough to be registered as a player)
+			// TODO: overload this to accept a 2d vec and make camera return 2d vecs
+			player.setPlayerPosition((float) (camera.getPlayerBlobX() * 3.2), (float) (camera.getPlayerBlobY() * 3.2));
+			creatureFactory.checkBulletPosition(camera.getBulletPosition(), camera.getBulletRadius());
+			//creatureFactory.checkBulletPosition((float) (camera.getBulletX() * 3.2), (float) (camera.getBulletY() * 3.2));
+		}
+	}
+	else
+	{
 		// looks for ir blobs
 		camera.processFrame();
-		
-		// Assumes there is always a blob
-		// sets position of player to blob's (if blob is big enough to be registered as a player)
-		// TODO: overload this to accept a 2d vec and make camera return 2d vecs
-		player.setPlayerPosition((float) (camera.getPlayerBlobX() * 3.2), (float) (camera.getPlayerBlobY() * 3.2));
-		creatureFactory.checkBulletPosition(camera.getBulletPosition(), camera.getBulletRadius());
-		//creatureFactory.checkBulletPosition((float) (camera.getBulletX() * 3.2), (float) (camera.getBulletY() * 3.2));
+			
+		if(i_agreement_hit_count < 3)
+		{
+			if(checkHit(camera.getBulletPosition(), camera.getBulletRadius(), 387.0f, 436.0f, 65.0f))
+			{
+				i_agreement_hit_count++;
+				
+			}
+		}
+		else
+		{
+			b_start_game		 = true;
+			b_agreement_accepted = true;
+			i_start_time = ofGetElapsedTimeMillis();
+		}
 	}
 }
 
 //--------------------------------------------------------------
 void LastStandApplication::draw(){
 	
-	ofSetColor(255, 255, 255);
-	play_field.draw(0,0);
-	// draw player
-	player.draw();
-	
-	// draws all camera views
-	//camera.drawFeed();
-	
-	// your score
-	gameScore.outputAsString(730, 40);
-	
-	// if game is started
-	if(b_start_game == true)
+	if(b_agreement_accepted == true && b_start_game == true)
 	{
-		// draw creature flock
-		creatureFactory.drawCreatures();
+		ofSetColor(255, 255, 255);
+		play_field.draw(0,0);
+		// draw player
+		player.draw();
+		
+		// draws all camera views
+		//camera.drawFeed();
+		
+		// your score
+		gameScore.outputAsString(730, 40);
+		
+		// if game is started
+		if(b_start_game == true)
+		{
+			// draw creature flock
+			creatureFactory.drawCreatures();
+		}
+		
+		ofNoFill();
+		ofCircle((camera.getBulletX() * 3.2), (camera.getBulletY() * 3.2), 5);
+		ofFill();
 	}
-	
-	ofNoFill();
-	ofCircle((camera.getBulletX() * 3.2), (camera.getBulletY() * 3.2), 5);
-	ofFill();
-	
+	else
+	{
+		ofSetColor(255, 255, 255);
+		ofimg_caution.draw(0,0);
+		
+		/*ofNoFill();
+		ofCircle((camera.getBulletX() * 3.2), (camera.getBulletY() * 3.2), 5);
+		ofFill();*/
+	}
 }
 
 //--------------------------------------------------------------
@@ -237,42 +286,7 @@ void LastStandApplication::mouseDragged(int x, int y, int button){
 
 //--------------------------------------------------------------
 void LastStandApplication::mousePressed(int x, int y, int button){
-	
-	// for warping image
-	if(b_adjusting_point == true)
-	{
-		camera.setSourcePoint(i_which_point_adjusting, x, y);
-	}
-	
-	/*********************************************************************************
-	 ** THIS WILL TRANSFER TO IRTRACKER CLASS
-	 ** Goes through all creatures and checks if mouse has hit one
-	 ** TODO: instead of on mouse click this should occur when laser is tracked
-	 *********************************************************************************
-	 
-	 for(int i = 0; i<creatures.size(); i++)
-	{
-		// A creature knows when it is hit
-		bool b_creatureHit = creatures[i].checkHit(float (x), float (y));
 		
-		// kill creature if hit or show a bullet hole on ground if not hit
-		if(b_creatureHit == true )
-		{
-			//printf("i'm hit\n");
-			//creatures[i].kill();
-			creatures.erase(creatures.begin()+i);
-			
-			// update game score with all the info it needs to keep track of stats
-			// TODO: add more params to update. it should keep track of info about the creature and player for stats
-			//gameScore.update(2);
-		}
-		else
-		{
-			// TODO: display a bullet hole sprite 
-			//printf("no hit\n");
-		}
-	}*/
-	
 }
 
 //--------------------------------------------------------------

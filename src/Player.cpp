@@ -50,6 +50,11 @@ void Player::deliverHit(float f_damage) {
 	
 }
 
+//------------------------------------------------------------
+void Player::resetLife() {
+	mf_hit_points = mf_hit_point_reset;
+}
+
 // SETTERS
 
 //------------------------------------------------------------
@@ -76,7 +81,8 @@ void Player::setPlayerY(float f_y_pos) {
 
 //------------------------------------------------------------
 void Player::setPlayerHitPoints(float f_life){
-	mf_hit_points = f_life;
+	mf_hit_points		= f_life;
+	mf_hit_point_reset	= f_life;
 }
 //------ Sets radius from where player can take damage -------
 void Player::setDamageRadius(float f_damage_radius){
