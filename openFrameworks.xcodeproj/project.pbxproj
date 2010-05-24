@@ -46,6 +46,7 @@
 		E1B3EB01108176E400338EE8 /* CreatureFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1B3EB00108176E400338EE8 /* CreatureFactory.cpp */; };
 		E1B762C010813AA3002C4311 /* LastStandApplication.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1B762BF10813AA3002C4311 /* LastStandApplication.cpp */; };
 		E1BEDCEA10AB900D00B236CB /* GameScore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1BEDCE910AB900D00B236CB /* GameScore.cpp */; };
+		E1C3B03D11A22E5A00E2E909 /* GameUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C3B03B11A22E5A00E2E909 /* GameUtils.cpp */; };
 		E1F2C5FD10B0B7BE00502BE6 /* IRTracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1F2C5FC10B0B7BE00502BE6 /* IRTracker.cpp */; };
 		E446644B0F5B1CFD005D0BF0 /* ofAppGlutWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E446641A0F5B1CFD005D0BF0 /* ofAppGlutWindow.cpp */; };
 		E446644C0F5B1CFD005D0BF0 /* ofAppRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E446641C0F5B1CFD005D0BF0 /* ofAppRunner.cpp */; };
@@ -168,6 +169,8 @@
 		E1B762BF10813AA3002C4311 /* LastStandApplication.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LastStandApplication.cpp; sourceTree = "<group>"; };
 		E1BEDCE810AB900D00B236CB /* GameScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScore.h; sourceTree = "<group>"; };
 		E1BEDCE910AB900D00B236CB /* GameScore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameScore.cpp; sourceTree = "<group>"; };
+		E1C3B03B11A22E5A00E2E909 /* GameUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameUtils.cpp; sourceTree = "<group>"; };
+		E1C3B03C11A22E5A00E2E909 /* GameUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameUtils.h; sourceTree = "<group>"; };
 		E1F2C5FB10B0B7BE00502BE6 /* IRTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRTracker.h; sourceTree = "<group>"; };
 		E1F2C5FC10B0B7BE00502BE6 /* IRTracker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IRTracker.cpp; sourceTree = "<group>"; };
 		E44664190F5B1CFD005D0BF0 /* ofAppBaseWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofAppBaseWindow.h; path = ../../../libs/openFrameworks/app/ofAppBaseWindow.h; sourceTree = SOURCE_ROOT; };
@@ -1086,6 +1089,8 @@
 				E1BEDCE910AB900D00B236CB /* GameScore.cpp */,
 				E1F2C5FB10B0B7BE00502BE6 /* IRTracker.h */,
 				E1F2C5FC10B0B7BE00502BE6 /* IRTracker.cpp */,
+				E1C3B03B11A22E5A00E2E909 /* GameUtils.cpp */,
+				E1C3B03C11A22E5A00E2E909 /* GameUtils.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -1206,6 +1211,7 @@
 				E19562161140931C00197960 /* tinyxmlerror.cpp in Sources */,
 				E19562171140931C00197960 /* tinyxmlparser.cpp in Sources */,
 				E19562181140931C00197960 /* ofxXmlSettings.cpp in Sources */,
+				E1C3B03D11A22E5A00E2E909 /* GameUtils.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
