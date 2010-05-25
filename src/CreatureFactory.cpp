@@ -21,7 +21,7 @@ CreatureFactory::CreatureFactory() {
 	mbottom_x =  ofGetWidth()/2;
 	mbottom_y =  ofGetHeight();
 	offset    =  20;
-	nSurprise =  ofRandom(3,7);
+	nSurprise =  ofRandom(4,7);
 	
 }
 
@@ -64,11 +64,12 @@ void CreatureFactory::findEdgeToSpawn(float f_player_x, float f_player_y) {
 	int spawn_side = 3;
 	
 	//Check if the suprise counter is at 0. If so, spawn from wall closest to player and reset it.
-	if (!nSurprise)
+	cout << "SUPRISE : " << nSurprise << endl;
+	if (nSurprise == 0)
 	{
 		spawn_side = 0;
 			cout << "SUPRISE : " << nSurprise << endl;
-		nSurprise = ofRandom(3, 7);
+		nSurprise = ofRandom(4, 7);
 	}
 
 	// distance checking
@@ -86,7 +87,7 @@ void CreatureFactory::findEdgeToSpawn(float f_player_x, float f_player_y) {
 	
 	float dist_l = sqrt( (dx_l*dx_l) + (dy_l*dy_l));
 	float dist_r = sqrt( (dx_r*dx_r) + (dy_r*dy_r));
-	float dist_t = sqrt( (dx_t*dx_t) + (dy_l*dy_t));
+	float dist_t = sqrt( (dx_t*dx_t) + (dy_t*dy_t));
 	float dist_b = sqrt( (dx_b*dx_b) + (dy_b*dy_b)); 
 	
 	//create arrays to store distances for sorting and comparison
