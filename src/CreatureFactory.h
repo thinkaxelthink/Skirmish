@@ -22,7 +22,7 @@ public:
 	
 	CreatureFactory();
 	void startFactory(bool b_repel, float f_radius, float f_strength, float f_too_close_dist, float f_in_sight_distance); 
-	void updateCreatureMax(int i_creature_max);
+	void updateCreatureMax(int i_creature_max, float f_player_x, float f_player_y );
 	void findEdgeToSpawn(float f_player_x, float f_player_y);
 	void spawnCreatures();
 	void resetCreatures();
@@ -62,7 +62,18 @@ protected:
 	float mf_spawn_x;
 	float mf_spawn_y;
 	float mf_dist;
+	float mleft_x;
+	float mleft_y;
+	float mright_x; 
+	float mright_y;  	 
+	float mtop_x;      
+	float mtop_y;    
+	float mbottom_x;  
+	float mbottom_y; 
 	
+	int offset;
+	//Counter that determines when an enemy should attack player from closest position
+	int nSurprise;
 	// Stores copies of creatures to be used
 	std::vector<Creature> creature_archetypes;
 	

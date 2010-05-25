@@ -112,8 +112,8 @@ void LastStandApplication::setup(){
 	player.setPlayerPosition(ofGetWidth()/2, ofGetHeight()/2);
 	camera.setupCV();
 	
-	b_start_game			= false;
-	b_agreement_accepted	= false;
+	b_start_game			= true;
+	b_agreement_accepted	= true;
 	b_adjusting_point		= false;
 	i_which_point_adjusting	= 0;
 	
@@ -146,18 +146,17 @@ void LastStandApplication::update(){
 			
 			if(i_timer %5 == 0)
 			{
-				
 				// sets max creatures allowed on the field
 				creature_max = i_timer / 5;
 			}
 			
 			// Finds which edge the player is closest to and sets factory's 
 			// member x & y pos to that position
-			creatureFactory.findEdgeToSpawn(player.getPlayerX(), player.getPlayerY()); 
+			//creatureFactory.findEdgeToSpawn); 
 			
 			// this will set max creatures allowed on the field
 			// then calls spawnCreatures() internally
-			creatureFactory.updateCreatureMax(creature_max);
+			creatureFactory.updateCreatureMax(creature_max, player.getPlayerX(), player.getPlayerY());
 			
 			// updates creature flock 
 			creatureFactory.updateCreaturesFlock(player);
@@ -171,7 +170,7 @@ void LastStandApplication::update(){
 			// Assumes there is always a blob
 			// sets position of player to blob's (if blob is big enough to be registered as a player)
 			// TODO: overload this to accept a 2d vec and make camera return 2d vecs
-			player.setPlayerPosition((float) (camera.getPlayerBlobX() * 3.2), (float) (camera.getPlayerBlobY() * 3.2));
+			player.setPlayerPosition(mouseX, mouseY);//(float) (camera.getPlayerBlobX() * 3.2), (float) (camera.getPlayerBlobY() * 3.2));
 			creatureFactory.checkBulletPosition(camera.getBulletPosition(), camera.getBulletRadius());
 			//creatureFactory.checkBulletPosition((float) (camera.getBulletX() * 3.2), (float) (camera.getBulletY() * 3.2));
 		}

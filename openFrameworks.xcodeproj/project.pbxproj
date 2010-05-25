@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C41397B111AB7CDF000F2AAB /* Creature.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C41397A211AB7CDF000F2AAB /* Creature.cpp */; };
+		C41397B211AB7CDF000F2AAB /* CreatureFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */; };
+		C41397B311AB7CDF000F2AAB /* GameScore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C41397A611AB7CDF000F2AAB /* GameScore.cpp */; };
+		C41397B411AB7CDF000F2AAB /* GameUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */; };
+		C41397B511AB7CDF000F2AAB /* IRTracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C41397AA11AB7CDF000F2AAB /* IRTracker.cpp */; };
+		C41397B611AB7CDF000F2AAB /* LastStandApplication.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C41397AC11AB7CDF000F2AAB /* LastStandApplication.cpp */; };
+		C41397B711AB7CDF000F2AAB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C41397AE11AB7CDF000F2AAB /* main.cpp */; };
+		C41397B811AB7CDF000F2AAB /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C41397AF11AB7CDF000F2AAB /* Player.cpp */; };
 		E19562151140931C00197960 /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E19562091140931C00197960 /* tinyxml.cpp */; };
 		E19562161140931C00197960 /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E195620B1140931C00197960 /* tinyxmlerror.cpp */; };
 		E19562171140931C00197960 /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E195620C1140931C00197960 /* tinyxmlparser.cpp */; };
@@ -40,14 +48,7 @@
 		E19FF0961082617E002C2B06 /* ofxCvGrayscaleImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E19FF0771082617E002C2B06 /* ofxCvGrayscaleImage.cpp */; };
 		E19FF0971082617E002C2B06 /* ofxCvImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E19FF0791082617E002C2B06 /* ofxCvImage.cpp */; };
 		E19FF0981082617E002C2B06 /* ofxCvShortImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E19FF07C1082617E002C2B06 /* ofxCvShortImage.cpp */; };
-		E1B3E5F71081419E00338EE8 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1B3E5F61081419E00338EE8 /* Player.cpp */; };
 		E1B3E98F1081473500338EE8 /* openFrameworks-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */; };
-		E1B3EA3C10815AFC00338EE8 /* Creature.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1B3EA3B10815AFC00338EE8 /* Creature.cpp */; };
-		E1B3EB01108176E400338EE8 /* CreatureFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1B3EB00108176E400338EE8 /* CreatureFactory.cpp */; };
-		E1B762C010813AA3002C4311 /* LastStandApplication.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1B762BF10813AA3002C4311 /* LastStandApplication.cpp */; };
-		E1BEDCEA10AB900D00B236CB /* GameScore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1BEDCE910AB900D00B236CB /* GameScore.cpp */; };
-		E1C3B03D11A22E5A00E2E909 /* GameUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C3B03B11A22E5A00E2E909 /* GameUtils.cpp */; };
-		E1F2C5FD10B0B7BE00502BE6 /* IRTracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1F2C5FC10B0B7BE00502BE6 /* IRTracker.cpp */; };
 		E446644B0F5B1CFD005D0BF0 /* ofAppGlutWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E446641A0F5B1CFD005D0BF0 /* ofAppGlutWindow.cpp */; };
 		E446644C0F5B1CFD005D0BF0 /* ofAppRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E446641C0F5B1CFD005D0BF0 /* ofAppRunner.cpp */; };
 		E446644D0F5B1CFD005D0BF0 /* ofArduino.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E44664200F5B1CFD005D0BF0 /* ofArduino.cpp */; };
@@ -86,10 +87,24 @@
 		E45BEEA20E8CC911009D7055 /* libPocoNet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BEE780E8CC911009D7055 /* libPocoNet.a */; };
 		E45BEEA30E8CC911009D7055 /* libPocoUtil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BEE790E8CC911009D7055 /* libPocoUtil.a */; };
 		E45BEEA40E8CC911009D7055 /* libPocoXML.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BEE7A0E8CC911009D7055 /* libPocoXML.a */; };
-		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C41397A211AB7CDF000F2AAB /* Creature.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Creature.cpp; sourceTree = "<group>"; };
+		C41397A311AB7CDF000F2AAB /* Creature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Creature.h; sourceTree = "<group>"; };
+		C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CreatureFactory.cpp; sourceTree = "<group>"; };
+		C41397A511AB7CDF000F2AAB /* CreatureFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatureFactory.h; sourceTree = "<group>"; };
+		C41397A611AB7CDF000F2AAB /* GameScore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameScore.cpp; sourceTree = "<group>"; };
+		C41397A711AB7CDF000F2AAB /* GameScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScore.h; sourceTree = "<group>"; };
+		C41397A811AB7CDF000F2AAB /* GameUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameUtils.cpp; sourceTree = "<group>"; };
+		C41397A911AB7CDF000F2AAB /* GameUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameUtils.h; sourceTree = "<group>"; };
+		C41397AA11AB7CDF000F2AAB /* IRTracker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IRTracker.cpp; sourceTree = "<group>"; };
+		C41397AB11AB7CDF000F2AAB /* IRTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRTracker.h; sourceTree = "<group>"; };
+		C41397AC11AB7CDF000F2AAB /* LastStandApplication.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LastStandApplication.cpp; sourceTree = "<group>"; };
+		C41397AD11AB7CDF000F2AAB /* LastStandApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LastStandApplication.h; sourceTree = "<group>"; };
+		C41397AE11AB7CDF000F2AAB /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C41397AF11AB7CDF000F2AAB /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
+		C41397B011AB7CDF000F2AAB /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		E19562091140931C00197960 /* tinyxml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxml.cpp; path = ../../../addons/ofxXmlSettings/libs/tinyxml.cpp; sourceTree = SOURCE_ROOT; };
 		E195620A1140931C00197960 /* tinyxml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tinyxml.h; path = ../../../addons/ofxXmlSettings/libs/tinyxml.h; sourceTree = SOURCE_ROOT; };
 		E195620B1140931C00197960 /* tinyxmlerror.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxmlerror.cpp; path = ../../../addons/ofxXmlSettings/libs/tinyxmlerror.cpp; sourceTree = SOURCE_ROOT; };
@@ -159,20 +174,6 @@
 		E19FF07C1082617E002C2B06 /* ofxCvShortImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxCvShortImage.cpp; path = ../../../addons/ofxOpenCv/src/ofxCvShortImage.cpp; sourceTree = SOURCE_ROOT; };
 		E19FF07D1082617E002C2B06 /* ofxCvShortImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxCvShortImage.h; path = ../../../addons/ofxOpenCv/src/ofxCvShortImage.h; sourceTree = SOURCE_ROOT; };
 		E19FF07E1082617E002C2B06 /* ofxOpenCv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxOpenCv.h; path = ../../../addons/ofxOpenCv/src/ofxOpenCv.h; sourceTree = SOURCE_ROOT; };
-		E1B3E5F51081419E00338EE8 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
-		E1B3E5F61081419E00338EE8 /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
-		E1B3EA3A10815AFC00338EE8 /* Creature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Creature.h; sourceTree = "<group>"; };
-		E1B3EA3B10815AFC00338EE8 /* Creature.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Creature.cpp; sourceTree = "<group>"; };
-		E1B3EAFF108176E400338EE8 /* CreatureFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatureFactory.h; sourceTree = "<group>"; };
-		E1B3EB00108176E400338EE8 /* CreatureFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CreatureFactory.cpp; sourceTree = "<group>"; };
-		E1B762BE10813AA3002C4311 /* LastStandApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LastStandApplication.h; sourceTree = "<group>"; };
-		E1B762BF10813AA3002C4311 /* LastStandApplication.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LastStandApplication.cpp; sourceTree = "<group>"; };
-		E1BEDCE810AB900D00B236CB /* GameScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScore.h; sourceTree = "<group>"; };
-		E1BEDCE910AB900D00B236CB /* GameScore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameScore.cpp; sourceTree = "<group>"; };
-		E1C3B03B11A22E5A00E2E909 /* GameUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameUtils.cpp; sourceTree = "<group>"; };
-		E1C3B03C11A22E5A00E2E909 /* GameUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameUtils.h; sourceTree = "<group>"; };
-		E1F2C5FB10B0B7BE00502BE6 /* IRTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRTracker.h; sourceTree = "<group>"; };
-		E1F2C5FC10B0B7BE00502BE6 /* IRTracker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IRTracker.cpp; sourceTree = "<group>"; };
 		E44664190F5B1CFD005D0BF0 /* ofAppBaseWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofAppBaseWindow.h; path = ../../../libs/openFrameworks/app/ofAppBaseWindow.h; sourceTree = SOURCE_ROOT; };
 		E446641A0F5B1CFD005D0BF0 /* ofAppGlutWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofAppGlutWindow.cpp; path = ../../../libs/openFrameworks/app/ofAppGlutWindow.cpp; sourceTree = SOURCE_ROOT; };
 		E446641B0F5B1CFD005D0BF0 /* ofAppGlutWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofAppGlutWindow.h; path = ../../../libs/openFrameworks/app/ofAppGlutWindow.h; sourceTree = SOURCE_ROOT; };
@@ -338,7 +339,6 @@
 		E45BEE790E8CC911009D7055 /* libPocoUtil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoUtil.a; path = ../../../libs/poco/lib/libPocoUtil.a; sourceTree = SOURCE_ROOT; };
 		E45BEE7A0E8CC911009D7055 /* libPocoXML.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoXML.a; path = ../../../libs/poco/lib/libPocoXML.a; sourceTree = SOURCE_ROOT; };
 		E4B69B5B0A3A1756003C02F2 /* openFrameworksDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = openFrameworksDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
 		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1076,21 +1076,21 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
-				E1B762BE10813AA3002C4311 /* LastStandApplication.h */,
-				E1B762BF10813AA3002C4311 /* LastStandApplication.cpp */,
-				E1B3E5F51081419E00338EE8 /* Player.h */,
-				E1B3E5F61081419E00338EE8 /* Player.cpp */,
-				E1B3EA3A10815AFC00338EE8 /* Creature.h */,
-				E1B3EA3B10815AFC00338EE8 /* Creature.cpp */,
-				E1B3EAFF108176E400338EE8 /* CreatureFactory.h */,
-				E1B3EB00108176E400338EE8 /* CreatureFactory.cpp */,
-				E1BEDCE810AB900D00B236CB /* GameScore.h */,
-				E1BEDCE910AB900D00B236CB /* GameScore.cpp */,
-				E1F2C5FB10B0B7BE00502BE6 /* IRTracker.h */,
-				E1F2C5FC10B0B7BE00502BE6 /* IRTracker.cpp */,
-				E1C3B03B11A22E5A00E2E909 /* GameUtils.cpp */,
-				E1C3B03C11A22E5A00E2E909 /* GameUtils.h */,
+				C41397A211AB7CDF000F2AAB /* Creature.cpp */,
+				C41397A311AB7CDF000F2AAB /* Creature.h */,
+				C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */,
+				C41397A511AB7CDF000F2AAB /* CreatureFactory.h */,
+				C41397A611AB7CDF000F2AAB /* GameScore.cpp */,
+				C41397A711AB7CDF000F2AAB /* GameScore.h */,
+				C41397A811AB7CDF000F2AAB /* GameUtils.cpp */,
+				C41397A911AB7CDF000F2AAB /* GameUtils.h */,
+				C41397AA11AB7CDF000F2AAB /* IRTracker.cpp */,
+				C41397AB11AB7CDF000F2AAB /* IRTracker.h */,
+				C41397AC11AB7CDF000F2AAB /* LastStandApplication.cpp */,
+				C41397AD11AB7CDF000F2AAB /* LastStandApplication.h */,
+				C41397AE11AB7CDF000F2AAB /* main.cpp */,
+				C41397AF11AB7CDF000F2AAB /* Player.cpp */,
+				C41397B011AB7CDF000F2AAB /* Player.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -1169,7 +1169,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				E446644B0F5B1CFD005D0BF0 /* ofAppGlutWindow.cpp in Sources */,
 				E446644C0F5B1CFD005D0BF0 /* ofAppRunner.cpp in Sources */,
 				E446644D0F5B1CFD005D0BF0 /* ofArduino.cpp in Sources */,
@@ -1188,10 +1187,6 @@
 				E446645A0F5B1CFD005D0BF0 /* ofUCUtils.cpp in Sources */,
 				E446645B0F5B1CFD005D0BF0 /* ofVideoGrabber.cpp in Sources */,
 				E446645C0F5B1CFD005D0BF0 /* ofVideoPlayer.cpp in Sources */,
-				E1B762C010813AA3002C4311 /* LastStandApplication.cpp in Sources */,
-				E1B3E5F71081419E00338EE8 /* Player.cpp in Sources */,
-				E1B3EA3C10815AFC00338EE8 /* Creature.cpp in Sources */,
-				E1B3EB01108176E400338EE8 /* CreatureFactory.cpp in Sources */,
 				E19FF02010826028002C2B06 /* ofxMatrix3x3.cpp in Sources */,
 				E19FF02110826028002C2B06 /* ofxPoint2f.cpp in Sources */,
 				E19FF02210826028002C2B06 /* ofxPoint3f.cpp in Sources */,
@@ -1205,13 +1200,18 @@
 				E19FF0961082617E002C2B06 /* ofxCvGrayscaleImage.cpp in Sources */,
 				E19FF0971082617E002C2B06 /* ofxCvImage.cpp in Sources */,
 				E19FF0981082617E002C2B06 /* ofxCvShortImage.cpp in Sources */,
-				E1BEDCEA10AB900D00B236CB /* GameScore.cpp in Sources */,
-				E1F2C5FD10B0B7BE00502BE6 /* IRTracker.cpp in Sources */,
 				E19562151140931C00197960 /* tinyxml.cpp in Sources */,
 				E19562161140931C00197960 /* tinyxmlerror.cpp in Sources */,
 				E19562171140931C00197960 /* tinyxmlparser.cpp in Sources */,
 				E19562181140931C00197960 /* ofxXmlSettings.cpp in Sources */,
-				E1C3B03D11A22E5A00E2E909 /* GameUtils.cpp in Sources */,
+				C41397B111AB7CDF000F2AAB /* Creature.cpp in Sources */,
+				C41397B211AB7CDF000F2AAB /* CreatureFactory.cpp in Sources */,
+				C41397B311AB7CDF000F2AAB /* GameScore.cpp in Sources */,
+				C41397B411AB7CDF000F2AAB /* GameUtils.cpp in Sources */,
+				C41397B511AB7CDF000F2AAB /* IRTracker.cpp in Sources */,
+				C41397B611AB7CDF000F2AAB /* LastStandApplication.cpp in Sources */,
+				C41397B711AB7CDF000F2AAB /* main.cpp in Sources */,
+				C41397B811AB7CDF000F2AAB /* Player.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

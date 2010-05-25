@@ -11,7 +11,18 @@
 
 CreatureFactory::CreatureFactory() {
 	// init members with default values
-	mb_repel = false;
+	mb_repel   = false;
+	mleft_x   =  0;
+	mleft_y   =	 ofGetHeight()/2;
+	mright_x  =  ofGetWidth();
+	mright_y  =	 ofGetHeight()/2;
+	mtop_x    =  ofGetWidth()/2;
+	mtop_y    =  0;
+	mbottom_x =  ofGetWidth()/2;
+	mbottom_y =  ofGetHeight();
+	offset    =  20;
+	nSurprise =  ofRandom(3,7);
+	
 }
 
 //------------------------------------------------------------
@@ -26,21 +37,121 @@ void CreatureFactory::startFactory(bool b_repel, float f_radius, float f_strengt
 }
 
 //------------------------------------------------------------
-void CreatureFactory::updateCreatureMax(int i_creature_max) {
+void CreatureFactory::updateCreatureMax(int i_creature_max, float f_player_x, float f_player_y ) {
 	
 	// TODO: Amount to spawn should be
 	// as time played > current time between spawns < last time between spawns 
-	mi_creature_max = i_creature_max;
-	spawnCreatures();
+	//if(i_creature_max < mi_creature_max) 
+//	{
+		mi_creature_max = i_creature_max;
+		findEdgeToSpawn(f_player_x, f_player_y);
+		spawnCreatures();
+	//}
+//	else {
+//		return;
+//	}
 	
 }
 
 //------------------------------------------------------------
 void CreatureFactory::findEdgeToSpawn(float f_player_x, float f_player_y) {
 	
-	// finds the farthest edge from the player and 
-	// spawns creatures from that side
+	//Calculates player's distance from midpoints along each edge
+	//Then spawns enemy from farthest edge, with the exception of
+	//Suprise attacks, which are determined by a counter with a randomly generated duration.
 	
+	// used to specifiy the closest or farthest wall to spawn from. 0 is closest, 3 is farthest. 
+	int spawn_side = 3;
+	
+	//Check if the suprise counter is at 0. If so, spawn from wall closest to player and reset it.
+	if (!nSurprise)
+	{
+		spawn_side = 0;
+			cout << "SUPRISE : " << nSurprise << endl;
+		nSurprise = ofRandom(3, 7);
+	}
+
+	// distance checking
+	float dx_l = f_player_x - mleft_x;
+	float dy_l = f_player_y - mleft_y; 
+	
+	float dx_r = f_player_x - mright_x; 
+	float dy_r = f_player_y - mright_y;
+	
+	float dx_b = f_player_x - mbottom_x;
+	float dy_b = f_player_y - mbottom_y;
+	
+	float dx_t = f_player_x - mtop_x;
+	float dy_t = f_player_y - mtop_y;
+	
+	float dist_l = sqrt( (dx_l*dx_l) + (dy_l*dy_l));
+	float dist_r = sqrt( (dx_r*dx_r) + (dy_r*dy_r));
+	float dist_t = sqrt( (dx_t*dx_t) + (dy_l*dy_t));
+	float dist_b = sqrt( (dx_b*dx_b) + (dy_b*dy_b)); 
+	
+	//create arrays to store distances for sorting and comparison
+	float adist[4];
+	float sdist[4];
+	
+	//Store distances in unsort and sort arrays
+	adist[0] = dist_l;
+	adist[1] = dist_r;
+	adist[2] = dist_t;
+	adist[3] = dist_b;
+	
+	sdist[0] = adist[0];
+	sdist[1] = adist[1];
+	sdist[2] = adist[2];
+	sdist[3] = adist[3];
+	
+	//Sort distances in array
+	sort(sdist, sdist + 4);
+
+	//Test the unsorted array against sorted to get the Spawn Point
+	
+	//Left Spawn
+	if(sdist[spawn_side] == adist[0])
+	{
+		mf_spawn_x = -offset;
+		mf_spawn_y = ofRandom(0, ofGetHeight());
+		cout << "spawn from left" << endl;
+	}
+	//Right Spawn
+	else if(sdist[spawn_side] == adist[1])
+	{
+		mf_spawn_x = ofGetWidth() + offset;
+		mf_spawn_y = ofRandom(0, ofGetHeight());
+		cout << "spawn from right" << endl;
+	}
+	//Top Spawn
+	else if(sdist[spawn_side] == adist[2])
+	{
+		mf_spawn_x = ofRandom(0, ofGetWidth());
+		mf_spawn_y = -offset;
+		cout << "spawn from top" << endl;
+	}
+	//Bottom Spawn
+	else if(sdist[spawn_side] == adist[3])
+	{
+		mf_spawn_x = ofRandom(0, ofGetWidth());
+		mf_spawn_y = ofGetHeight() + offset;
+		cout << "spawn from bottom" << endl;
+	}
+	nSurprise--;
+	/*
+	cout << "dist 0  : " << adist[0] << endl;
+	cout << "dist 1  : " << adist[1] << endl;
+	cout << "dist 2  : " << adist[2] << endl;
+	cout << "dist 3  : " << adist[3] << endl;
+	
+	cout << "player x  : " << f_player_x << endl;
+	cout << "player y  : " << f_player_y << endl;
+	cout << "dist_left : " << dist_l << endl;
+	cout << "dist_right : " << dist_r << endl;
+	cout << "dist_bottom : " << dist_b << endl;
+	cout << "dist_top : " << dist_t << endl;
+	*/
+	/*
 	float f_screen_x_diff = ofGetWidth() - f_player_x;
 	float f_screen_y_diff = ofGetHeight() - f_player_y;
 		
@@ -75,6 +186,7 @@ void CreatureFactory::findEdgeToSpawn(float f_player_x, float f_player_y) {
 		
 		mf_spawn_y = (f_player_y * 0.2);
 	}
+	*/
 }
 
 //------------------------------------------------------------
@@ -95,7 +207,7 @@ void CreatureFactory::spawnCreatures() {
 		creature.loadSprite();
 		
 		// set creature position
-		creature.setPosition((mf_spawn_x * ofRandomf()), (mf_spawn_y * ofRandomf()));
+		creature.setPosition((mf_spawn_x ), (mf_spawn_y ));
 		creatures.push_back(creature);
 	}
 	

@@ -1,0 +1,88 @@
+TopenFrameworks
+v7
+r1
+cCheck dependencies
+
+N/Users/novatheory/Dev/openFrameworks/Releases/OF_06_SETPIXEL/apps/Axel_Thesis/Skirmish/../../../addons/ofxOpenCv/libs/opencv/lib/win32/cv110d.pdb
+c0000000049C9ADDC000000000009D000
+t1237954012
+s643072
+
+N/Users/novatheory/Dev/openFrameworks/Releases/OF_06_SETPIXEL/apps/Axel_Thesis/Skirmish/../../../addons/ofxOpenCv/libs/opencv/lib/win32/cvaux110d.pdb
+c0000000049C9ADDC000000000005F000
+t1237954012
+s389120
+
+N/Users/novatheory/Dev/openFrameworks/Releases/OF_06_SETPIXEL/apps/Axel_Thesis/Skirmish/../../../addons/ofxOpenCv/libs/opencv/lib/win32/cxcore110d.pdb
+c0000000049C9ADDE0000000000045000
+t1237954014
+s282624
+
+N/Users/novatheory/Dev/openFrameworks/Releases/OF_06_SETPIXEL/apps/Axel_Thesis/Skirmish/bin//openFrameworksDebug.app
+t1274757117
+s102
+
+N/Users/novatheory/Dev/openFrameworks/Releases/OF_06_SETPIXEL/apps/Axel_Thesis/Skirmish/bin//openFrameworksDebug.app/Contents/Info.plist
+t1274757117
+s623
+
+N/Users/novatheory/Dev/openFrameworks/Releases/OF_06_SETPIXEL/apps/Axel_Thesis/Skirmish/bin//openFrameworksDebug.app/Contents/PkgInfo
+t1274757117
+s8
+
+N/Users/novatheory/Dev/openFrameworks/Releases/OF_06_SETPIXEL/apps/Axel_Thesis/Skirmish/bin/openFrameworksDebug.app/Contents/Resources/cv110d.pdb
+t1274757117
+s643072
+
+N/Users/novatheory/Dev/openFrameworks/Releases/OF_06_SETPIXEL/apps/Axel_Thesis/Skirmish/bin/openFrameworksDebug.app/Contents/Resources/cvaux110d.pdb
+t1274757117
+s389120
+
+N/Users/novatheory/Dev/openFrameworks/Releases/OF_06_SETPIXEL/apps/Axel_Thesis/Skirmish/bin/openFrameworksDebug.app/Contents/Resources/cxcore110d.pdb
+t1274757117
+s282624
+
+N/Users/novatheory/Dev/openFrameworks/Releases/OF_06_SETPIXEL/apps/Axel_Thesis/Skirmish/bin/openFrameworksDebug.app/Contents/Resources/openFrameworks-Info.plist
+t1274757117
+s631
+
+N/Users/novatheory/Dev/openFrameworks/Releases/OF_06_SETPIXEL/apps/Axel_Thesis/Skirmish/build/openFrameworks.build/Debug/openFrameworks.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh
+c000000004BFB3FFE000000000000010F
+t1274757118
+s271
+
+N/Users/novatheory/Dev/openFrameworks/Releases/OF_06_SETPIXEL/apps/Axel_Thesis/Skirmish/openFrameworks-Info.plist
+c000000004BFB40000000000000000277
+t1274757120
+s631
+
+NopenFrameworks-Info.plist
+c000000004BFB40000000000000000277
+t1274757120
+s631
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies296451264#296451264#0(207"[WARN]Warning: The Copy Bundle Resources build phase contains this target's Info.plist file 'openFrameworks-Info.plist'.[BEROR]error: There is no SDK with the name or path '/Developer/SDKs/MacOSX10.4u.sdk'2(22@114"Warning: The Copy Bundle Resources build phase contains this target's Info.plist file 'openFrameworks-Info.plist'.296451264#18446744073709551615#0#0(1@0"0(4@78"error: There is no SDK with the name or path '/Developer/SDKs/MacOSX10.4u.sdk'296451264#18446744073709551615#0#0(1@0"0(0#1#0"4300911832#0"0#
+
+CCopyPlistFile /Users/novatheory/Dev/openFrameworks/Releases/OF_06_SETPIXEL/apps/Axel_Thesis/Skirmish/bin/openFrameworksDebug.app/Contents/Resources/openFrameworks-Info.plist openFrameworks-Info.plist
+r0
+
+CCpResource bin/openFrameworksDebug.app/Contents/Resources/cv110d.pdb ../../../addons/ofxOpenCv/libs/opencv/lib/win32/cv110d.pdb
+r0
+
+CCpResource bin/openFrameworksDebug.app/Contents/Resources/cvaux110d.pdb ../../../addons/ofxOpenCv/libs/opencv/lib/win32/cvaux110d.pdb
+r0
+
+CCpResource bin/openFrameworksDebug.app/Contents/Resources/cxcore110d.pdb ../../../addons/ofxOpenCv/libs/opencv/lib/win32/cxcore110d.pdb
+r0
+
+CPhaseScriptExecution "Run Script" /Users/novatheory/Dev/openFrameworks/Releases/OF_06_SETPIXEL/apps/Axel_Thesis/Skirmish/build/openFrameworks.build/Debug/openFrameworks.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh
+r0
+
+CProcessInfoPlistFile /Users/novatheory/Dev/openFrameworks/Releases/OF_06_SETPIXEL/apps/Axel_Thesis/Skirmish/bin//openFrameworksDebug.app/Contents/Info.plist openFrameworks-Info.plist
+r0
+
+CTouch /Users/novatheory/Dev/openFrameworks/Releases/OF_06_SETPIXEL/apps/Axel_Thesis/Skirmish/bin//openFrameworksDebug.app
+r0
+
