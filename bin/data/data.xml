@@ -23,7 +23,7 @@
         <TOO_CLOSE_DISTANCE>2.0f</TOO_CLOSE_DISTANCE>
         <IN_SIGHT_DISTANCE>6.0f</IN_SIGHT_DISTANCE>
         <SCALE>0.2f</SCALE>
-        <REPULSION_RADIUS>1000.0f</REPULSION_RADIUS>
+        <REPULSION_RADIUS>1200.0f</REPULSION_RADIUS>
         <SPRITE>soldier/Soldier_00000.png,soldier/Soldier_00001.png,soldier/Soldier_00002.png,soldier/Soldier_00003.png,soldier/Soldier_00004.png,soldier/Soldier_00005.png,soldier/Soldier_00006.png,soldier/Soldier_00007.png,soldier/Soldier_00008.png,soldier/Soldier_00009.png,soldier/Soldier_00010.png,soldier/Soldier_00011.png,soldier/Soldier_00012.png,soldier/Soldier_00013.png,soldier/Soldier_00014.png,soldier/Soldier_00015.png,soldier/Soldier_00016.png,soldier/Soldier_00017.png,soldier/Soldier_00018.png</SPRITE>
         <SOUNDS>sounds/soldier.aif</SOUNDS>
         <DAMAGE_RATE>0.2f</DAMAGE_RATE>

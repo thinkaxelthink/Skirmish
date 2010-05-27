@@ -78,6 +78,8 @@ public:
 	string getSprite();
 	string getSounds();
 	int getFrameRate();
+	
+	float randTurn;
 	// TODO: get sprite should return png
 	// TODO: get sound should return audio
 	

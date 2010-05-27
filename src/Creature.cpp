@@ -14,6 +14,8 @@ Creature::Creature() {
 	//mf_damping = 0.4f;
 	//mf_radius = 15.0f;
 	//mf_damage = 2.0f;
+	
+	randTurn  = 1; //level
 	mi_frame_num = 0;
 	mi_last_frame_number = 0;
 }
@@ -125,7 +127,7 @@ void Creature::setVelocity(float vx, float vy) {
 //------------------------------------------------------------
 void Creature::update(){	
 	
-	ofv_vel = ofv_vel + ofv_frc;
+	ofv_vel = (ofv_vel + ofv_frc ) * randTurn;
 	ofv_pos = ofv_pos + ofv_vel;
 	
 	mf_angle = (float)atan2(-ofv_vel.y, ofv_vel.x);

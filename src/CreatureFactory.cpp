@@ -22,6 +22,7 @@ CreatureFactory::CreatureFactory() {
 	mbottom_y =  ofGetHeight();
 	offset    =  20;
 	nSurprise =  ofRandom(4,7);
+	//mi_creature_max = 0;
 	
 }
 
@@ -41,15 +42,14 @@ void CreatureFactory::updateCreatureMax(int i_creature_max, float f_player_x, fl
 	
 	// TODO: Amount to spawn should be
 	// as time played > current time between spawns < last time between spawns 
-	//if(i_creature_max < mi_creature_max) 
-//	{
+
 		mi_creature_max = i_creature_max;
 		findEdgeToSpawn(f_player_x, f_player_y);
 		spawnCreatures();
 	//}
 //	else {
 //		return;
-//	}
+
 	
 }
 
@@ -262,13 +262,18 @@ void CreatureFactory::updateCreaturesFlock(Player &player) {
 		{
 			// apply damage to player 
 			player.deliverHit(creatures[i].getDamage());
+			player.isHit = true;
+		}
+		else
+		{
+			player.isHit = false;
 		}
 	}
 
 }
 
 //------------------------------------------------------------
-void CreatureFactory::drawCreatures() {
+void CreatureFactory::drawCreatures(Player &p) {
 
 	// draw our flock
 	if(creatures.size() > 0)

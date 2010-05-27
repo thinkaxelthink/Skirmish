@@ -39,6 +39,7 @@ public:
 	float getPlayerY();
 	ofxPoint2f getPlayerPoint();
 	bool isAlive();
+	bool isHit;
 	
 protected:
 	

@@ -12,12 +12,15 @@
 
 #include "ofMain.h"
 #include "ofxVectorMath.h"
+#include "Player.h"
 
-string wrapString(string text, ofTrueTypeFont &ofttf_object, int width);
-
-//bool checkHit(float f_x_pos, float f_y_pos, float f_gun_radius);
-bool checkHit(ofxVec2f ofxvec_gun_pos , float f_gun_radius, ofxVec2f ofv_pos, float f_radius);
-bool checkHit(ofxVec2f ofxvec_gun_pos , float f_gun_radius, float f_x_pos, float f_y_pos, float f_radius);
-
+		string wrapString(string text, ofTrueTypeFont &ofttf_object, int width);
+		//bool checkHit(float f_x_pos, float f_y_pos, float f_gun_radius);
+		bool checkHit(ofxVec2f ofxvec_gun_pos , float f_gun_radius, ofxVec2f ofv_pos, float f_radius);
+		bool checkHit(ofxVec2f ofxvec_gun_pos , float f_gun_radius, float f_x_pos, float f_y_pos, float f_radius);
+		void checkPlayerHit(Player &player);
+		void setHitTime();
+	
+		static  int hitTime;
 
 #endif

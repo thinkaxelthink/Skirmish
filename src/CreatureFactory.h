@@ -27,7 +27,7 @@ public:
 	void spawnCreatures();
 	void resetCreatures();
 	void updateCreaturesFlock(Player &player);
-	void drawCreatures();
+	void drawCreatures(Player &p);
 	void checkBulletPosition(float f_bullet_x, float f_bullet_y);
 	void checkBulletPosition(ofxVec2f ofxvec_gun_pos, float f_gun_radius);
 	
@@ -70,6 +70,7 @@ protected:
 	float mtop_y;    
 	float mbottom_x;  
 	float mbottom_y; 
+	
 	
 	int offset;
 	//Counter that determines when an enemy should attack player from closest position

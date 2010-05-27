@@ -9,13 +9,15 @@
 
 #include "GameUtils.h"
 
+void setHitTime(){
+	hitTime = 0;
+}
 //------------------------------------------------------------
 string wrapString(string text, ofTrueTypeFont &ofttf_object, int width) {
 	
 	string typeWrapped = "";
 	string tempString = "";
 	vector <string> words = ofSplitString(text, " ");
-	
 	for(int i=0; i<words.size(); i++) {
 		
 		string wrd = words[i];
@@ -105,5 +107,24 @@ bool checkHit(ofxVec2f ofxvec_gun_pos, float f_gun_radius, float f_x_pos, float 
 	else
 	{
 		return false;
+	}
+}
+
+void checkPlayerHit(Player &player){
+	if(player.isHit) 
+	{
+		if(hitTime <= 0) hitTime =200;
+		ofEnableAlphaBlending();
+		ofSetColor(255, 0, 0,hitTime);
+		ofRect(0,0,ofGetWidth(),ofGetHeight());
+		ofDisableAlphaBlending();
+		hitTime-=10;
+	}
+	else {
+		if(hitTime > 0) hitTime-=10;
+		ofEnableAlphaBlending();
+		ofSetColor(hitTime, 0, 0,hitTime);
+		ofRect(0,0,ofGetWidth(),ofGetHeight());
+		ofDisableAlphaBlending();
 	}
 }

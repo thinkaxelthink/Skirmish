@@ -16,8 +16,9 @@ void LastStandApplication::setup(){
 	/********************************************
 	 ** LOAD SETTINGS FROM XML
 	 ********************************************/
-	
+	//hitTime = 255;
 	// check if load was successful
+	setHitTime();
 	if( XML.loadFile("data.xml") ){
 		
 		cout<<"data.xml loaded! \n"<<endl;
@@ -112,8 +113,8 @@ void LastStandApplication::setup(){
 	player.setPlayerPosition(ofGetWidth()/2, ofGetHeight()/2);
 	camera.setupCV();
 	
-	b_start_game			= true;
-	b_agreement_accepted	= true;
+	b_start_game			= true; //set to false
+	b_agreement_accepted	= true; //set to false
 	b_adjusting_point		= false;
 	i_which_point_adjusting	= 0;
 	
@@ -170,7 +171,7 @@ void LastStandApplication::update(){
 			// Assumes there is always a blob
 			// sets position of player to blob's (if blob is big enough to be registered as a player)
 			// TODO: overload this to accept a 2d vec and make camera return 2d vecs
-			player.setPlayerPosition(mouseX, mouseY);//(float) (camera.getPlayerBlobX() * 3.2), (float) (camera.getPlayerBlobY() * 3.2));
+			player.setPlayerPosition((float)mouseX, (float)mouseY);//(float) (camera.getPlayerBlobX() * 3.2), (float) (camera.getPlayerBlobY() * 3.2));
 			creatureFactory.checkBulletPosition(camera.getBulletPosition(), camera.getBulletRadius());
 			//creatureFactory.checkBulletPosition((float) (camera.getBulletX() * 3.2), (float) (camera.getBulletY() * 3.2));
 		}
@@ -209,7 +210,6 @@ void LastStandApplication::draw(){
 		
 		// draws all camera views
 		//camera.drawFeed();
-		
 		// your score
 		gameScore.outputAsString(730, 40);
 		
@@ -217,8 +217,11 @@ void LastStandApplication::draw(){
 		if(b_start_game == true)
 		{
 			// draw creature flock
-			creatureFactory.drawCreatures();
+			creatureFactory.drawCreatures(player);
 		}
+		
+		//draw hit bg
+		checkPlayerHit(player);
 		
 		ofNoFill();
 		ofCircle((camera.getBulletX() * 3.2), (camera.getBulletY() * 3.2), 5);
@@ -228,7 +231,6 @@ void LastStandApplication::draw(){
 	{
 		ofSetColor(255, 255, 255);
 		ofimg_caution.draw(0,0);
-		
 		/*ofNoFill();
 		ofCircle((camera.getBulletX() * 3.2), (camera.getBulletY() * 3.2), 5);
 		ofFill();*/

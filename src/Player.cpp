@@ -12,7 +12,8 @@
 Player::Player() {
 	// TODO: Get this from XML SETTINGS
 	mf_hit_points		= 100.0f;
-	mf_player_radius	= 25.0f;
+	mf_player_radius	= 20.0f;
+	isHit				= false;
 	//setPlayerPosition(ofGetScreenWidth()/2, ofGetScreenHeight()/2);
 }
 
