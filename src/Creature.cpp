@@ -171,7 +171,7 @@ void Creature::draw(){
 	
 	mvimg_sprites[mi_frame_num].setAnchorPercent(0.5,0.5);
 	mvimg_sprites[mi_frame_num].draw(0,0);
-
+	//cout << "FRAME YOOOOO: " << mi_frame_num << endl;
     ofPopMatrix();
 	
 	ofDisableAlphaBlending();
@@ -183,6 +183,7 @@ void Creature::draw(){
 //------------------------------------------------------------
 void Creature::die(){
 	// delete this creature
+	mvimg_sprites.clear();
 }
 
 //------------------------------------------------------------

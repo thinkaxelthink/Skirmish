@@ -263,6 +263,9 @@ void CreatureFactory::updateCreaturesFlock(Player &player) {
 			// apply damage to player 
 			player.deliverHit(creatures[i].getDamage());
 			player.isHit = true;
+		//	creatures[i].die();
+		//	creatures.erase(creatures.begin() + i);
+		//	cout << "I KILLED THIS FUCKER : " << i << endl;
 		}
 		else
 		{
