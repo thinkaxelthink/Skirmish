@@ -113,6 +113,8 @@ bool checkHit(ofxVec2f ofxvec_gun_pos, float f_gun_radius, float f_x_pos, float 
 void checkPlayerHit(Player &player){	
 	if(player.isHit) 
 	{
+		//the 900 being subtracted from the player's hit points need to be changed 
+		//if the hit points are altered in the xml file
 		if(hitTime <= 0) hitTime = fabs((player.getPlayerHitPoints()-900.0) - 255);
 		cout <<  "HIT TIME: " <<hitTime <<endl;
 		cout <<  "PLAYER :  " << player.getPlayerHitPoints() <<endl;

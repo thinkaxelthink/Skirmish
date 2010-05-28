@@ -22,6 +22,7 @@
 #include "IRTracker.h"
 #include "GameUtils.h"
 
+//Comment out this define if you are using a camera and ir light tracking for testing
 #define  NO_CAMERA_MODE
 
 class LastStandApplication : public ofBaseApp{
