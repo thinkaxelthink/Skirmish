@@ -22,7 +22,7 @@
 #include "IRTracker.h"
 #include "GameUtils.h"
 
-
+#define  NO_CAMERA_MODE
 
 class LastStandApplication : public ofBaseApp{
 	

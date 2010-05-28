@@ -113,8 +113,13 @@ void LastStandApplication::setup(){
 	player.setPlayerPosition(ofGetWidth()/2, ofGetHeight()/2);
 	camera.setupCV();
 	
-	b_start_game			= true; //set to false
-	b_agreement_accepted	= true; //set to false
+	#ifdef NO_CAMERA_MODE
+	b_start_game			= true; 
+	b_agreement_accepted	= true; 
+	#else
+	b_start_game			= false; 
+	b_agreement_accepted	= false; 
+	#endif
 	b_adjusting_point		= false;
 	i_which_point_adjusting	= 0;
 	
@@ -171,7 +176,11 @@ void LastStandApplication::update(){
 			// Assumes there is always a blob
 			// sets position of player to blob's (if blob is big enough to be registered as a player)
 			// TODO: overload this to accept a 2d vec and make camera return 2d vecs
-			player.setPlayerPosition((float)mouseX, (float)mouseY);//(float) (camera.getPlayerBlobX() * 3.2), (float) (camera.getPlayerBlobY() * 3.2));
+			#ifdef NO_CAMERA_MODE
+			player.setPlayerPosition((float)mouseX, (float)mouseY);
+			#else
+			player.setPlayerPosition((float) (camera.getPlayerBlobX() * 3.2), (float) (camera.getPlayerBlobY() * 3.2));
+			#endif
 			creatureFactory.checkBulletPosition(camera.getBulletPosition(), camera.getBulletRadius());
 			//creatureFactory.checkBulletPosition((float) (camera.getBulletX() * 3.2), (float) (camera.getBulletY() * 3.2));
 		}

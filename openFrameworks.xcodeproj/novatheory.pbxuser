@@ -62,9 +62,9 @@
 	};
 	C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1172, 5161}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1172, 5044}}";
 			sepNavSelRange = "{6600, 0}";
-			sepNavVisRange = "{6449, 774}";
+			sepNavVisRange = "{384, 1017}";
 			sepNavWindowFrame = "{{15, 30}, {1390, 843}}";
 		};
 	};
@@ -72,14 +72,14 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1172, 1118}}";
 			sepNavSelRange = "{1607, 0}";
-			sepNavVisRange = "{1317, 700}";
+			sepNavVisRange = "{1304, 713}";
 		};
 	};
 	C41397A611AB7CDF000F2AAB /* GameScore.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1172, 1287}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1172, 1222}}";
 			sepNavSelRange = "{569, 0}";
-			sepNavVisRange = "{290, 773}";
+			sepNavVisRange = "{270, 795}";
 		};
 	};
 	C41397A711AB7CDF000F2AAB /* GameScore.h */ = {
@@ -116,22 +116,22 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1172, 871}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{424, 1091}";
+			sepNavVisRange = "{379, 1139}";
 		};
 	};
 	C41397AC11AB7CDF000F2AAB /* LastStandApplication.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1172, 3952}}";
-			sepNavSelRange = "{6567, 0}";
-			sepNavVisRange = "{54, 1178}";
+			sepNavIntBoundsRect = "{{0, 0}, {1172, 3757}}";
+			sepNavSelRange = "{3816, 0}";
+			sepNavVisRange = "{4653, 1364}";
 			sepNavWindowFrame = "{{15, 30}, {1390, 843}}";
 		};
 	};
 	C41397AD11AB7CDF000F2AAB /* LastStandApplication.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1172, 1053}}";
-			sepNavSelRange = "{1154, 0}";
-			sepNavVisRange = "{502, 879}";
+			sepNavSelRange = "{428, 0}";
+			sepNavVisRange = "{821, 698}";
 		};
 	};
 	C41397AE11AB7CDF000F2AAB /* main.cpp */ = {
@@ -367,7 +367,7 @@
 		fRef = C41397AD11AB7CDF000F2AAB /* LastStandApplication.h */;
 		name = "LastStandApplication.h: 24";
 		rLen = 0;
-		rLoc = 428;
+		rLoc = 451;
 		rType = 0;
 		vrLen = 1128;
 		vrLoc = 0;
@@ -417,7 +417,7 @@
 		fRef = C41397AC11AB7CDF000F2AAB /* LastStandApplication.cpp */;
 		name = "LastStandApplication.cpp: 225";
 		rLen = 0;
-		rLoc = 6677;
+		rLoc = 6816;
 		rType = 0;
 		vrLen = 1172;
 		vrLoc = 5901;
@@ -427,7 +427,7 @@
 		fRef = C41397AC11AB7CDF000F2AAB /* LastStandApplication.cpp */;
 		name = "LastStandApplication.cpp: 229";
 		rLen = 0;
-		rLoc = 6677;
+		rLoc = 6816;
 		rType = 0;
 		vrLen = 1148;
 		vrLoc = 5927;
@@ -447,7 +447,7 @@
 		fRef = C41397AC11AB7CDF000F2AAB /* LastStandApplication.cpp */;
 		name = "LastStandApplication.cpp: 220";
 		rLen = 0;
-		rLoc = 5786;
+		rLoc = 5925;
 		rType = 0;
 		vrLen = 1181;
 		vrLoc = 5959;
@@ -457,7 +457,7 @@
 		fRef = C41397AD11AB7CDF000F2AAB /* LastStandApplication.h */;
 		name = "LastStandApplication.h: 25";
 		rLen = 0;
-		rLoc = 428;
+		rLoc = 451;
 		rType = 0;
 		vrLen = 1105;
 		vrLoc = 301;
@@ -557,7 +557,7 @@
 		fRef = C41397AD11AB7CDF000F2AAB /* LastStandApplication.h */;
 		name = "LastStandApplication.h: 35";
 		rLen = 0;
-		rLoc = 586;
+		rLoc = 609;
 		rType = 0;
 		vrLen = 851;
 		vrLoc = 302;
@@ -567,7 +567,7 @@
 		fRef = C41397AC11AB7CDF000F2AAB /* LastStandApplication.cpp */;
 		name = "LastStandApplication.cpp: 212";
 		rLen = 0;
-		rLoc = 5786;
+		rLoc = 5925;
 		rType = 0;
 		vrLen = 959;
 		vrLoc = 3326;
@@ -647,7 +647,7 @@
 		fRef = C41397AC11AB7CDF000F2AAB /* LastStandApplication.cpp */;
 		name = "LastStandApplication.cpp: 212";
 		rLen = 0;
-		rLoc = 5786;
+		rLoc = 5925;
 		rType = 0;
 		vrLen = 959;
 		vrLoc = 3326;
@@ -657,7 +657,7 @@
 		fRef = C41397AC11AB7CDF000F2AAB /* LastStandApplication.cpp */;
 		name = "LastStandApplication.cpp: 216";
 		rLen = 0;
-		rLoc = 5786;
+		rLoc = 5925;
 		rType = 0;
 		vrLen = 766;
 		vrLoc = 5890;
@@ -667,7 +667,7 @@
 		fRef = C41397AC11AB7CDF000F2AAB /* LastStandApplication.cpp */;
 		name = "LastStandApplication.cpp: 216";
 		rLen = 0;
-		rLoc = 5786;
+		rLoc = 5925;
 		rType = 0;
 		vrLen = 1431;
 		vrLoc = 4213;
@@ -926,7 +926,7 @@
 		fRef = C41397AC11AB7CDF000F2AAB /* LastStandApplication.cpp */;
 		name = "LastStandApplication.cpp: 223";
 		rLen = 0;
-		rLoc = 6552;
+		rLoc = 6691;
 		rType = 0;
 		vrLen = 822;
 		vrLoc = 6040;
@@ -936,7 +936,7 @@
 		fRef = C41397AD11AB7CDF000F2AAB /* LastStandApplication.h */;
 		name = "LastStandApplication.h: 59";
 		rLen = 0;
-		rLoc = 1152;
+		rLoc = 1175;
 		rType = 0;
 		vrLen = 715;
 		vrLoc = 798;
@@ -946,7 +946,7 @@
 		fRef = C41397AD11AB7CDF000F2AAB /* LastStandApplication.h */;
 		name = "LastStandApplication.h: 59";
 		rLen = 0;
-		rLoc = 1154;
+		rLoc = 1177;
 		rType = 0;
 		vrLen = 697;
 		vrLoc = 798;
@@ -956,7 +956,7 @@
 		fRef = C41397AD11AB7CDF000F2AAB /* LastStandApplication.h */;
 		name = "LastStandApplication.h: 59";
 		rLen = 0;
-		rLoc = 1154;
+		rLoc = 1177;
 		rType = 0;
 		vrLen = 716;
 		vrLoc = 0;
@@ -1080,7 +1080,7 @@
 		fRef = C41397AD11AB7CDF000F2AAB /* LastStandApplication.h */;
 		name = "LastStandApplication.h: 59";
 		rLen = 0;
-		rLoc = 1154;
+		rLoc = 1177;
 		rType = 0;
 		vrLen = 716;
 		vrLoc = 0;
@@ -1469,7 +1469,7 @@
 		fRef = C41397AC11AB7CDF000F2AAB /* LastStandApplication.cpp */;
 		name = "LastStandApplication.cpp: 224";
 		rLen = 23;
-		rLoc = 6552;
+		rLoc = 6691;
 		rType = 0;
 		vrLen = 762;
 		vrLoc = 5928;
@@ -1499,7 +1499,7 @@
 		fRef = C41397AC11AB7CDF000F2AAB /* LastStandApplication.cpp */;
 		name = "LastStandApplication.cpp: 224";
 		rLen = 0;
-		rLoc = 6550;
+		rLoc = 6689;
 		rType = 0;
 		vrLen = 792;
 		vrLoc = 5928;
@@ -1509,7 +1509,7 @@
 		fRef = C41397AC11AB7CDF000F2AAB /* LastStandApplication.cpp */;
 		name = "LastStandApplication.cpp: 224";
 		rLen = 0;
-		rLoc = 6567;
+		rLoc = 6706;
 		rType = 0;
 		vrLen = 762;
 		vrLoc = 5928;
@@ -1529,7 +1529,7 @@
 		fRef = C41397AD11AB7CDF000F2AAB /* LastStandApplication.h */;
 		name = "LastStandApplication.h: 59";
 		rLen = 0;
-		rLoc = 1154;
+		rLoc = 1177;
 		rType = 0;
 		vrLen = 798;
 		vrLoc = 0;
@@ -1539,7 +1539,7 @@
 		fRef = C41397AC11AB7CDF000F2AAB /* LastStandApplication.cpp */;
 		name = "LastStandApplication.cpp: 224";
 		rLen = 0;
-		rLoc = 6567;
+		rLoc = 6706;
 		rType = 0;
 		vrLen = 1232;
 		vrLoc = 0;
@@ -1729,7 +1729,7 @@
 		fRef = C41397AD11AB7CDF000F2AAB /* LastStandApplication.h */;
 		name = "LastStandApplication.h: 59";
 		rLen = 0;
-		rLoc = 1154;
+		rLoc = 1177;
 		rType = 0;
 		vrLen = 879;
 		vrLoc = 502;
@@ -1739,7 +1739,7 @@
 		fRef = C41397AC11AB7CDF000F2AAB /* LastStandApplication.cpp */;
 		name = "LastStandApplication.cpp: 224";
 		rLen = 0;
-		rLoc = 6567;
+		rLoc = 6706;
 		rType = 0;
 		vrLen = 1232;
 		vrLoc = 0;
@@ -1849,7 +1849,7 @@
 		fRef = C41397AC11AB7CDF000F2AAB /* LastStandApplication.cpp */;
 		name = "LastStandApplication.cpp: 224";
 		rLen = 0;
-		rLoc = 6567;
+		rLoc = 6706;
 		rType = 0;
 		vrLen = 1232;
 		vrLoc = 0;
@@ -2133,7 +2133,7 @@
 		fRef = C41397AC11AB7CDF000F2AAB /* LastStandApplication.cpp */;
 		name = "LastStandApplication.cpp: 224";
 		rLen = 0;
-		rLoc = 6567;
+		rLoc = 6706;
 		rType = 0;
 		vrLen = 1178;
 		vrLoc = 54;
@@ -2207,6 +2207,76 @@
 		rType = 0;
 		vrLen = 774;
 		vrLoc = 6449;
+	};
+	C4DAE89F11AF463E004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A611AB7CDF000F2AAB /* GameScore.cpp */;
+		name = "GameScore.cpp: 33";
+		rLen = 0;
+		rLoc = 569;
+		rType = 0;
+		vrLen = 795;
+		vrLoc = 270;
+	};
+	C4DAE8A011AF463E004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A511AB7CDF000F2AAB /* CreatureFactory.h */;
+		name = "CreatureFactory.h: 67";
+		rLen = 0;
+		rLoc = 1607;
+		rType = 0;
+		vrLen = 713;
+		vrLoc = 1304;
+	};
+	C4DAE8A111AF463E004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
+		name = "CreatureFactory.cpp: 259";
+		rLen = 0;
+		rLoc = 6600;
+		rType = 0;
+		vrLen = 1017;
+		vrLoc = 384;
+	};
+	C4DAE8A211AF463E004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397AB11AB7CDF000F2AAB /* IRTracker.h */;
+		name = "IRTracker.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1139;
+		vrLoc = 379;
+	};
+	C4DAE8A311AF463E004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397AC11AB7CDF000F2AAB /* LastStandApplication.cpp */;
+		name = "LastStandApplication.cpp: 121";
+		rLen = 0;
+		rLoc = 3816;
+		rType = 0;
+		vrLen = 1364;
+		vrLoc = 4653;
+	};
+	C4DAE8A411AF463E004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397AD11AB7CDF000F2AAB /* LastStandApplication.h */;
+		name = "LastStandApplication.h: 25";
+		rLen = 0;
+		rLoc = 428;
+		rType = 0;
+		vrLen = 796;
+		vrLoc = 52;
+	};
+	C4DAE8A511AF463E004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397AD11AB7CDF000F2AAB /* LastStandApplication.h */;
+		name = "LastStandApplication.h: 25";
+		rLen = 0;
+		rLoc = 428;
+		rType = 0;
+		vrLen = 698;
+		vrLoc = 821;
 	};
 	C4E0DAEE11ADD54900B34358 /* Creature.cpp:18 */ = {
 		isa = PBXFileBreakpoint;
@@ -2300,7 +2370,7 @@
 		fRef = C41397AD11AB7CDF000F2AAB /* LastStandApplication.h */;
 		name = "LastStandApplication.h: 24";
 		rLen = 0;
-		rLoc = 428;
+		rLoc = 451;
 		rType = 0;
 		vrLen = 1128;
 		vrLoc = 0;
@@ -2652,6 +2722,13 @@
 			C4DAE89111AF3B73004654D6 /* PBXTextBookmark */ = C4DAE89111AF3B73004654D6 /* PBXTextBookmark */;
 			C4DAE89211AF3B73004654D6 /* PBXTextBookmark */ = C4DAE89211AF3B73004654D6 /* PBXTextBookmark */;
 			C4DAE89311AF3B73004654D6 /* PBXTextBookmark */ = C4DAE89311AF3B73004654D6 /* PBXTextBookmark */;
+			C4DAE89F11AF463E004654D6 /* PBXTextBookmark */ = C4DAE89F11AF463E004654D6 /* PBXTextBookmark */;
+			C4DAE8A011AF463E004654D6 /* PBXTextBookmark */ = C4DAE8A011AF463E004654D6 /* PBXTextBookmark */;
+			C4DAE8A111AF463E004654D6 /* PBXTextBookmark */ = C4DAE8A111AF463E004654D6 /* PBXTextBookmark */;
+			C4DAE8A211AF463E004654D6 /* PBXTextBookmark */ = C4DAE8A211AF463E004654D6 /* PBXTextBookmark */;
+			C4DAE8A311AF463E004654D6 /* PBXTextBookmark */ = C4DAE8A311AF463E004654D6 /* PBXTextBookmark */;
+			C4DAE8A411AF463E004654D6 /* PBXTextBookmark */ = C4DAE8A411AF463E004654D6 /* PBXTextBookmark */;
+			C4DAE8A511AF463E004654D6 /* PBXTextBookmark */ = C4DAE8A511AF463E004654D6 /* PBXTextBookmark */;
 			C4E0DAF011ADD56C00B34358 = C4E0DAF011ADD56C00B34358 /* PBXTextBookmark */;
 			C4E0DAF111ADD56C00B34358 = C4E0DAF111ADD56C00B34358 /* PBXTextBookmark */;
 			C4E0DAF211ADD56C00B34358 = C4E0DAF211ADD56C00B34358 /* PBXTextBookmark */;
