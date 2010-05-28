@@ -131,3 +131,7 @@ bool Player::isAlive(){
 		return true;
 	}
 }
+
+float Player::getPlayerHitPoints(){
+	return mf_hit_points;
+}

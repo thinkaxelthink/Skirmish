@@ -48,9 +48,9 @@
 	};
 	C41397A211AB7CDF000F2AAB /* Creature.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1172, 5941}}";
-			sepNavSelRange = "{4658, 0}";
-			sepNavVisRange = "{4080, 909}";
+			sepNavIntBoundsRect = "{{0, 0}, {1379, 5980}}";
+			sepNavSelRange = "{4634, 0}";
+			sepNavVisRange = "{4056, 453}";
 		};
 	};
 	C41397A311AB7CDF000F2AAB /* Creature.h */ = {
@@ -62,9 +62,9 @@
 	};
 	C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1172, 5044}}";
-			sepNavSelRange = "{6600, 0}";
-			sepNavVisRange = "{384, 1017}";
+			sepNavIntBoundsRect = "{{0, 0}, {1379, 4368}}";
+			sepNavSelRange = "{1910, 0}";
+			sepNavVisRange = "{4472, 367}";
 			sepNavWindowFrame = "{{15, 30}, {1390, 843}}";
 		};
 	};
@@ -86,22 +86,22 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1172, 585}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{82, 730}";
+			sepNavVisRange = "{41, 773}";
 		};
 	};
 	C41397A811AB7CDF000F2AAB /* GameUtils.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1172, 1690}}";
-			sepNavSelRange = "{2502, 0}";
-			sepNavVisRange = "{2073, 791}";
+			sepNavIntBoundsRect = "{{0, 0}, {1172, 1716}}";
+			sepNavSelRange = "{3069, 0}";
+			sepNavVisRange = "{2185, 1033}";
 			sepNavWindowFrame = "{{38, 9}, {1390, 843}}";
 		};
 	};
 	C41397A911AB7CDF000F2AAB /* GameUtils.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1172, 513}}";
-			sepNavSelRange = "{597, 0}";
-			sepNavVisRange = "{0, 689}";
+			sepNavIntBoundsRect = "{{0, 0}, {1172, 488}}";
+			sepNavSelRange = "{674, 0}";
+			sepNavVisRange = "{0, 691}";
 			sepNavWindowFrame = "{{15, 30}, {1390, 843}}";
 		};
 	};
@@ -109,50 +109,50 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1172, 3679}}";
 			sepNavSelRange = "{145, 1}";
-			sepNavVisRange = "{0, 935}";
+			sepNavVisRange = "{0, 866}";
 		};
 	};
 	C41397AB11AB7CDF000F2AAB /* IRTracker.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1172, 871}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1172, 858}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{379, 1139}";
+			sepNavVisRange = "{379, 1136}";
 		};
 	};
 	C41397AC11AB7CDF000F2AAB /* LastStandApplication.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1172, 3757}}";
-			sepNavSelRange = "{3816, 0}";
-			sepNavVisRange = "{4653, 1364}";
+			sepNavIntBoundsRect = "{{0, 0}, {1172, 4186}}";
+			sepNavSelRange = "{5878, 0}";
+			sepNavVisRange = "{5390, 1009}";
 			sepNavWindowFrame = "{{15, 30}, {1390, 843}}";
 		};
 	};
 	C41397AD11AB7CDF000F2AAB /* LastStandApplication.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1172, 1053}}";
-			sepNavSelRange = "{428, 0}";
-			sepNavVisRange = "{821, 698}";
+			sepNavSelRange = "{1353, 0}";
+			sepNavVisRange = "{848, 678}";
 		};
 	};
 	C41397AE11AB7CDF000F2AAB /* main.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1172, 513}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1172, 488}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 440}";
 		};
 	};
 	C41397AF11AB7CDF000F2AAB /* Player.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1172, 1755}}";
-			sepNavSelRange = "{291, 0}";
-			sepNavVisRange = "{0, 947}";
+			sepNavIntBoundsRect = "{{0, 0}, {1172, 1781}}";
+			sepNavSelRange = "{3032, 0}";
+			sepNavVisRange = "{2361, 673}";
 		};
 	};
 	C41397B011AB7CDF000F2AAB /* Player.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1172, 721}}";
-			sepNavSelRange = "{816, 0}";
-			sepNavVisRange = "{0, 979}";
+			sepNavIntBoundsRect = "{{0, 0}, {1172, 728}}";
+			sepNavSelRange = "{893, 13}";
+			sepNavVisRange = "{235, 773}";
 		};
 	};
 	C4DAE6AF11AF0D6D004654D6 /* PBXBookmarkGroup */ = {
@@ -167,7 +167,7 @@
 		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
 		name = "CreatureFactory.cpp: 112";
 		rLen = 0;
-		rLoc = 3039;
+		rLoc = 2949;
 		rType = 0;
 		vrLen = 1401;
 		vrLoc = 0;
@@ -267,7 +267,7 @@
 		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
 		name = "CreatureFactory.cpp: 262";
 		rLen = 0;
-		rLoc = 6716;
+		rLoc = 5361;
 		rType = 0;
 		vrLen = 1145;
 		vrLoc = 6102;
@@ -277,7 +277,7 @@
 		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
 		name = "CreatureFactory.cpp: 264";
 		rLen = 0;
-		rLoc = 6716;
+		rLoc = 5361;
 		rType = 0;
 		vrLen = 1211;
 		vrLoc = 6105;
@@ -317,7 +317,7 @@
 		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
 		name = "CreatureFactory.cpp: 265";
 		rLen = 0;
-		rLoc = 6730;
+		rLoc = 5375;
 		rType = 0;
 		vrLen = 1404;
 		vrLoc = 6279;
@@ -327,7 +327,7 @@
 		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
 		name = "CreatureFactory.cpp: 264";
 		rLen = 0;
-		rLoc = 6743;
+		rLoc = 5388;
 		rType = 0;
 		vrLen = 1140;
 		vrLoc = 5926;
@@ -337,7 +337,7 @@
 		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
 		name = "CreatureFactory.cpp: 264";
 		rLen = 0;
-		rLoc = 6743;
+		rLoc = 5388;
 		rType = 0;
 		vrLen = 1140;
 		vrLoc = 5926;
@@ -347,7 +347,7 @@
 		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
 		name = "CreatureFactory.cpp: 264";
 		rLen = 0;
-		rLoc = 6743;
+		rLoc = 5388;
 		rType = 0;
 		vrLen = 425;
 		vrLoc = 6170;
@@ -377,7 +377,7 @@
 		fRef = C41397B011AB7CDF000F2AAB /* Player.h */;
 		name = "Player.h: 42";
 		rLen = 0;
-		rLoc = 816;
+		rLoc = 845;
 		rType = 0;
 		vrLen = 979;
 		vrLoc = 0;
@@ -407,7 +407,7 @@
 		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
 		name = "CreatureFactory.cpp: 269";
 		rLen = 0;
-		rLoc = 6978;
+		rLoc = 5623;
 		rType = 0;
 		vrLen = 1190;
 		vrLoc = 5826;
@@ -477,7 +477,7 @@
 		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
 		name = "CreatureFactory.cpp: 286";
 		rLen = 0;
-		rLoc = 7225;
+		rLoc = 5870;
 		rType = 0;
 		vrLen = 1373;
 		vrLoc = 6598;
@@ -527,7 +527,7 @@
 		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
 		name = "CreatureFactory.cpp: 285";
 		rLen = 0;
-		rLoc = 7225;
+		rLoc = 5870;
 		rType = 0;
 		vrLen = 1218;
 		vrLoc = 7994;
@@ -727,7 +727,7 @@
 		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
 		name = "CreatureFactory.cpp: 285";
 		rLen = 0;
-		rLoc = 7225;
+		rLoc = 5870;
 		rType = 0;
 		vrLen = 1113;
 		vrLoc = 3254;
@@ -787,7 +787,7 @@
 		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
 		name = "GameUtils.cpp: 121";
 		rLen = 0;
-		rLoc = 2794;
+		rLoc = 2945;
 		rType = 0;
 		vrLen = 886;
 		vrLoc = 1828;
@@ -827,7 +827,7 @@
 		fRef = C41397A911AB7CDF000F2AAB /* GameUtils.h */;
 		name = "GameUtils.h: 25";
 		rLen = 0;
-		rLoc = 681;
+		rLoc = 683;
 		rType = 0;
 		vrLen = 651;
 		vrLoc = 0;
@@ -837,7 +837,7 @@
 		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
 		name = "GameUtils.cpp: 117";
 		rLen = 0;
-		rLoc = 2781;
+		rLoc = 2932;
 		rType = 0;
 		vrLen = 933;
 		vrLoc = 1812;
@@ -886,7 +886,7 @@
 		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
 		name = "GameUtils.cpp: 117";
 		rLen = 0;
-		rLoc = 2781;
+		rLoc = 2932;
 		rType = 0;
 		vrLen = 727;
 		vrLoc = 446;
@@ -896,7 +896,7 @@
 		fRef = C41397A911AB7CDF000F2AAB /* GameUtils.h */;
 		name = "GameUtils.h: 27";
 		rLen = 0;
-		rLoc = 681;
+		rLoc = 683;
 		rType = 0;
 		vrLen = 718;
 		vrLoc = 0;
@@ -966,7 +966,7 @@
 		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
 		name = "GameUtils.cpp: 117";
 		rLen = 0;
-		rLoc = 2781;
+		rLoc = 2932;
 		rType = 0;
 		vrLen = 856;
 		vrLoc = 0;
@@ -985,7 +985,7 @@
 		fRef = C41397A911AB7CDF000F2AAB /* GameUtils.h */;
 		name = "GameUtils.h: 27";
 		rLen = 0;
-		rLoc = 681;
+		rLoc = 683;
 		rType = 0;
 		vrLen = 725;
 		vrLoc = 0;
@@ -1011,7 +1011,7 @@
 		hitCount = 0;
 		ignoreCount = 0;
 		lineNumber = 24;
-		modificationTime = 296696690.539882;
+		modificationTime = 296700466.677021;
 		originalNumberOfMultipleMatches = 1;
 		state = 0;
 	};
@@ -1100,7 +1100,7 @@
 		fRef = C41397A911AB7CDF000F2AAB /* GameUtils.h */;
 		name = "GameUtils.h: 23";
 		rLen = 0;
-		rLoc = 681;
+		rLoc = 683;
 		rType = 0;
 		vrLen = 681;
 		vrLoc = 0;
@@ -1110,7 +1110,7 @@
 		fRef = C41397A911AB7CDF000F2AAB /* GameUtils.h */;
 		name = "GameUtils.h: 24";
 		rLen = 0;
-		rLoc = 681;
+		rLoc = 683;
 		rType = 0;
 		vrLen = 683;
 		vrLoc = 0;
@@ -1120,7 +1120,7 @@
 		fRef = C41397A911AB7CDF000F2AAB /* GameUtils.h */;
 		name = "GameUtils.h: 25";
 		rLen = 0;
-		rLoc = 682;
+		rLoc = 684;
 		rType = 0;
 		vrLen = 683;
 		vrLoc = 0;
@@ -1140,7 +1140,7 @@
 		fRef = C41397A911AB7CDF000F2AAB /* GameUtils.h */;
 		name = "GameUtils.h: 25";
 		rLen = 0;
-		rLoc = 682;
+		rLoc = 684;
 		rType = 0;
 		vrLen = 689;
 		vrLoc = 0;
@@ -1199,7 +1199,7 @@
 		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
 		name = "GameUtils.cpp: 119";
 		rLen = 0;
-		rLoc = 2616;
+		rLoc = 2617;
 		rType = 0;
 		vrLen = 819;
 		vrLoc = 1830;
@@ -1209,7 +1209,7 @@
 		fRef = C41397A911AB7CDF000F2AAB /* GameUtils.h */;
 		name = "GameUtils.h: 25";
 		rLen = 0;
-		rLoc = 682;
+		rLoc = 684;
 		rType = 0;
 		vrLen = 689;
 		vrLoc = 0;
@@ -1218,8 +1218,8 @@
 		isa = PBXTextBookmark;
 		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
 		name = "GameUtils.cpp: 116";
-		rLen = 179;
-		rLoc = 2616;
+		rLen = 329;
+		rLoc = 2617;
 		rType = 0;
 		vrLen = 863;
 		vrLoc = 1918;
@@ -1229,7 +1229,7 @@
 		fRef = C41397A911AB7CDF000F2AAB /* GameUtils.h */;
 		name = "GameUtils.h: 25";
 		rLen = 0;
-		rLoc = 682;
+		rLoc = 684;
 		rType = 0;
 		vrLen = 689;
 		vrLoc = 0;
@@ -1239,7 +1239,7 @@
 		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
 		name = "GameUtils.cpp: 120";
 		rLen = 0;
-		rLoc = 2780;
+		rLoc = 2931;
 		rType = 0;
 		vrLen = 888;
 		vrLoc = 1854;
@@ -1249,7 +1249,7 @@
 		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
 		name = "GameUtils.cpp: 120";
 		rLen = 0;
-		rLoc = 2780;
+		rLoc = 2931;
 		rType = 0;
 		vrLen = 824;
 		vrLoc = 1918;
@@ -1259,7 +1259,7 @@
 		fRef = C41397A911AB7CDF000F2AAB /* GameUtils.h */;
 		name = "GameUtils.h: 25";
 		rLen = 0;
-		rLoc = 682;
+		rLoc = 684;
 		rType = 0;
 		vrLen = 689;
 		vrLoc = 0;
@@ -1269,7 +1269,7 @@
 		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
 		name = "GameUtils.cpp: 119";
 		rLen = 0;
-		rLoc = 2707;
+		rLoc = 2858;
 		rType = 0;
 		vrLen = 779;
 		vrLoc = 2026;
@@ -1279,7 +1279,7 @@
 		fRef = C41397A911AB7CDF000F2AAB /* GameUtils.h */;
 		name = "GameUtils.h: 25";
 		rLen = 0;
-		rLoc = 682;
+		rLoc = 684;
 		rType = 0;
 		vrLen = 689;
 		vrLoc = 0;
@@ -1299,7 +1299,7 @@
 		fRef = C41397A911AB7CDF000F2AAB /* GameUtils.h */;
 		name = "GameUtils.h: 25";
 		rLen = 0;
-		rLoc = 682;
+		rLoc = 684;
 		rType = 0;
 		vrLen = 689;
 		vrLoc = 0;
@@ -1309,7 +1309,7 @@
 		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
 		name = "GameUtils.cpp: 125";
 		rLen = 0;
-		rLoc = 2824;
+		rLoc = 3099;
 		rType = 0;
 		vrLen = 768;
 		vrLoc = 2077;
@@ -1319,7 +1319,7 @@
 		fRef = C41397A911AB7CDF000F2AAB /* GameUtils.h */;
 		name = "GameUtils.h: 25";
 		rLen = 0;
-		rLoc = 682;
+		rLoc = 684;
 		rType = 0;
 		vrLen = 689;
 		vrLoc = 0;
@@ -1329,7 +1329,7 @@
 		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
 		name = "GameUtils.cpp: 126";
 		rLen = 0;
-		rLoc = 2839;
+		rLoc = 3114;
 		rType = 0;
 		vrLen = 795;
 		vrLoc = 2185;
@@ -1339,7 +1339,7 @@
 		fRef = C41397A911AB7CDF000F2AAB /* GameUtils.h */;
 		name = "GameUtils.h: 25";
 		rLen = 0;
-		rLoc = 682;
+		rLoc = 684;
 		rType = 0;
 		vrLen = 689;
 		vrLoc = 0;
@@ -1349,7 +1349,7 @@
 		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
 		name = "GameUtils.cpp: 117";
 		rLen = 0;
-		rLoc = 2648;
+		rLoc = 2694;
 		rType = 0;
 		vrLen = 795;
 		vrLoc = 2183;
@@ -1359,7 +1359,7 @@
 		fRef = C41397A911AB7CDF000F2AAB /* GameUtils.h */;
 		name = "GameUtils.h: 25";
 		rLen = 0;
-		rLoc = 682;
+		rLoc = 684;
 		rType = 0;
 		vrLen = 689;
 		vrLoc = 0;
@@ -1369,7 +1369,7 @@
 		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
 		name = "GameUtils.cpp: 124";
 		rLen = 0;
-		rLoc = 2832;
+		rLoc = 3107;
 		rType = 0;
 		vrLen = 852;
 		vrLoc = 2131;
@@ -1379,7 +1379,7 @@
 		fRef = C41397A911AB7CDF000F2AAB /* GameUtils.h */;
 		name = "GameUtils.h: 25";
 		rLen = 0;
-		rLoc = 682;
+		rLoc = 684;
 		rType = 0;
 		vrLen = 689;
 		vrLoc = 0;
@@ -1389,7 +1389,7 @@
 		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
 		name = "GameUtils.cpp: 124";
 		rLen = 0;
-		rLoc = 2820;
+		rLoc = 3095;
 		rType = 0;
 		vrLen = 852;
 		vrLoc = 2131;
@@ -1399,7 +1399,7 @@
 		fRef = C41397A911AB7CDF000F2AAB /* GameUtils.h */;
 		name = "GameUtils.h: 25";
 		rLen = 0;
-		rLoc = 682;
+		rLoc = 684;
 		rType = 0;
 		vrLen = 689;
 		vrLoc = 0;
@@ -1409,7 +1409,7 @@
 		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
 		name = "GameUtils.cpp: 124";
 		rLen = 0;
-		rLoc = 2820;
+		rLoc = 3095;
 		rType = 0;
 		vrLen = 851;
 		vrLoc = 2131;
@@ -1419,7 +1419,7 @@
 		fRef = C41397A911AB7CDF000F2AAB /* GameUtils.h */;
 		name = "GameUtils.h: 25";
 		rLen = 0;
-		rLoc = 682;
+		rLoc = 684;
 		rType = 0;
 		vrLen = 689;
 		vrLoc = 0;
@@ -1439,7 +1439,7 @@
 		fRef = C41397A911AB7CDF000F2AAB /* GameUtils.h */;
 		name = "GameUtils.h: 25";
 		rLen = 0;
-		rLoc = 682;
+		rLoc = 684;
 		rType = 0;
 		vrLen = 689;
 		vrLoc = 0;
@@ -1479,7 +1479,7 @@
 		fRef = C41397A911AB7CDF000F2AAB /* GameUtils.h */;
 		name = "GameUtils.h: 25";
 		rLen = 0;
-		rLoc = 682;
+		rLoc = 684;
 		rType = 0;
 		vrLen = 689;
 		vrLoc = 0;
@@ -1519,7 +1519,7 @@
 		fRef = C41397A911AB7CDF000F2AAB /* GameUtils.h */;
 		name = "GameUtils.h: 25";
 		rLen = 0;
-		rLoc = 682;
+		rLoc = 684;
 		rType = 0;
 		vrLen = 689;
 		vrLoc = 0;
@@ -1579,7 +1579,7 @@
 		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
 		name = "GameUtils.cpp: 116";
 		rLen = 0;
-		rLoc = 2648;
+		rLoc = 2694;
 		rType = 0;
 		vrLen = 904;
 		vrLoc = 2075;
@@ -1589,7 +1589,7 @@
 		fRef = C41397A911AB7CDF000F2AAB /* GameUtils.h */;
 		name = "GameUtils.h: 25";
 		rLen = 0;
-		rLoc = 682;
+		rLoc = 684;
 		rType = 0;
 		vrLen = 689;
 		vrLoc = 0;
@@ -1599,7 +1599,7 @@
 		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
 		name = "GameUtils.cpp: 116";
 		rLen = 0;
-		rLoc = 2648;
+		rLoc = 2694;
 		rType = 0;
 		vrLen = 881;
 		vrLoc = 2096;
@@ -1609,7 +1609,7 @@
 		fRef = C41397A911AB7CDF000F2AAB /* GameUtils.h */;
 		name = "GameUtils.h: 25";
 		rLen = 0;
-		rLoc = 682;
+		rLoc = 684;
 		rType = 0;
 		vrLen = 689;
 		vrLoc = 0;
@@ -1619,7 +1619,7 @@
 		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
 		name = "GameUtils.cpp: 124";
 		rLen = 0;
-		rLoc = 2836;
+		rLoc = 3111;
 		rType = 0;
 		vrLen = 896;
 		vrLoc = 2075;
@@ -1629,7 +1629,7 @@
 		fRef = C41397A911AB7CDF000F2AAB /* GameUtils.h */;
 		name = "GameUtils.h: 25";
 		rLen = 0;
-		rLoc = 682;
+		rLoc = 684;
 		rType = 0;
 		vrLen = 689;
 		vrLoc = 0;
@@ -1639,7 +1639,7 @@
 		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
 		name = "GameUtils.cpp: 124";
 		rLen = 0;
-		rLoc = 2835;
+		rLoc = 3110;
 		rType = 0;
 		vrLen = 900;
 		vrLoc = 2075;
@@ -1649,7 +1649,7 @@
 		fRef = C41397A911AB7CDF000F2AAB /* GameUtils.h */;
 		name = "GameUtils.h: 25";
 		rLen = 0;
-		rLoc = 682;
+		rLoc = 684;
 		rType = 0;
 		vrLen = 689;
 		vrLoc = 0;
@@ -1659,7 +1659,7 @@
 		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
 		name = "GameUtils.cpp: 118";
 		rLen = 0;
-		rLoc = 2693;
+		rLoc = 2844;
 		rType = 0;
 		vrLen = 896;
 		vrLoc = 2075;
@@ -1669,7 +1669,7 @@
 		fRef = C41397A911AB7CDF000F2AAB /* GameUtils.h */;
 		name = "GameUtils.h: 25";
 		rLen = 0;
-		rLoc = 682;
+		rLoc = 684;
 		rType = 0;
 		vrLen = 689;
 		vrLoc = 0;
@@ -1679,7 +1679,7 @@
 		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
 		name = "GameUtils.cpp: 116";
 		rLen = 0;
-		rLoc = 2649;
+		rLoc = 2800;
 		rType = 0;
 		vrLen = 764;
 		vrLoc = 444;
@@ -1689,7 +1689,7 @@
 		fRef = C41397A911AB7CDF000F2AAB /* GameUtils.h */;
 		name = "GameUtils.h: 25";
 		rLen = 0;
-		rLoc = 682;
+		rLoc = 684;
 		rType = 0;
 		vrLen = 689;
 		vrLoc = 0;
@@ -1829,7 +1829,7 @@
 		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
 		name = "CreatureFactory.cpp: 267";
 		rLen = 0;
-		rLoc = 6938;
+		rLoc = 5583;
 		rType = 0;
 		vrLen = 736;
 		vrLoc = 6378;
@@ -1839,7 +1839,7 @@
 		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
 		name = "CreatureFactory.cpp: 266";
 		rLen = 0;
-		rLoc = 6938;
+		rLoc = 5583;
 		rType = 0;
 		vrLen = 732;
 		vrLoc = 6378;
@@ -1869,7 +1869,7 @@
 		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
 		name = "CreatureFactory.cpp: 267";
 		rLen = 0;
-		rLoc = 6841;
+		rLoc = 5486;
 		rType = 0;
 		vrLen = 754;
 		vrLoc = 6378;
@@ -1879,7 +1879,7 @@
 		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
 		name = "CreatureFactory.cpp: 267";
 		rLen = 0;
-		rLoc = 6882;
+		rLoc = 5527;
 		rType = 0;
 		vrLen = 769;
 		vrLoc = 6378;
@@ -1889,7 +1889,7 @@
 		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
 		name = "CreatureFactory.cpp: 267";
 		rLen = 0;
-		rLoc = 6882;
+		rLoc = 5527;
 		rType = 0;
 		vrLen = 769;
 		vrLoc = 6378;
@@ -1926,7 +1926,7 @@
 		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
 		name = "CreatureFactory.cpp: 267";
 		rLen = 0;
-		rLoc = 6882;
+		rLoc = 5527;
 		rType = 0;
 		vrLen = 769;
 		vrLoc = 6378;
@@ -1936,7 +1936,7 @@
 		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
 		name = "CreatureFactory.cpp: 268";
 		rLen = 0;
-		rLoc = 6929;
+		rLoc = 5574;
 		rType = 0;
 		vrLen = 839;
 		vrLoc = 6327;
@@ -1946,7 +1946,7 @@
 		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
 		name = "CreatureFactory.cpp: 268";
 		rLen = 0;
-		rLoc = 6929;
+		rLoc = 5574;
 		rType = 0;
 		vrLen = 839;
 		vrLoc = 6327;
@@ -1956,7 +1956,7 @@
 		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
 		name = "CreatureFactory.cpp: 268";
 		rLen = 0;
-		rLoc = 6929;
+		rLoc = 5574;
 		rType = 0;
 		vrLen = 839;
 		vrLoc = 6327;
@@ -1966,7 +1966,7 @@
 		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
 		name = "CreatureFactory.cpp: 268";
 		rLen = 0;
-		rLoc = 6929;
+		rLoc = 5574;
 		rType = 0;
 		vrLen = 464;
 		vrLoc = 6332;
@@ -2003,7 +2003,7 @@
 		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
 		name = "CreatureFactory.cpp: 268";
 		rLen = 0;
-		rLoc = 6929;
+		rLoc = 5574;
 		rType = 0;
 		vrLen = 867;
 		vrLoc = 6327;
@@ -2013,7 +2013,7 @@
 		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
 		name = "CreatureFactory.cpp: 267";
 		rLen = 0;
-		rLoc = 6846;
+		rLoc = 5491;
 		rType = 0;
 		vrLen = 808;
 		vrLoc = 6156;
@@ -2023,7 +2023,7 @@
 		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
 		name = "CreatureFactory.cpp: 266";
 		rLen = 0;
-		rLoc = 6882;
+		rLoc = 5527;
 		rType = 0;
 		vrLen = 850;
 		vrLoc = 5534;
@@ -2103,7 +2103,7 @@
 		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
 		name = "CreatureFactory.cpp: 266";
 		rLen = 0;
-		rLoc = 6882;
+		rLoc = 5527;
 		rType = 0;
 		vrLen = 850;
 		vrLoc = 5534;
@@ -2113,7 +2113,7 @@
 		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
 		name = "CreatureFactory.cpp: 266";
 		rLen = 0;
-		rLoc = 6840;
+		rLoc = 5485;
 		rType = 0;
 		vrLen = 677;
 		vrLoc = 6543;
@@ -2193,7 +2193,7 @@
 		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
 		name = "CreatureFactory.cpp: 266";
 		rLen = 0;
-		rLoc = 6821;
+		rLoc = 5466;
 		rType = 0;
 		vrLen = 673;
 		vrLoc = 6549;
@@ -2203,7 +2203,7 @@
 		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
 		name = "CreatureFactory.cpp: 259";
 		rLen = 0;
-		rLoc = 6600;
+		rLoc = 5245;
 		rType = 0;
 		vrLen = 774;
 		vrLoc = 6449;
@@ -2233,7 +2233,7 @@
 		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
 		name = "CreatureFactory.cpp: 259";
 		rLen = 0;
-		rLoc = 6600;
+		rLoc = 5245;
 		rType = 0;
 		vrLen = 1017;
 		vrLoc = 384;
@@ -2278,6 +2278,495 @@
 		vrLen = 698;
 		vrLoc = 821;
 	};
+	C4DAE8A811AF470F004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397AF11AB7CDF000F2AAB /* Player.cpp */;
+		name = "Player.cpp: 16";
+		rLen = 0;
+		rLoc = 291;
+		rType = 0;
+		vrLen = 906;
+		vrLoc = 0;
+	};
+	C4DAE8A911AF470F004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397AD11AB7CDF000F2AAB /* LastStandApplication.h */;
+		name = "LastStandApplication.h: 68";
+		rLen = 0;
+		rLoc = 1353;
+		rType = 0;
+		vrLen = 678;
+		vrLoc = 848;
+	};
+	C4DAE8AA11AF470F004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397AC11AB7CDF000F2AAB /* LastStandApplication.cpp */;
+		name = "LastStandApplication.cpp: 121";
+		rLen = 0;
+		rLoc = 3816;
+		rType = 0;
+		vrLen = 1364;
+		vrLoc = 4653;
+	};
+	C4DAE8AB11AF470F004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397AC11AB7CDF000F2AAB /* LastStandApplication.cpp */;
+		name = "LastStandApplication.cpp: 191";
+		rLen = 0;
+		rLoc = 5878;
+		rType = 0;
+		vrLen = 1251;
+		vrLoc = 4805;
+	};
+	C4DAE8B311AF482E004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397AC11AB7CDF000F2AAB /* LastStandApplication.cpp */;
+		name = "LastStandApplication.cpp: 191";
+		rLen = 0;
+		rLoc = 5878;
+		rType = 0;
+		vrLen = 1009;
+		vrLoc = 5390;
+	};
+	C4DAE8B411AF482E004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397AB11AB7CDF000F2AAB /* IRTracker.h */;
+		name = "IRTracker.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1136;
+		vrLoc = 379;
+	};
+	C4DAE8B511AF482E004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397AE11AB7CDF000F2AAB /* main.cpp */;
+		name = "main.cpp: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 440;
+		vrLoc = 0;
+	};
+	C4DAE8B611AF482E004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397AA11AB7CDF000F2AAB /* IRTracker.cpp */;
+		name = "IRTracker.cpp: 9";
+		rLen = 1;
+		rLoc = 145;
+		rType = 0;
+		vrLen = 866;
+		vrLoc = 0;
+	};
+	C4DAE8B711AF482E004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A711AB7CDF000F2AAB /* GameScore.h */;
+		name = "GameScore.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 773;
+		vrLoc = 41;
+	};
+	C4DAE8B811AF482E004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A911AB7CDF000F2AAB /* GameUtils.h */;
+		name = "GameUtils.h: 21";
+		rLen = 0;
+		rLoc = 597;
+		rType = 0;
+		vrLen = 689;
+		vrLoc = 0;
+	};
+	C4DAE8B911AF482E004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397AF11AB7CDF000F2AAB /* Player.cpp */;
+		name = "Player.cpp: 136";
+		rLen = 0;
+		rLoc = 3032;
+		rType = 0;
+		vrLen = 673;
+		vrLoc = 2361;
+	};
+	C4DAE8BA11AF482E004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397B011AB7CDF000F2AAB /* Player.h */;
+		name = "Player.h: 48";
+		rLen = 13;
+		rLoc = 893;
+		rType = 0;
+		vrLen = 783;
+		vrLoc = 218;
+	};
+	C4DAE8BB11AF482E004654D6 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "'getPlayerHitPoints' was not declared in this scope";
+		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 117;
+		rType = 1;
+	};
+	C4DAE8BC11AF482E004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
+		name = "GameUtils.cpp: 116";
+		rLen = 0;
+		rLoc = 2660;
+		rType = 0;
+		vrLen = 883;
+		vrLoc = 2129;
+	};
+	C4DAE8C011AF4850004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A911AB7CDF000F2AAB /* GameUtils.h */;
+		name = "GameUtils.h: 24";
+		rLen = 0;
+		rLoc = 674;
+		rType = 0;
+		vrLen = 691;
+		vrLoc = 0;
+	};
+	C4DAE8C111AF4850004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
+		name = "GameUtils.cpp: 116";
+		rLen = 0;
+		rLoc = 2660;
+		rType = 0;
+		vrLen = 760;
+		vrLoc = 0;
+	};
+	C4DAE8C211AF4850004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
+		name = "GameUtils.cpp: 116";
+		rLen = 0;
+		rLoc = 2660;
+		rType = 0;
+		vrLen = 739;
+		vrLoc = 21;
+	};
+	C4DAE8C611AF4879004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A911AB7CDF000F2AAB /* GameUtils.h */;
+		name = "GameUtils.h: 24";
+		rLen = 0;
+		rLoc = 674;
+		rType = 0;
+		vrLen = 691;
+		vrLoc = 0;
+	};
+	C4DAE8C711AF4879004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
+		name = "GameUtils.cpp: 116";
+		rLen = 0;
+		rLoc = 2660;
+		rType = 0;
+		vrLen = 803;
+		vrLoc = 21;
+	};
+	C4DAE8C811AF4879004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
+		name = "GameUtils.cpp: 117";
+		rLen = 0;
+		rLoc = 2800;
+		rType = 0;
+		vrLen = 957;
+		vrLoc = 2096;
+	};
+	C4DAE8C911AF487B004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
+		name = "GameUtils.cpp: 117";
+		rLen = 0;
+		rLoc = 2800;
+		rType = 0;
+		vrLen = 924;
+		vrLoc = 2129;
+	};
+	C4DAE8CB11AF4888004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A211AB7CDF000F2AAB /* Creature.cpp */;
+		name = "Creature.cpp: 185";
+		rLen = 0;
+		rLoc = 4634;
+		rType = 0;
+		vrLen = 453;
+		vrLoc = 4056;
+	};
+	C4DAE8CC11AF4888004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
+		name = "GameUtils.cpp: 117";
+		rLen = 0;
+		rLoc = 2800;
+		rType = 0;
+		vrLen = 350;
+		vrLoc = 2509;
+	};
+	C4DAE8CD11AF4889004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
+		name = "GameUtils.cpp: 117";
+		rLen = 0;
+		rLoc = 2800;
+		rType = 0;
+		vrLen = 924;
+		vrLoc = 2129;
+	};
+	C4DAE8D011AF48B4004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
+		name = "GameUtils.cpp: 117";
+		rLen = 0;
+		rLoc = 2800;
+		rType = 0;
+		vrLen = 927;
+		vrLoc = 2127;
+	};
+	C4DAE8D111AF48B4004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A511AB7CDF000F2AAB /* CreatureFactory.h */;
+		name = "CreatureFactory.h: 67";
+		rLen = 0;
+		rLoc = 1607;
+		rType = 0;
+		vrLen = 713;
+		vrLoc = 1304;
+	};
+	C4DAE8D211AF48B4004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
+		name = "CreatureFactory.cpp: 259";
+		rLen = 0;
+		rLoc = 5245;
+		rType = 0;
+		vrLen = 1017;
+		vrLoc = 384;
+	};
+	C4DAE8D311AF48B4004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
+		name = "CreatureFactory.cpp: 66";
+		rLen = 0;
+		rLoc = 1910;
+		rType = 0;
+		vrLen = 760;
+		vrLoc = 2738;
+	};
+	C4DAE8D511AF48B9004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
+		name = "CreatureFactory.cpp: 66";
+		rLen = 0;
+		rLoc = 1910;
+		rType = 0;
+		vrLen = 843;
+		vrLoc = 2828;
+	};
+	C4DAE8D611AF48BA004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
+		name = "CreatureFactory.cpp: 66";
+		rLen = 0;
+		rLoc = 1910;
+		rType = 0;
+		vrLen = 843;
+		vrLoc = 2828;
+	};
+	C4DAE8D711AF48D2004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
+		name = "GameUtils.cpp: 117";
+		rLen = 0;
+		rLoc = 2800;
+		rType = 0;
+		vrLen = 350;
+		vrLoc = 2509;
+	};
+	C4DAE8D811AF48D2004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
+		name = "CreatureFactory.cpp: 66";
+		rLen = 0;
+		rLoc = 1910;
+		rType = 0;
+		vrLen = 367;
+		vrLoc = 4472;
+	};
+	C4DAE8DB11AF491B004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
+		name = "CreatureFactory.cpp: 66";
+		rLen = 0;
+		rLoc = 1910;
+		rType = 0;
+		vrLen = 932;
+		vrLoc = 3902;
+	};
+	C4DAE8DC11AF491B004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A911AB7CDF000F2AAB /* GameUtils.h */;
+		name = "GameUtils.h: 24";
+		rLen = 0;
+		rLoc = 674;
+		rType = 0;
+		vrLen = 691;
+		vrLoc = 0;
+	};
+	C4DAE8DD11AF491B004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397B011AB7CDF000F2AAB /* Player.h */;
+		name = "Player.h: 48";
+		rLen = 13;
+		rLoc = 893;
+		rType = 0;
+		vrLen = 773;
+		vrLoc = 235;
+	};
+	C4DAE8DE11AF491B004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397AF11AB7CDF000F2AAB /* Player.cpp */;
+		name = "Player.cpp: 136";
+		rLen = 0;
+		rLoc = 3032;
+		rType = 0;
+		vrLen = 673;
+		vrLoc = 2361;
+	};
+	C4DAE8DF11AF491B004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
+		name = "GameUtils.cpp: 119";
+		rLen = 0;
+		rLoc = 2860;
+		rType = 0;
+		vrLen = 958;
+		vrLoc = 2096;
+	};
+	C4DAE8E011AF491B004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
+		name = "GameUtils.cpp: 118";
+		rLen = 0;
+		rLoc = 2800;
+		rType = 0;
+		vrLen = 927;
+		vrLoc = 2183;
+	};
+	C4DAE8E211AF491E004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
+		name = "GameUtils.cpp: 118";
+		rLen = 0;
+		rLoc = 2800;
+		rType = 0;
+		vrLen = 927;
+		vrLoc = 2183;
+	};
+	C4DAE8E311AF4921004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
+		name = "GameUtils.cpp: 118";
+		rLen = 0;
+		rLoc = 2800;
+		rType = 0;
+		vrLen = 927;
+		vrLoc = 2183;
+	};
+	C4DAE8E411AF4930004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
+		name = "CreatureFactory.cpp: 66";
+		rLen = 0;
+		rLoc = 1910;
+		rType = 0;
+		vrLen = 367;
+		vrLoc = 4472;
+	};
+	C4DAE8E511AF4930004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
+		name = "GameUtils.cpp: 118";
+		rLen = 0;
+		rLoc = 2800;
+		rType = 0;
+		vrLen = 421;
+		vrLoc = 2552;
+	};
+	C4DAE8E811AF4948004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
+		name = "GameUtils.cpp: 116";
+		rLen = 0;
+		rLoc = 2686;
+		rType = 0;
+		vrLen = 932;
+		vrLoc = 2185;
+	};
+	C4DAE8EC11AF4969004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
+		name = "GameUtils.cpp: 116";
+		rLen = 0;
+		rLoc = 2686;
+		rType = 0;
+		vrLen = 934;
+		vrLoc = 2185;
+	};
+	C4DAE8EE11AF4975004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
+		name = "GameUtils.cpp: 116";
+		rLen = 0;
+		rLoc = 2686;
+		rType = 0;
+		vrLen = 934;
+		vrLoc = 2185;
+	};
+	C4DAE8F111AF4982004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
+		name = "GameUtils.cpp: 116";
+		rLen = 0;
+		rLoc = 2686;
+		rType = 0;
+		vrLen = 940;
+		vrLoc = 2185;
+	};
+	C4DAE8F711AF4A33004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
+		name = "GameUtils.cpp: 116";
+		rLen = 0;
+		rLoc = 2686;
+		rType = 0;
+		vrLen = 954;
+		vrLoc = 2185;
+	};
+	C4DAE8F911AF4A72004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
+		name = "GameUtils.cpp: 128";
+		rLen = 0;
+		rLoc = 3069;
+		rType = 0;
+		vrLen = 392;
+		vrLoc = 2469;
+	};
+	C4DAE8FA11AF4A75004654D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C41397A811AB7CDF000F2AAB /* GameUtils.cpp */;
+		name = "GameUtils.cpp: 128";
+		rLen = 0;
+		rLoc = 3069;
+		rType = 0;
+		vrLen = 1033;
+		vrLoc = 2185;
+	};
 	C4E0DAEE11ADD54900B34358 /* Creature.cpp:18 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
@@ -2291,7 +2780,7 @@
 		hitCount = 0;
 		ignoreCount = 0;
 		lineNumber = 18;
-		modificationTime = 296696690.539531;
+		modificationTime = 296700466.67644;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -2430,7 +2919,7 @@
 		fRef = C41397A411AB7CDF000F2AAB /* CreatureFactory.cpp */;
 		name = "CreatureFactory.cpp: 76";
 		rLen = 0;
-		rLoc = 2134;
+		rLoc = 2044;
 		rType = 0;
 		vrLen = 1593;
 		vrLoc = 8039;
@@ -2729,6 +3218,55 @@
 			C4DAE8A311AF463E004654D6 /* PBXTextBookmark */ = C4DAE8A311AF463E004654D6 /* PBXTextBookmark */;
 			C4DAE8A411AF463E004654D6 /* PBXTextBookmark */ = C4DAE8A411AF463E004654D6 /* PBXTextBookmark */;
 			C4DAE8A511AF463E004654D6 /* PBXTextBookmark */ = C4DAE8A511AF463E004654D6 /* PBXTextBookmark */;
+			C4DAE8A811AF470F004654D6 /* PBXTextBookmark */ = C4DAE8A811AF470F004654D6 /* PBXTextBookmark */;
+			C4DAE8A911AF470F004654D6 /* PBXTextBookmark */ = C4DAE8A911AF470F004654D6 /* PBXTextBookmark */;
+			C4DAE8AA11AF470F004654D6 /* PBXTextBookmark */ = C4DAE8AA11AF470F004654D6 /* PBXTextBookmark */;
+			C4DAE8AB11AF470F004654D6 /* PBXTextBookmark */ = C4DAE8AB11AF470F004654D6 /* PBXTextBookmark */;
+			C4DAE8B311AF482E004654D6 /* PBXTextBookmark */ = C4DAE8B311AF482E004654D6 /* PBXTextBookmark */;
+			C4DAE8B411AF482E004654D6 /* PBXTextBookmark */ = C4DAE8B411AF482E004654D6 /* PBXTextBookmark */;
+			C4DAE8B511AF482E004654D6 /* PBXTextBookmark */ = C4DAE8B511AF482E004654D6 /* PBXTextBookmark */;
+			C4DAE8B611AF482E004654D6 /* PBXTextBookmark */ = C4DAE8B611AF482E004654D6 /* PBXTextBookmark */;
+			C4DAE8B711AF482E004654D6 /* PBXTextBookmark */ = C4DAE8B711AF482E004654D6 /* PBXTextBookmark */;
+			C4DAE8B811AF482E004654D6 /* PBXTextBookmark */ = C4DAE8B811AF482E004654D6 /* PBXTextBookmark */;
+			C4DAE8B911AF482E004654D6 /* PBXTextBookmark */ = C4DAE8B911AF482E004654D6 /* PBXTextBookmark */;
+			C4DAE8BA11AF482E004654D6 /* PBXTextBookmark */ = C4DAE8BA11AF482E004654D6 /* PBXTextBookmark */;
+			C4DAE8BB11AF482E004654D6 /* XCBuildMessageTextBookmark */ = C4DAE8BB11AF482E004654D6 /* XCBuildMessageTextBookmark */;
+			C4DAE8BC11AF482E004654D6 /* PBXTextBookmark */ = C4DAE8BC11AF482E004654D6 /* PBXTextBookmark */;
+			C4DAE8C011AF4850004654D6 /* PBXTextBookmark */ = C4DAE8C011AF4850004654D6 /* PBXTextBookmark */;
+			C4DAE8C111AF4850004654D6 /* PBXTextBookmark */ = C4DAE8C111AF4850004654D6 /* PBXTextBookmark */;
+			C4DAE8C211AF4850004654D6 /* PBXTextBookmark */ = C4DAE8C211AF4850004654D6 /* PBXTextBookmark */;
+			C4DAE8C611AF4879004654D6 /* PBXTextBookmark */ = C4DAE8C611AF4879004654D6 /* PBXTextBookmark */;
+			C4DAE8C711AF4879004654D6 /* PBXTextBookmark */ = C4DAE8C711AF4879004654D6 /* PBXTextBookmark */;
+			C4DAE8C811AF4879004654D6 /* PBXTextBookmark */ = C4DAE8C811AF4879004654D6 /* PBXTextBookmark */;
+			C4DAE8C911AF487B004654D6 /* PBXTextBookmark */ = C4DAE8C911AF487B004654D6 /* PBXTextBookmark */;
+			C4DAE8CB11AF4888004654D6 /* PBXTextBookmark */ = C4DAE8CB11AF4888004654D6 /* PBXTextBookmark */;
+			C4DAE8CC11AF4888004654D6 /* PBXTextBookmark */ = C4DAE8CC11AF4888004654D6 /* PBXTextBookmark */;
+			C4DAE8CD11AF4889004654D6 /* PBXTextBookmark */ = C4DAE8CD11AF4889004654D6 /* PBXTextBookmark */;
+			C4DAE8D011AF48B4004654D6 /* PBXTextBookmark */ = C4DAE8D011AF48B4004654D6 /* PBXTextBookmark */;
+			C4DAE8D111AF48B4004654D6 /* PBXTextBookmark */ = C4DAE8D111AF48B4004654D6 /* PBXTextBookmark */;
+			C4DAE8D211AF48B4004654D6 /* PBXTextBookmark */ = C4DAE8D211AF48B4004654D6 /* PBXTextBookmark */;
+			C4DAE8D311AF48B4004654D6 /* PBXTextBookmark */ = C4DAE8D311AF48B4004654D6 /* PBXTextBookmark */;
+			C4DAE8D511AF48B9004654D6 /* PBXTextBookmark */ = C4DAE8D511AF48B9004654D6 /* PBXTextBookmark */;
+			C4DAE8D611AF48BA004654D6 /* PBXTextBookmark */ = C4DAE8D611AF48BA004654D6 /* PBXTextBookmark */;
+			C4DAE8D711AF48D2004654D6 /* PBXTextBookmark */ = C4DAE8D711AF48D2004654D6 /* PBXTextBookmark */;
+			C4DAE8D811AF48D2004654D6 /* PBXTextBookmark */ = C4DAE8D811AF48D2004654D6 /* PBXTextBookmark */;
+			C4DAE8DB11AF491B004654D6 /* PBXTextBookmark */ = C4DAE8DB11AF491B004654D6 /* PBXTextBookmark */;
+			C4DAE8DC11AF491B004654D6 /* PBXTextBookmark */ = C4DAE8DC11AF491B004654D6 /* PBXTextBookmark */;
+			C4DAE8DD11AF491B004654D6 /* PBXTextBookmark */ = C4DAE8DD11AF491B004654D6 /* PBXTextBookmark */;
+			C4DAE8DE11AF491B004654D6 /* PBXTextBookmark */ = C4DAE8DE11AF491B004654D6 /* PBXTextBookmark */;
+			C4DAE8DF11AF491B004654D6 /* PBXTextBookmark */ = C4DAE8DF11AF491B004654D6 /* PBXTextBookmark */;
+			C4DAE8E011AF491B004654D6 /* PBXTextBookmark */ = C4DAE8E011AF491B004654D6 /* PBXTextBookmark */;
+			C4DAE8E211AF491E004654D6 /* PBXTextBookmark */ = C4DAE8E211AF491E004654D6 /* PBXTextBookmark */;
+			C4DAE8E311AF4921004654D6 /* PBXTextBookmark */ = C4DAE8E311AF4921004654D6 /* PBXTextBookmark */;
+			C4DAE8E411AF4930004654D6 /* PBXTextBookmark */ = C4DAE8E411AF4930004654D6 /* PBXTextBookmark */;
+			C4DAE8E511AF4930004654D6 /* PBXTextBookmark */ = C4DAE8E511AF4930004654D6 /* PBXTextBookmark */;
+			C4DAE8E811AF4948004654D6 /* PBXTextBookmark */ = C4DAE8E811AF4948004654D6 /* PBXTextBookmark */;
+			C4DAE8EC11AF4969004654D6 /* PBXTextBookmark */ = C4DAE8EC11AF4969004654D6 /* PBXTextBookmark */;
+			C4DAE8EE11AF4975004654D6 /* PBXTextBookmark */ = C4DAE8EE11AF4975004654D6 /* PBXTextBookmark */;
+			C4DAE8F111AF4982004654D6 /* PBXTextBookmark */ = C4DAE8F111AF4982004654D6 /* PBXTextBookmark */;
+			C4DAE8F711AF4A33004654D6 /* PBXTextBookmark */ = C4DAE8F711AF4A33004654D6 /* PBXTextBookmark */;
+			C4DAE8F911AF4A72004654D6 /* PBXTextBookmark */ = C4DAE8F911AF4A72004654D6 /* PBXTextBookmark */;
+			C4DAE8FA11AF4A75004654D6 /* PBXTextBookmark */ = C4DAE8FA11AF4A75004654D6 /* PBXTextBookmark */;
 			C4E0DAF011ADD56C00B34358 = C4E0DAF011ADD56C00B34358 /* PBXTextBookmark */;
 			C4E0DAF111ADD56C00B34358 = C4E0DAF111ADD56C00B34358 /* PBXTextBookmark */;
 			C4E0DAF211ADD56C00B34358 = C4E0DAF211ADD56C00B34358 /* PBXTextBookmark */;

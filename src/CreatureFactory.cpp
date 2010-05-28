@@ -64,11 +64,9 @@ void CreatureFactory::findEdgeToSpawn(float f_player_x, float f_player_y) {
 	int spawn_side = 3;
 	
 	//Check if the suprise counter is at 0. If so, spawn from wall closest to player and reset it.
-	cout << "SUPRISE : " << nSurprise << endl;
 	if (nSurprise == 0)
 	{
 		spawn_side = 0;
-			cout << "SUPRISE : " << nSurprise << endl;
 		nSurprise = ofRandom(4, 7);
 	}
 
@@ -115,79 +113,26 @@ void CreatureFactory::findEdgeToSpawn(float f_player_x, float f_player_y) {
 	{
 		mf_spawn_x = -offset;
 		mf_spawn_y = ofRandom(0, ofGetHeight());
-		cout << "spawn from left" << endl;
 	}
 	//Right Spawn
 	else if(sdist[spawn_side] == adist[1])
 	{
 		mf_spawn_x = ofGetWidth() + offset;
 		mf_spawn_y = ofRandom(0, ofGetHeight());
-		cout << "spawn from right" << endl;
 	}
 	//Top Spawn
 	else if(sdist[spawn_side] == adist[2])
 	{
 		mf_spawn_x = ofRandom(0, ofGetWidth());
 		mf_spawn_y = -offset;
-		cout << "spawn from top" << endl;
 	}
 	//Bottom Spawn
 	else if(sdist[spawn_side] == adist[3])
 	{
 		mf_spawn_x = ofRandom(0, ofGetWidth());
 		mf_spawn_y = ofGetHeight() + offset;
-		cout << "spawn from bottom" << endl;
-	}
+			}
 	nSurprise--;
-	/*
-	cout << "dist 0  : " << adist[0] << endl;
-	cout << "dist 1  : " << adist[1] << endl;
-	cout << "dist 2  : " << adist[2] << endl;
-	cout << "dist 3  : " << adist[3] << endl;
-	
-	cout << "player x  : " << f_player_x << endl;
-	cout << "player y  : " << f_player_y << endl;
-	cout << "dist_left : " << dist_l << endl;
-	cout << "dist_right : " << dist_r << endl;
-	cout << "dist_bottom : " << dist_b << endl;
-	cout << "dist_top : " << dist_t << endl;
-	*/
-	/*
-	float f_screen_x_diff = ofGetWidth() - f_player_x;
-	float f_screen_y_diff = ofGetHeight() - f_player_y;
-		
-	if(f_screen_x_diff > f_player_x)
-	{
-		mf_spawn_x = ofGetWidth();
-	}
-	else if(f_screen_x_diff < f_player_x)
-	{
-		mf_spawn_x = (f_player_x * 0.8);
-	}
-	else
-	{
-		// you're dead center
-		// TODO: randomize between zero and screen width
-		
-		mf_spawn_x = (f_player_x * 0.8);
-	}
-	
-	if(f_screen_y_diff > f_player_y)
-	{
-		mf_spawn_y = ofGetHeight();
-	}
-	else if(f_screen_y_diff < f_player_y)
-	{
-		mf_spawn_y = (f_player_y * 0.2);
-	}
-	else
-	{
-		// you're dead center
-		// TODO: randomize between zero and screen width
-		
-		mf_spawn_y = (f_player_y * 0.2);
-	}
-	*/
 }
 
 //------------------------------------------------------------

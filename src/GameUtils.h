@@ -21,6 +21,6 @@
 		void checkPlayerHit(Player &player);
 		void setHitTime();
 	
-		static  int hitTime;
+		static  float hitTime;
 
 #endif

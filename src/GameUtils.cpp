@@ -110,15 +110,22 @@ bool checkHit(ofxVec2f ofxvec_gun_pos, float f_gun_radius, float f_x_pos, float 
 	}
 }
 
-void checkPlayerHit(Player &player){
+void checkPlayerHit(Player &player){	
 	if(player.isHit) 
 	{
-		if(hitTime <= 0) hitTime =200;
+		if(hitTime <= 0) hitTime = fabs((player.getPlayerHitPoints()-900.0) - 255);
+		cout <<  "HIT TIME: " <<hitTime <<endl;
+		cout <<  "PLAYER :  " << player.getPlayerHitPoints() <<endl;
 		ofEnableAlphaBlending();
 		ofSetColor(255, 0, 0,hitTime);
 		ofRect(0,0,ofGetWidth(),ofGetHeight());
 		ofDisableAlphaBlending();
 		hitTime-=10;
+	}
+	else if(player.getPlayerHitPoints() == 0)
+	{
+		ofSetColor(255, 0, 0,hitTime);
+		ofRect(0,0,ofGetWidth(),ofGetHeight());
 	}
 	else {
 		if(hitTime > 0) hitTime-=10;

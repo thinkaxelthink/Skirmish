@@ -37,6 +37,7 @@ public:
 	// GETTERS
 	float getPlayerX();
 	float getPlayerY();
+	float getPlayerHitPoints();
 	ofxPoint2f getPlayerPoint();
 	bool isAlive();
 	bool isHit;
