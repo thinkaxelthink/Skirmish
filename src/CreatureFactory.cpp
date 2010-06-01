@@ -131,7 +131,7 @@ void CreatureFactory::findEdgeToSpawn(float f_player_x, float f_player_y) {
 	{
 		mf_spawn_x = ofRandom(0, ofGetWidth());
 		mf_spawn_y = ofGetHeight() + offset;
-			}
+	}
 	nSurprise--;
 }
 

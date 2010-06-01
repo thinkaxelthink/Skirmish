@@ -21,7 +21,7 @@ public:
 	void update(int i_amount);
 	void outputAsString(int i_x_position, int i_y_position);
 	string stringifyScore(int i_score_to_stringify);
-	
+	//void checkCreature(Creature &creature);
 	// SETTERS
 	void setFormat(string s_score_type, int i_start_position, string s_score_font, int i_score_font_size);
 	
@@ -40,6 +40,9 @@ protected:
 	// TODO: Anything related to this will be in a scoring class and used in game manager class
 	ofTrueTypeFont ofttf_gameScoreText;
 	
+	int nCreature1;
+	int nCreature2;
+	int nCreature3;
 };
 
 #endif

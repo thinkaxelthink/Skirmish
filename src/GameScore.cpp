@@ -17,6 +17,10 @@ void GameScore::outputAsString(int i_x_position, int i_y_position){
 	
 	ofSetColor(0,0,0);
 	ofFill();	
+	nCreature1 = 0;
+	nCreature2 = 0;
+	nCreature3 = 0;
+	
 	//730, 40
 	ofttf_gameScoreText.drawString(s_gameScoreText, i_x_position, i_y_position);
 	
@@ -50,7 +54,6 @@ void GameScore::update(int i_amount){
 		i_gameScore += i_amount;
 		
 		s_gameScoreText = stringifyScore(i_gameScore);
-			
 	}
 	
 }

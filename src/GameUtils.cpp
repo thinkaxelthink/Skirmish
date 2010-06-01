@@ -115,7 +115,7 @@ void checkPlayerHit(Player &player){
 	{
 		//the 900 being subtracted from the player's hit points need to be changed 
 		//if the hit points are altered in the xml file
-		if(hitTime <= 0) hitTime = fabs((player.getPlayerHitPoints()-900.0) - 255);
+		if(hitTime <= 0) hitTime = fabs((player.getPlayerHitPoints()-900.0f) - 255);
 		cout <<  "HIT TIME: " <<hitTime <<endl;
 		cout <<  "PLAYER :  " << player.getPlayerHitPoints() <<endl;
 		ofEnableAlphaBlending();
@@ -124,7 +124,7 @@ void checkPlayerHit(Player &player){
 		ofDisableAlphaBlending();
 		hitTime-=10;
 	}
-	else if(player.getPlayerHitPoints() == 0)
+	else if(player.getPlayerHitPoints() <= 20)
 	{
 		ofSetColor(255, 0, 0,hitTime);
 		ofRect(0,0,ofGetWidth(),ofGetHeight());

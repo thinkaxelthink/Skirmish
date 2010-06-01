@@ -232,6 +232,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -273,7 +275,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>15</integer>
+									<integer>6</integer>
 									<integer>3</integer>
 									<integer>0</integer>
 								</array>
@@ -307,14 +309,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>C413979511AB7CB5000F2AAB</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>LastStandApplication.h</string>
+								<string>CreatureFactory.cpp</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -322,29 +322,29 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>C413979611AB7CB5000F2AAB</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>LastStandApplication.h</string>
+										<string>CreatureFactory.cpp</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>C484D50111AF4BED0005F708</string>
+										<string>C4AA201211B5605900278712</string>
 										<key>history</key>
 										<array>
 											<string>C4DAE7B711AF2862004654D6</string>
-											<string>C4DAE84111AF3689004654D6</string>
-											<string>C4DAE89111AF3B73004654D6</string>
-											<string>C4DAE89F11AF463E004654D6</string>
-											<string>C4DAE8B411AF482E004654D6</string>
 											<string>C4DAE8B511AF482E004654D6</string>
-											<string>C4DAE8B611AF482E004654D6</string>
-											<string>C4DAE8D111AF48B4004654D6</string>
-											<string>C4DAE8DB11AF491B004654D6</string>
-											<string>C4DAE8DC11AF491B004654D6</string>
 											<string>C4DAE8DD11AF491B004654D6</string>
 											<string>C4DAE8DE11AF491B004654D6</string>
-											<string>C484D4FD11AF4BED0005F708</string>
-											<string>C484D4FE11AF4BED0005F708</string>
-											<string>C484D4FF11AF4BED0005F708</string>
-											<string>C484D50011AF4BED0005F708</string>
+											<string>C484D55211B35F840005F708</string>
+											<string>C484D55311B35F840005F708</string>
+											<string>C484D55411B35F840005F708</string>
+											<string>C484D55511B35F840005F708</string>
+											<string>C484D55611B35F840005F708</string>
+											<string>C484D55711B35F840005F708</string>
+											<string>C484D55811B35F840005F708</string>
+											<string>C484D55911B35F840005F708</string>
+											<string>C484D55A11B35F840005F708</string>
+											<string>C484D55B11B35F840005F708</string>
+											<string>C484D55C11B35F840005F708</string>
+											<string>C4AA201111B5605900278712</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -467,11 +467,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>C484D4ED11AF4B880005F708</string>
+				<string>C4AA201311B5605900278712</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>C484D4EE11AF4B880005F708</string>
+				<string>C4AA201411B5605900278712</string>
 				<string>C413979511AB7CB5000F2AAB</string>
-				<string>C484D4EF11AF4B880005F708</string>
+				<string>C4AA201511B5605900278712</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -620,14 +620,14 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>C484D4F011AF4B880005F708</string>
+				<string>C484D56211B35F840005F708</string>
 				<string>1CCC7628064C1048000F2A68</string>
 				<string>1CCC7629064C1048000F2A68</string>
-				<string>C484D4F111AF4B880005F708</string>
-				<string>C484D4F211AF4B880005F708</string>
-				<string>C484D4F311AF4B880005F708</string>
-				<string>C484D4F411AF4B880005F708</string>
-				<string>C484D4F511AF4B880005F708</string>
+				<string>C484D56311B35F840005F708</string>
+				<string>C484D56411B35F840005F708</string>
+				<string>C484D56511B35F840005F708</string>
+				<string>C484D56611B35F840005F708</string>
+				<string>C484D56711B35F840005F708</string>
 			</array>
 			<key>ToolbarConfigUserDefaultsMinorVersion</key>
 			<string>2</string>
@@ -661,8 +661,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>C484D4F711AF4B880005F708</string>
-		<string>C484D4F811AF4B880005F708</string>
 		<string>/Users/novatheory/Dev/openFrameworks/Releases/OF_06_SETPIXEL/apps/Axel_Thesis/Skirmish/openFrameworks.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
